@@ -1,0 +1,144 @@
+// AooBee - 全行业产品/工具/服务目录平台
+// Prisma Schema for GEO-SEO optimized directory
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ==================== 行业分类 ====================
+model Category {
+  id          String    @id @default(cuid())
+  name        String    // 如 "人工智能", "电商", "餐饮"
+  slug        String    @unique
+  description String?   @db.Text
+  icon        String?   // emoji 或 icon 名称
+  imageUrl    String?
+  parentId    String?
+  parent      Category? @relation("CategoryTree", fields: [parentId], references: [id])
+  children    Category[] @relation("CategoryTree")
+  products    Product[]
+  articles    Article[]
+  sortOrder   Int       @default(0)
+  published   Boolean   @default(true)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([parentId])
+  @@index([sortOrder])
+}
+
+// ==================== 产品/工具/服务 ====================
+model Product {
+  id             String        @id @default(cuid())
+  name           String
+  slug           String        @unique
+  url            String?       // 官网链接
+  description    String        @db.Text // 简短描述 (100字)
+  longDesc       String?       @db.Text // LLM生成的详细描述 (500-800字)
+  logo           String?
+  screenshots    String[]      // JSON数组存储
+  category       Category      @relation(fields: [categoryId], references: [id])
+  categoryId     String
+  tags           String[]
+  pricing        String?       // "免费" | "付费" | "免费增值" | "按需定价"
+  pricingDetail  String?       // 具体定价信息
+  rating         Float         @default(0)
+  reviewCount    Int           @default(0)
+  monthlyTraffic Int?          // 月访问量估计
+  founded        String?       // 成立年份
+  company        String?       // 公司名
+  location       String?       // 公司所在地
+  features       Json?         // 功能特性列表 [{name, description}]
+  pros           String[]      // 优点
+  cons           String[]      // 缺点
+  alternatives   String[]      // 替代品slug列表
+  useCases       String[]      // 适用场景
+  status         ProductStatus @default(DRAFT)
+  geoOptimized   Boolean       @default(false) // 是否已GEO优化
+  publishedAt    DateTime?
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  reviews  Review[]
+  articles Article[]
+
+  @@index([categoryId])
+  @@index([rating(sort: Desc)])
+  @@index([monthlyTraffic(sort: Desc)])
+  @@index([status])
+  @@index([publishedAt(sort: Desc)])
+}
+
+enum ProductStatus {
+  DRAFT
+  ACTIVE
+  ARCHIVED
+}
+
+// ==================== 用户评价 ====================
+model Review {
+  id         String   @id @default(cuid())
+  product    Product  @relation(fields: [productId], references: [id])
+  productId  String
+  author     String
+  authorUrl  String?  // 作者链接
+  rating     Float
+  title      String?
+  content    String   @db.Text
+  pros       String[]
+  cons       String[]
+  helpful    Int      @default(0)
+  verified   Boolean  @default(false) // 是否验证用户
+  createdAt  DateTime @default(now())
+
+  @@index([productId])
+  @@index([rating])
+}
+
+// ==================== 文章（LLM生成） ====================
+model Article {
+  id          String      @id @default(cuid())
+  title       String
+  slug        String      @unique
+  type        ArticleType
+  content     String      @db.Text       // Markdown内容
+  excerpt     String?     @db.Text       // 摘要 (150字)
+  faqItems    Json?       // FAQ问答对 [{question, answer}]
+  keywords    String[]    // 目标关键词
+  metaTitle   String?     // SEO meta title
+  metaDesc    String?     // SEO meta description
+  schemaType  String?     // 结构化数据类型
+  authorName  String      @default("AooBee 编辑部")
+  authorUrl   String?
+  readTime    Int?        // 预计阅读时间（分钟）
+  wordCount   Int?        // 字数
+  category    Category?   @relation(fields: [categoryId], references: [id])
+  categoryId  String?
+  product     Product?    @relation(fields: [productId], references: [id])
+  productId   String?
+  relatedSlugs String[]   // 相关文章slug
+  published   Boolean     @default(false)
+  publishedAt DateTime?
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  @@index([categoryId])
+  @@index([type])
+  @@index([published])
+  @@index([publishedAt(sort: Desc)])
+}
+
+enum ArticleType {
+  GUIDE        // 行业指南
+  COMPARISON   // 产品对比 ("A vs B")
+  REVIEW       // 产品评测
+  FAQ          // 问答
+  LISTICLE     // 清单文章 ("十大XX")
+  HOW_TO       // 使用教程
+  BEST         // "最佳XX" 推荐
+}

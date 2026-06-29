@@ -1,0 +1,71 @@
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.aoobee.com";
+
+/**
+ * 生成标准 meta 标签
+ */
+export function generateMeta({
+  title,
+  description,
+  keywords,
+  url,
+  image,
+  type = "website",
+}: {
+  title: string;
+  description: string;
+  keywords?: string[];
+  url?: string;
+  image?: string;
+  type?: string;
+}) {
+  const fullTitle = title.includes("AooBee") ? title : `${title} | AooBee`;
+  const fullUrl = url ? `${BASE_URL}${url}` : BASE_URL;
+
+  return {
+    title: fullTitle,
+    description,
+    keywords: keywords?.join(", "),
+    openGraph: {
+      title: fullTitle,
+      description,
+      url: fullUrl,
+      siteName: "AooBee",
+      type,
+      locale: "zh_CN",
+      ...(image && { images: [{ url: image, width: 1200, height: 630 }] }),
+    },
+    twitter: {
+      card: "summary_large_image" as const,
+      title: fullTitle,
+      description,
+      ...(image && { images: [image] }),
+    },
+    alternates: {
+      canonical: fullUrl,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large" as const,
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  };
+}
+
+/**
+ * 生成 canonical URL
+ */
+export function canonicalUrl(path: string) {
+  return `${BASE_URL}${path}`;
+}
+
+/**
+ * slug 转中文关键词（用于面包屑等）
+ */
+export function slugToDisplay(slug: string): string {
+  return slug
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
