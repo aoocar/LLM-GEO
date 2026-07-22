@@ -27,6 +27,13 @@ async function main() {
     { title:'在线教育平台深度评测', slug:'zaixian-jiaoyu-pingce', type:'REVIEW', cat:'jiao-yu-pei-xun', excerpt:'Coursera、中国大学MOOC、网易云课堂等平台深度对比评测', keywords:['在线教育','MOOC','学习平台'], content:'## 平台概览\n\n在线教育平台众多，如何选择最适合自己的？' },
     { title:'新手如何选择第一款AI写作工具', slug:'xinshou-ai-xiezuo', type:'HOW_TO', cat:'ren-gong-zhi-neng', excerpt:'AI写作工具入门指南，帮新手快速上手并选择合适的工具', keywords:['AI写作','新手入门','写作工具'], content:'## AI写作工具入门\n\n如果你是第一次接触AI写作工具...' },
     { title:'移动支付平台对比：支付宝 vs 微信支付', slug:'zhifubao-vs-weixin', type:'COMPARISON', cat:'jin-rong-ke-ji', excerpt:'支付宝和微信支付功能、费率、适用场景全面对比', keywords:['支付宝','微信支付','移动支付'], content:'## 产品概述\n\n支付宝和微信支付是中国两大移动支付平台...' },
+    { title:'装修前必看的10个避坑问题', slug:'zhuangxiu-bikong', type:'GUIDE', cat:'zhuang-xiu', excerpt:'从预算、施工、材料选购到合同签署，装修前要重点规避哪些坑', keywords:['装修','避坑','家装'], content:'## 装修前先做什么？\n\n装修前一定要先规划空间、预算和工期...' },
+    { title:'家电选购指南：买什么更实用', slug:'jiadian-xuan-gou', type:'GUIDE', cat:'jia-dian', excerpt:'厨房电器、空调、洗衣机、扫地机器人等家电怎么选更省心', keywords:['家电','选购','家居'], content:'## 家电选购核心原则\n\n家电选购要看功能、能耗和售后...' },
+    { title:'办公空间怎么提升效率', slug:'bangong-kongjian-xiaolv', type:'GUIDE', cat:'bangong', excerpt:'从家具、布局到设备，办公空间如何更高效', keywords:['办公','效率','办公空间'], content:'## 办公效率提升方法\n\n良好的办公空间可以显著提升团队效率...' },
+    { title:'教育行业如何选择优质培训服务', slug:'jiaoyu-peixun-xuanze', type:'GUIDE', cat:'jiao-yu', excerpt:'教育培训机构、课程内容和服务质量如何判断', keywords:['教育','培训','选购'], content:'## 教育培训服务怎么选？\n\n内容质量、师资和口碑是挑选培训服务的关键...' },
+    { title:'适老家居改造实用指南', slug:'shiylao-jiaju-gaizao', type:'GUIDE', cat:'lao-nian', excerpt:'适老化改造如何兼顾安全、舒适和实用', keywords:['老年','适老','家居'], content:'## 适老家居改造要点\n\n无障碍设计、扶手和照明是重点...' },
+    { title:'育儿家庭如何高效选购用品', slug:'yuer-jiaju-xuan-gou', type:'GUIDE', cat:'yu-er', excerpt:'从奶粉、玩具到儿童家具，育儿用品怎么选更省心', keywords:['育儿','母婴','用品'], content:'## 育儿用品选购建议\n\n家长在选购时应重点关注安全性和实用性...' },
+    { title:'上门维修安装服务怎么挑', slug:'shangmen-weixiu-xuanze', type:'GUIDE', cat:'shang-men-weixiu-an-zhuang', excerpt:'家电维修、安装服务、管道维修等上门服务选择指南', keywords:['维修','安装','上门服务'], content:'## 上门维修安装服务选择\n\n服务口碑、价格透明和售后保障最重要...' },
   ];
 
   let count = 0;

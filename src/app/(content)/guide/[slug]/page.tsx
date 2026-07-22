@@ -125,15 +125,96 @@ export default async function GuideDetailPage({ params }: { params: Promise<{ sl
 }
 
 function markdownToHtml(md: string): string {
-  return md
-    .replace(/^### (.+)$/gm, "<h3>$1</h3>")
-    .replace(/^## (.+)$/gm, "<h2>$1</h2>")
-    .replace(/^# (.+)$/gm, "<h1>$1</h1>")
+  const normalized = (md || "").replace(/\r\n?/g, "\n").trim();
+  const lines = normalized.split("\n");
+  const html: string[] = [];
+  let paragraphLines: string[] = [];
+  let listItems: string[] = [];
+  let quoteLines: string[] = [];
+
+  const flushParagraph = () => {
+    if (paragraphLines.length > 0) {
+      html.push(`<p>${formatInline(paragraphLines.join(" "))}</p>`);
+      paragraphLines = [];
+    }
+  };
+
+  const flushList = () => {
+    if (listItems.length > 0) {
+      html.push(`<ul>${listItems.map((item) => `<li>${formatInline(item)}</li>`).join("")}</ul>`);
+      listItems = [];
+    }
+  };
+
+  const flushQuote = () => {
+    if (quoteLines.length > 0) {
+      html.push(`<blockquote>${quoteLines.map((line) => formatInline(line)).join("<br />")}</blockquote>`);
+      quoteLines = [];
+    }
+  };
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+
+    if (!trimmed) {
+      flushParagraph();
+      flushList();
+      flushQuote();
+      continue;
+    }
+
+    if (/^###\s+/.test(trimmed)) {
+      flushParagraph();
+      flushList();
+      flushQuote();
+      html.push(`<h3>${formatInline(trimmed.replace(/^###\s+/, ""))}</h3>`);
+      continue;
+    }
+
+    if (/^##\s+/.test(trimmed)) {
+      flushParagraph();
+      flushList();
+      flushQuote();
+      html.push(`<h2>${formatInline(trimmed.replace(/^##\s+/, ""))}</h2>`);
+      continue;
+    }
+
+    if (/^#\s+/.test(trimmed)) {
+      flushParagraph();
+      flushList();
+      flushQuote();
+      html.push(`<h1>${formatInline(trimmed.replace(/^#\s+/, ""))}</h1>`);
+      continue;
+    }
+
+    if (/^>\s+/.test(trimmed)) {
+      flushParagraph();
+      flushList();
+      quoteLines.push(trimmed.replace(/^>\s+/, ""));
+      continue;
+    }
+
+    if (/^-\s+/.test(trimmed)) {
+      flushParagraph();
+      flushQuote();
+      listItems.push(trimmed.replace(/^-\s+/, ""));
+      continue;
+    }
+
+    flushList();
+    flushQuote();
+    paragraphLines.push(trimmed);
+  }
+
+  flushParagraph();
+  flushList();
+  flushQuote();
+
+  return html.join("");
+}
+
+function formatInline(text: string): string {
+  return text
     .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-    .replace(/\*(.+?)\*/g, "<em>$1</em>")
-    .replace(/^- (.+)$/gm, "<li>$1</li>")
-    .replace(/^> (.+)$/gm, "<blockquote>$1</blockquote>")
-    .replace(/\n\n/g, "</p><p>")
-    .replace(/^(?!<)(.+)$/gm, "<p>$1</p>")
-    .replace(/<p><\/p>/g, "");
+    .replace(/\*(.+?)\*/g, "<em>$1</em>");
 }

@@ -8,24 +8,40 @@ import { db } from "@/lib/db";
 
 export const revalidate = 60; // ISR: 每60秒重新验证
 
+async function getHomePageData() {
+  try {
+    const [categories, products, totalProducts, totalCategories] = await Promise.all([
+      db.category.findMany({
+        where: { published: true },
+        orderBy: { sortOrder: "asc" },
+        take: 8,
+        include: { _count: { select: { products: true } } },
+      }),
+      db.product.findMany({
+        where: { status: "ACTIVE" },
+        orderBy: { rating: "desc" },
+        take: 6,
+        include: { category: { select: { name: true, slug: true } } },
+      }),
+      db.product.count({ where: { status: "ACTIVE" } }),
+      db.category.count({ where: { published: true } }),
+    ]);
+
+    return { categories, products, totalProducts, totalCategories };
+  } catch (error) {
+    console.error("Failed to load homepage data from database.", error);
+    return {
+      categories: [],
+      products: [],
+      totalProducts: 0,
+      totalCategories: 0,
+    };
+  }
+}
+
 export default async function HomePage() {
-  // 从数据库读取真实数据
-  const [categories, products, totalProducts, totalCategories] = await Promise.all([
-    db.category.findMany({
-      where: { published: true },
-      orderBy: { sortOrder: "asc" },
-      take: 8,
-      include: { _count: { select: { products: true } } },
-    }),
-    db.product.findMany({
-      where: { status: "ACTIVE" },
-      orderBy: { rating: "desc" },
-      take: 6,
-      include: { category: { select: { name: true, slug: true } } },
-    }),
-    db.product.count({ where: { status: "ACTIVE" } }),
-    db.category.count({ where: { published: true } }),
-  ]);
+  const { categories, products, totalProducts, totalCategories } = await getHomePageData();
+  const hasContent = categories.length > 0 || products.length > 0;
 
   return (
     <>
@@ -91,53 +107,68 @@ export default async function HomePage() {
         />
       </section>
 
-      {/* 行业分类 */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="flex items-center justify-between mb-8">
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900">浏览行业分类</h2>
-            <p className="mt-1 text-gray-500">按行业探索产品和服务</p>
+      {!hasContent && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="rounded-xl border border-amber-200 bg-amber-50 p-5 text-amber-800">
+            <p className="font-medium">内容暂时不可用</p>
+            <p className="mt-1 text-sm">
+              当前数据库服务暂时不可用，首页已切换为简化展示。请稍后刷新，或检查数据库连接与配额。 
+            </p>
           </div>
-          <Link
-            href="/categories"
-            className="flex items-center gap-1 text-sm font-medium text-primary hover:text-primary-dark"
-          >
-            全部分类 <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {categories.map((cat) => (
+        </section>
+      )}
+
+      {/* 行业分类 */}
+      {categories.length > 0 && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="flex items-center justify-between mb-8">
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900">浏览行业分类</h2>
+              <p className="mt-1 text-gray-500">按行业探索产品和服务</p>
+            </div>
             <Link
-              key={cat.slug}
-              href={`/${cat.slug}`}
-              className="group bg-white rounded-xl border border-gray-200 p-5
-                         hover:shadow-lg hover:border-primary/30 transition-all duration-200"
+              href="/categories"
+              className="flex items-center gap-1 text-sm font-medium text-primary hover:text-primary-dark"
             >
-              <div className="text-3xl mb-2">{cat.icon || "📦"}</div>
-              <h3 className="font-semibold text-gray-900 group-hover:text-primary">
-                {cat.name}
-              </h3>
-              <p className="text-xs text-gray-500 mt-1 line-clamp-1">
-                {cat.description}
-              </p>
-              <p className="text-xs text-gray-400 mt-2">{cat._count.products} 个产品</p>
+              全部分类 <ArrowRight className="w-4 h-4" />
             </Link>
-          ))}
-        </div>
-      </section>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {categories.map((cat) => (
+              <Link
+                key={cat.slug}
+                href={`/${cat.slug}`}
+                className="group bg-white rounded-xl border border-gray-200 p-5
+                           hover:shadow-lg hover:border-primary/30 transition-all duration-200"
+              >
+                <div className="text-3xl mb-2">{cat.icon || "📦"}</div>
+                <h3 className="font-semibold text-gray-900 group-hover:text-primary">
+                  {cat.name}
+                </h3>
+                <p className="text-xs text-gray-500 mt-1 line-clamp-1">
+                  {cat.description}
+                </p>
+                <p className="text-xs text-gray-400 mt-2">{cat._count.products} 个产品</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* 热门产品 */}
-      <section className="bg-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Suspense fallback={<div>加载中...</div>}>
-            <ProductList
-              products={products}
-              title="热门产品推荐"
-              showMoreHref="/best"
-            />
-          </Suspense>
-        </div>
-      </section>
+      {products.length > 0 && (
+        <section className="bg-white py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <Suspense fallback={<div>加载中...</div>}>
+              <ProductList
+                products={products}
+                title="热门产品推荐"
+                showMoreHref="/best"
+              />
+            </Suspense>
+          </div>
+        </section>
+      )}
 
       {/* SEO 内容区块 - GEO 优化 */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
