@@ -4,9 +4,9 @@ import Script from "next/script";
 // 也可在 Vercel 环境变量 NEXT_PUBLIC_GA_ID 中覆盖。
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-LFP31YGTRT";
 
-// Microsoft Clarity project ID。需在 Vercel 环境变量 NEXT_PUBLIC_CLARITY_ID 中配置，
-// 未配置时不注入（不影响站点运行）。
-const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID;
+// Microsoft Clarity project ID（来自用户提供的 Clarity 项目）。
+// 也可在 Vercel 环境变量 NEXT_PUBLIC_CLARITY_ID 中覆盖。
+const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID || "lx18ztcr4b";
 
 export function Analytics() {
   return (
@@ -25,12 +25,10 @@ export function Analytics() {
         `}
       </Script>
 
-      {/* Microsoft Clarity（仅当配置了 NEXT_PUBLIC_CLARITY_ID 时注入） */}
-      {CLARITY_ID ? (
-        <Script id="ms-clarity" strategy="afterInteractive">
-          {`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "${CLARITY_ID}");`}
-        </Script>
-      ) : null}
+      {/* Microsoft Clarity */}
+      <Script id="ms-clarity" strategy="afterInteractive">
+        {`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "${CLARITY_ID}");`}
+      </Script>
     </>
   );
 }
