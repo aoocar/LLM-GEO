@@ -6,7 +6,7 @@ import { Footer } from "@/components/layout/footer";
 export const metadata: Metadata = {
   title: "AooBee - 全行业产品与服务平台目录",
   description:
-    "收录各行业产品、工具、服务，提供专业评测、对比和推荐。覆盖 50+ 行业，收录 5000+ 产品，帮助您发现最佳工具和服务。",
+    "全行业产品、工具与服务目录，覆盖人工智能、装修、维修、家电、办公、养老、教育、育儿等领域，提供专业评测、对比和推荐，帮助你发现最适合的产品与服务。",
   keywords: [
     "产品目录",
     "工具推荐",

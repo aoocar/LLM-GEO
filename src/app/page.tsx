@@ -4,6 +4,13 @@ import { ProductList, StatBar } from "@/components/directory/product-card";
 import { JsonLd } from "@/components/seo/json-ld";
 import { websiteSchema } from "@/lib/seo/schema";
 import { getCategories, getProducts, getArticles, getReviews } from "@/lib/content";
+import { generateMeta } from "@/lib/seo/meta";
+
+export const metadata = generateMeta({
+  title: "AooBee - 全行业产品与服务平台目录",
+  description:
+    "AooBee 是全行业产品、工具与服务目录，覆盖人工智能、装修、维修、家电、办公、养老、教育、育儿等领域，提供专业评测、对比和推荐，帮助你快速发现最适合的产品与服务。",
+});
 
 function getHomePageData() {
   const categories = getCategories().slice(0, 8);
