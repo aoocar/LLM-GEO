@@ -13,6 +13,7 @@ export default function TermsPage() {
       title="使用条款"
       description="访问或使用 AooBee 即表示您同意以下条款。"
       updated="2026-07-23"
+      url="/terms"
     >
       <p>欢迎访问 AooBee。访问或使用本网站，即表示您同意下列条款。</p>
       <h2>内容用途</h2>
@@ -29,9 +30,6 @@ export default function TermsPage() {
       </p>
       <h2>条款变更</h2>
       <p>我们可能不时更新本条款，更新后以本站公示版本为准。</p>
-      <p className="text-sm text-gray-400">
-        注：本页为占位模板，正式上线前请由法务或负责人审阅并补充完整条款。
-      </p>
     </LegalPage>
   );
 }

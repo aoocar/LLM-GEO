@@ -3,6 +3,7 @@
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useState, useMemo } from "react";
+import { SearchResultList } from "./search-list";
 
 export type SearchItem = {
   title: string;
@@ -19,7 +20,7 @@ export function SearchResults({ items }: { items: SearchItem[] }) {
 
   const results = useMemo(() => {
     const term = q.trim().toLowerCase();
-    if (!term) return [];
+    if (!term) return items;
     return items.filter(
       (it) =>
         it.title.toLowerCase().includes(term) ||
@@ -52,42 +53,17 @@ export function SearchResults({ items }: { items: SearchItem[] }) {
         </button>
       </form>
 
-      {q && (
+      {q ? (
         <p className="mt-6 text-gray-600">
           {results.length > 0
             ? `找到 ${results.length} 条与“${q}”相关的结果`
             : `未找到与“${q}”相关的结果`}
         </p>
+      ) : (
+        <p className="mt-6 text-gray-600">共收录 {items.length} 条，输入关键词可实时筛选</p>
       )}
 
-      <ul className="mt-4 space-y-3">
-        {results.map((it) => (
-          <li key={it.url}>
-            <Link
-              href={it.url}
-              className="group block bg-white rounded-xl border border-gray-200 p-5
-                         hover:shadow-lg hover:border-primary/30 transition-all"
-            >
-              <div className="flex items-center gap-2 mb-1">
-                <span className="px-2 py-0.5 bg-blue-50 text-blue-600 text-xs rounded-full">
-                  {it.type}
-                </span>
-                {it.category && (
-                  <span className="text-xs text-gray-400">{it.category}</span>
-                )}
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 group-hover:text-primary">
-                {it.title}
-              </h3>
-              {it.description && (
-                <p className="mt-1 text-sm text-gray-500 line-clamp-2">
-                  {it.description}
-                </p>
-              )}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <SearchResultList items={results} />
     </div>
   );
 }

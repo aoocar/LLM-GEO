@@ -13,6 +13,7 @@ export default function PrivacyPage() {
       title="隐私政策"
       description="本政策说明 AooBee 如何处理访问者信息。"
       updated="2026-07-23"
+      url="/privacy"
     >
       <p>
         AooBee（以下简称“我们”）重视您的隐私。本政策说明在您访问本网站时，我们如何对待相关信息。
@@ -33,9 +34,6 @@ export default function PrivacyPage() {
       <h2>联系我们</h2>
       <p>
         如对本政策有疑问，可通过 <a href="mailto:hello@aoobee.com" className="text-primary hover:underline">hello@aoobee.com</a> 联系我们。
-      </p>
-      <p className="text-sm text-gray-400">
-        注：本页为占位模板，正式上线前请由法务或负责人审阅并补充完整条款。
       </p>
     </LegalPage>
   );

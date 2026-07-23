@@ -6,6 +6,7 @@ import { generateMeta } from "@/lib/seo/meta";
 import { breadcrumbSchema } from "@/lib/seo/schema";
 import { getProducts, getArticles, getReviews } from "@/lib/content";
 import { SearchResults, type SearchItem } from "@/components/search/search-results";
+import { SearchResultList } from "@/components/search/search-list";
 
 export const metadata = generateMeta({
   title: "搜索 - AooBee 产品与服务目录",
@@ -69,7 +70,34 @@ export default async function SearchPage() {
           在 AooBee 全行业产品目录中检索产品、工具、服务与评测。
         </p>
 
-        <Suspense fallback={<div className="mt-6 text-gray-500">加载中...</div>}>
+        <Suspense
+          fallback={
+            <div className="mt-6">
+              <form
+                action="/search"
+                method="GET"
+                className="flex gap-2 max-w-xl"
+              >
+                <input
+                  name="q"
+                  placeholder="输入关键词，如 AI 写作、CRM..."
+                  className="flex-1 px-4 py-3 rounded-lg border border-gray-300
+                             focus:ring-2 focus:ring-primary focus:outline-none text-gray-900"
+                />
+                <button
+                  type="submit"
+                  className="px-5 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary-dark transition-colors"
+                >
+                  搜索
+                </button>
+              </form>
+              <p className="mt-6 text-gray-600">
+                共收录 {items.length} 条，输入关键词开始筛选
+              </p>
+              <SearchResultList items={items} />
+            </div>
+          }
+        >
           <SearchResults items={items} />
         </Suspense>
       </div>

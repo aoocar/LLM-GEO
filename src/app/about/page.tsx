@@ -13,6 +13,7 @@ export default function AboutPage() {
       title="关于我们"
       description="AooBee 致力于成为全行业产品与服务的结构化信息源。"
       updated="2026-07-23"
+      url="/about"
     >
       <p>
         AooBee 是一个覆盖全行业的综合产品目录平台。我们收录各行业的产品与服务信息，
@@ -26,9 +27,6 @@ export default function AboutPage() {
       <h2>内容来源</h2>
       <p>
         全部内容以 Markdown 文件形式维护，便于持续更新与版本管理。我们正在不断扩充行业与产品覆盖。
-      </p>
-      <p className="text-sm text-gray-400">
-        注：本页为占位模板，可后续在内容源中补充更完整的品牌与团队介绍。
       </p>
     </LegalPage>
   );
