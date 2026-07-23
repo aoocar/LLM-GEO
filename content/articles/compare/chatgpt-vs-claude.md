@@ -4,6 +4,7 @@ type: COMPARISON
 category: ai
 keywords: [ChatGPT, Claude, 对比]
 excerpt: 从模型能力、价格、中文表现对比两款主流对话 AI。
+description: ChatGPT 与 Claude 全面对比：从模型能力、价格、中文表现等维度解析两款主流对话 AI 的差异，帮你选对工具。
 authorName: AooBee 编辑部
 ---
 # ChatGPT vs Claude 全面对比

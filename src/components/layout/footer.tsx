@@ -1,37 +1,40 @@
 import Link from "next/link";
+import { getCategories, getArticlesByType } from "@/lib/content";
 
-const FOOTER_SECTIONS = [
-  {
-    title: "热门行业",
-    links: [
-      { label: "人工智能", href: "/ren-gong-zhi-neng" },
-      { label: "软件开发", href: "/ruan-jian-kai-fa" },
-      { label: "电商零售", href: "/dian-shang-ling-shou" },
-      { label: "数字营销", href: "/shu-zi-ying-xiao" },
-      { label: "设计创意", href: "/she-ji-chuang-yi" },
-    ],
-  },
-  {
-    title: "推荐",
-    links: [
-      { label: "最佳AI工具", href: "/best/ai-gong-ju" },
-      { label: "最佳设计工具", href: "/best/she-ji-gong-ju" },
-      { label: "最佳CRM", href: "/best/crm" },
-      { label: "最佳项目管理", href: "/best/xiang-mu-guan-li" },
-    ],
-  },
-  {
-    title: "关于",
-    links: [
-      { label: "关于我们", href: "/about" },
-      { label: "联系我们", href: "/contact" },
-      { label: "隐私政策", href: "/privacy" },
-      { label: "使用条款", href: "/terms" },
-    ],
-  },
-];
+export async function Footer() {
+  const categories = getCategories();
+  const bests = getArticlesByType("BEST").slice(0, 6);
 
-export function Footer() {
+  const industryLinks = categories.map((cat) => ({
+    label: cat.name,
+    href: `/${cat.slug}`,
+  }));
+
+  const recommendLinks = bests.map((a) => ({
+    label: a.title,
+    href: `/best/${a.slug}`,
+  }));
+
+  const FOOTER_SECTIONS = [
+    {
+      title: "热门行业",
+      links: industryLinks.length > 0 ? industryLinks : [],
+    },
+    {
+      title: "推荐",
+      links: recommendLinks.length > 0 ? recommendLinks : [],
+    },
+    {
+      title: "关于",
+      links: [
+        { label: "关于我们", href: "/about" },
+        { label: "联系我们", href: "/contact" },
+        { label: "隐私政策", href: "/privacy" },
+        { label: "使用条款", href: "/terms" },
+      ],
+    },
+  ];
+
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -53,16 +56,20 @@ export function Footer() {
                 {section.title}
               </h3>
               <ul className="mt-4 space-y-2">
-                {section.links.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="text-sm text-gray-400 hover:text-white transition-colors"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
+                {section.links.length > 0 ? (
+                  section.links.map((link) => (
+                    <li key={link.href}>
+                      <Link
+                        href={link.href}
+                        className="text-sm text-gray-400 hover:text-white transition-colors"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))
+                ) : (
+                  <li className="text-sm text-gray-600">敬请期待</li>
+                )}
               </ul>
             </div>
           ))}

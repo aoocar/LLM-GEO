@@ -15,10 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "AooBee - 全行业产品与服务平台目录",
-    template: "%s | AooBee",
-  },
+  title: "AooBee - 全行业产品与服务平台目录",
   description:
     "收录各行业产品、工具、服务，提供专业评测、对比和推荐。覆盖 50+ 行业，收录 5000+ 产品，帮助您发现最佳工具和服务。",
   keywords: [

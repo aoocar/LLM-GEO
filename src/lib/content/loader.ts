@@ -23,6 +23,19 @@ function fileSlug(file: string): string {
   return path.basename(file, ".md");
 }
 
+/**
+ * 从 markdown 正文派生 meta description：跳过纯标题行，取首个有效段落，
+ * 去掉 markdown 标记后截取前 160 字。仅当 frontmatter 未显式提供 description 时使用。
+ */
+function deriveDescription(content: string): string {
+  const paras = content
+    .split(/\n\s*\n/)
+    .map((p) => p.replace(/^#+\s*/gm, "").replace(/[*_`>#]/g, "").replace(/\s+/g, " ").trim())
+    .filter(Boolean);
+  const first = paras.find((p) => p.length > 10) || paras[0] || "";
+  return first.slice(0, 160);
+}
+
 function listMd(dir: string): string[] {
   if (!fs.existsSync(dir)) return [];
   return fs
@@ -110,7 +123,7 @@ function parseProduct(file: string, catDirName: string): Product | null {
   return {
     slug,
     name: (data.name as string) || slug,
-    description: (data.description as string) || "",
+    description: (data.description as string) || deriveDescription(content),
     category: { name: category?.name || categorySlug, slug: categorySlug },
     url: (data.url as string) || null,
     company: (data.company as string) || null,

@@ -1,6 +1,25 @@
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.aoobee.com";
 
 /**
+ * 统一给页面型 URL 补末尾斜杠，使 JSON-LD 中的 canonical 与 trailingSlash:true 下
+ * 实际生成的链接（/guide/slug/）保持一致，避免爬虫把 /guide/slug 与 /guide/slug/ 视为重复。
+ * 根域名、带文件后缀、已含斜杠的地址原样返回。
+ */
+function normUrl(u: string): string {
+  if (!/^https?:\/\//.test(u)) return u;
+  const clean = u.split("#")[0].split("?")[0];
+  if (/\.[a-z0-9]{2,}$/i.test(clean)) return u;
+  if (clean.endsWith("/")) return u;
+  try {
+    const path = new URL(u).pathname;
+    if (path === "/" || path === "") return u;
+  } catch {
+    /* ignore */
+  }
+  return u + "/";
+}
+
+/**
  * 产品页结构化数据 - SoftwareApplication
  */
 export function productSchema(product: {
@@ -24,7 +43,7 @@ export function productSchema(product: {
     operatingSystem: "Web",
   };
 
-  if (product.url) schema.url = product.url;
+  if (product.url) schema.url = normUrl(product.url);
   if (product.logo) schema.image = product.logo;
   if (product.company) {
     schema.author = {
@@ -88,7 +107,7 @@ export function articleSchema(article: {
   authorName?: string;
   url?: string;
 }) {
-  const canonical = article.url || `${BASE_URL}/guide/${article.slug}`;
+  const canonical = normUrl(article.url || `${BASE_URL}/guide/${article.slug}`);
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -104,7 +123,7 @@ export function articleSchema(article: {
       name: "AooBee",
       logo: {
         "@type": "ImageObject",
-        url: `${BASE_URL}/logo.png`,
+        url: `${BASE_URL}/logo.svg`,
       },
     },
   };
@@ -135,7 +154,7 @@ export function breadcrumbSchema(
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: item.url,
+      item: normUrl(item.url),
     })),
   };
 }
@@ -217,7 +236,7 @@ export function reviewSchema(review: {
     "@context": "https://schema.org",
     "@type": "Review",
     name: review.title,
-    url: `${BASE_URL}/reviews/${review.slug}`,
+    url: normUrl(`${BASE_URL}/reviews/${review.slug}`),
     itemReviewed: {
       "@type": "SoftwareApplication",
       name: review.product,
@@ -231,7 +250,7 @@ export function reviewSchema(review: {
       name: "AooBee",
       logo: {
         "@type": "ImageObject",
-        url: `${BASE_URL}/logo.png`,
+        url: `${BASE_URL}/logo.svg`,
       },
     },
   };

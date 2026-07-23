@@ -1,5 +1,6 @@
 ---
 name: ChatGPT
+description: ChatGPT 是 OpenAI 推出的通用对话 AI，支持多轮对话与多模态输入输出，免费版与 Plus $20/月订阅并行，适合写作、编程、知识问答等场景。
 category: ai
 url: https://chat.openai.com
 company: OpenAI

@@ -4,6 +4,7 @@ type: GUIDE
 category: ai
 keywords: [AI写作, 工具选型]
 excerpt: 从场景、价格、模型能力三个维度帮你选对 AI 写作工具。
+description: 从使用场景、价格额度、模型能力三个维度，给出一份可落地的 AI 写作工具选型清单，帮你选对工具不踩坑。
 authorName: AooBee 编辑部
 publishedAt: 2026-01-15
 ---
