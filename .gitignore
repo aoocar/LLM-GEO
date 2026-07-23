@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# 构建期生成的 OG 图（scripts/gen-og.ts 在 build 时重新产出）
+/public/og/
+
 # production
 /build
 

@@ -22,6 +22,10 @@ export function generateMeta({
   const fullUrl = url ? `${BASE_URL}${url}` : BASE_URL;
   const desc = description || "";
 
+  // OG 图指向预先生成的真实 .png 文件（public/og/...），由 scripts/gen-og.ts 产出，
+  // 避免静态导出把图当 application/octet-stream 返回。无 url（首页）回退到 /og/home.png。
+  const ogImage = image || (url ? `/og${url}.png` : "/og/home.png");
+
   return {
     title: fullTitle,
     description: desc,
@@ -33,13 +37,13 @@ export function generateMeta({
       siteName: "AooBee",
       type,
       locale: "zh_CN",
-      ...(image && { images: [{ url: image, width: 1200, height: 630 }] }),
+      images: [{ url: ogImage, width: 1200, height: 630, alt: fullTitle }],
     },
     twitter: {
       card: "summary_large_image" as const,
       title: fullTitle,
       description,
-      ...(image && { images: [image] }),
+      images: [ogImage],
     },
     alternates: {
       canonical: fullUrl,

@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "gen:llms": "tsx scripts/gen-llms.ts",
-    "build": "tsx scripts/gen-llms.ts && next build",
+    "build": "tsx scripts/gen-llms.ts && tsx scripts/gen-og.ts && next build",
     "start": "next start",
     "lint": "eslint",
     "gen": "tsx scripts/generate.ts",
