@@ -4,9 +4,7 @@ import { Breadcrumb } from "@/components/directory/breadcrumb";
 import { JsonLd } from "@/components/seo/json-ld";
 import { generateMeta } from "@/lib/seo/meta";
 import { breadcrumbSchema } from "@/lib/seo/schema";
-import { db } from "@/lib/db";
-
-export const revalidate = 60;
+import { getArticlesByType } from "@/lib/content";
 
 export const metadata = generateMeta({
   title: "最佳推荐 - 各行业最佳产品榜单",
@@ -16,21 +14,16 @@ export const metadata = generateMeta({
 });
 
 export default async function BestListPage() {
-  // 从数据库获取已发布的 BEST 类型文章
-  const bestArticles = await db.article.findMany({
-    where: { published: true, type: "BEST" },
-    orderBy: { publishedAt: "desc" },
-    include: { category: { select: { name: true, slug: true } } },
-  });
+  const bestArticles = getArticlesByType("BEST");
 
-  // 预置推荐榜单（数据库里没有时展示）
+  // 预置推荐榜单（content/ 未提供时的展示）
   const presetBests = [
     { slug: "ai-xie-zuo-gong-ju", title: "2026年十大AI写作工具推荐", desc: "精选最值得使用的10款AI写作工具，涵盖综合写作、营销文案、SEO文章等场景", icon: "✍️", category: "人工智能" },
     { slug: "ai-gong-ju", title: "2026年最佳AI工具推荐", desc: "覆盖对话、绘画、编程、分析等领域的顶级AI工具", icon: "🤖", category: "人工智能" },
     { slug: "she-ji-gong-ju", title: "2026年最佳UI/UX设计工具推荐", desc: "Figma、即时设计、Adobe XD等主流设计工具深度评测", icon: "🎨", category: "设计创意" },
     { slug: "crm", title: "2026年最佳CRM系统推荐", desc: "Salesforce、HubSpot、纷享销客等CRM系统对比评测", icon: "📊", category: "企业管理" },
     { slug: "xiang-mu-guan-li", title: "2026年最佳项目管理工具推荐", desc: "Jira、Notion、飞书、Asana等项目管理工具对比", icon: "📋", category: "企业管理" },
-    { slug: "dian-shang-pingtai", title: "2026年最佳电商平台推荐", desc: "Shopify、有赞、WooCommerce等电商平台对比评测", icon: "🛒", category: "电商零售" },
+    { slug: "dian-shang-ping-tai", title: "2026年最佳电商平台推荐", desc: "Shopify、有赞、WooCommerce等电商平台对比评测", icon: "🛒", category: "电商零售" },
   ];
 
   return (
@@ -86,7 +79,6 @@ export default async function BestListPage() {
           ))}
         </div>
 
-        {/* 数据库中的 BEST 文章 */}
         {bestArticles.length > 0 && (
           <section className="mt-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">更多推荐</h2>

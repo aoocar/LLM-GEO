@@ -12,7 +12,7 @@ export function generateMeta({
   type = "website",
 }: {
   title: string;
-  description: string;
+  description?: string;
   keywords?: string[];
   url?: string;
   image?: string;
@@ -20,14 +20,15 @@ export function generateMeta({
 }) {
   const fullTitle = title.includes("AooBee") ? title : `${title} | AooBee`;
   const fullUrl = url ? `${BASE_URL}${url}` : BASE_URL;
+  const desc = description || "";
 
   return {
     title: fullTitle,
-    description,
+    description: desc,
     keywords: keywords?.join(", "),
     openGraph: {
       title: fullTitle,
-      description,
+      description: desc,
       url: fullUrl,
       siteName: "AooBee",
       type,

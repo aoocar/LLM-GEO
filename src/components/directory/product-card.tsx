@@ -124,7 +124,7 @@ export function CategoryCard({
     slug: string;
     description?: string | null;
     icon?: string | null;
-    _count?: { products: number };
+    productCount?: number;
   };
 }) {
   return (
@@ -142,9 +142,9 @@ export function CategoryCard({
           {category.description}
         </p>
       )}
-      {category._count && (
+      {category.productCount != null && (
         <p className="mt-3 text-xs text-gray-400">
-          {category._count.products} 个产品
+          {category.productCount} 个产品
         </p>
       )}
     </Link>

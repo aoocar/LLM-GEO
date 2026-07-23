@@ -4,43 +4,24 @@ import { Search, ArrowRight } from "lucide-react";
 import { ProductList, StatBar } from "@/components/directory/product-card";
 import { JsonLd } from "@/components/seo/json-ld";
 import { websiteSchema } from "@/lib/seo/schema";
-import { db } from "@/lib/db";
+import { getCategories, getProducts, getArticles, getReviews } from "@/lib/content";
 
-export const revalidate = 60; // ISR: 每60秒重新验证
-
-async function getHomePageData() {
-  try {
-    const [categories, products, totalProducts, totalCategories] = await Promise.all([
-      db.category.findMany({
-        where: { published: true },
-        orderBy: { sortOrder: "asc" },
-        take: 8,
-        include: { _count: { select: { products: true } } },
-      }),
-      db.product.findMany({
-        where: { status: "ACTIVE" },
-        orderBy: { rating: "desc" },
-        take: 6,
-        include: { category: { select: { name: true, slug: true } } },
-      }),
-      db.product.count({ where: { status: "ACTIVE" } }),
-      db.category.count({ where: { published: true } }),
-    ]);
-
-    return { categories, products, totalProducts, totalCategories };
-  } catch (error) {
-    console.error("Failed to load homepage data from database.", error);
-    return {
-      categories: [],
-      products: [],
-      totalProducts: 0,
-      totalCategories: 0,
-    };
-  }
+function getHomePageData() {
+  const categories = getCategories().slice(0, 8);
+  const allProducts = getProducts();
+  const products = [...allProducts]
+    .sort((a, b) => (b.rating || 0) - (a.rating || 0))
+    .slice(0, 6);
+  const totalProducts = allProducts.length;
+  const totalCategories = getCategories().length;
+  const totalArticles = getArticles().length;
+  const totalReviews = getReviews().length;
+  return { categories, products, totalProducts, totalCategories, totalArticles, totalReviews };
 }
 
 export default async function HomePage() {
-  const { categories, products, totalProducts, totalCategories } = await getHomePageData();
+  const { categories, products, totalProducts, totalCategories, totalArticles, totalReviews } =
+    await Promise.resolve(getHomePageData());
   const hasContent = categories.length > 0 || products.length > 0;
 
   return (
@@ -101,8 +82,8 @@ export default async function HomePage() {
           stats={[
             { label: "行业分类", value: `${totalCategories}` },
             { label: "收录产品", value: `${totalProducts}` },
-            { label: "用户评价", value: "100+" },
-            { label: "文章指南", value: "8+" },
+            { label: "用户评价", value: `${totalReviews}` },
+            { label: "文章指南", value: `${totalArticles}` },
           ]}
         />
       </section>
@@ -112,7 +93,7 @@ export default async function HomePage() {
           <div className="rounded-xl border border-amber-200 bg-amber-50 p-5 text-amber-800">
             <p className="font-medium">内容暂时不可用</p>
             <p className="mt-1 text-sm">
-              当前数据库服务暂时不可用，首页已切换为简化展示。请稍后刷新，或检查数据库连接与配额。 
+              当前内容目录为空，请向 content/ 添加 Markdown 文件后重新构建。
             </p>
           </div>
         </section>
@@ -148,7 +129,7 @@ export default async function HomePage() {
                 <p className="text-xs text-gray-500 mt-1 line-clamp-1">
                   {cat.description}
                 </p>
-                <p className="text-xs text-gray-400 mt-2">{cat._count.products} 个产品</p>
+                <p className="text-xs text-gray-400 mt-2">{cat.productCount} 个产品</p>
               </Link>
             ))}
           </div>

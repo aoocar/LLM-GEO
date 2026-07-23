@@ -3,9 +3,7 @@ import { Breadcrumb } from "@/components/directory/breadcrumb";
 import { JsonLd } from "@/components/seo/json-ld";
 import { generateMeta } from "@/lib/seo/meta";
 import { breadcrumbSchema } from "@/lib/seo/schema";
-import { db } from "@/lib/db";
-
-export const revalidate = 60;
+import { getCategories } from "@/lib/content";
 
 export const metadata = generateMeta({
   title: "全部行业分类",
@@ -15,11 +13,7 @@ export const metadata = generateMeta({
 });
 
 export default async function CategoriesPage() {
-  const categories = await db.category.findMany({
-    where: { published: true },
-    orderBy: { sortOrder: "asc" },
-    include: { _count: { select: { products: true } } },
-  });
+  const categories = getCategories();
 
   return (
     <>
@@ -58,7 +52,7 @@ export default async function CategoriesPage() {
                 </p>
               )}
               <p className="mt-3 text-sm text-primary font-medium">
-                {cat._count.products} 个产品 →
+                {cat.productCount} 个产品 →
               </p>
             </Link>
           ))}

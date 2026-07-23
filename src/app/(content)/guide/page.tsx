@@ -4,9 +4,7 @@ import { Breadcrumb } from "@/components/directory/breadcrumb";
 import { JsonLd } from "@/components/seo/json-ld";
 import { generateMeta } from "@/lib/seo/meta";
 import { breadcrumbSchema } from "@/lib/seo/schema";
-import { db } from "@/lib/db";
-
-export const revalidate = 60;
+import { getArticles } from "@/lib/content";
 
 export const metadata = generateMeta({
   title: "行业指南 - 专业知识与选购建议",
@@ -16,13 +14,8 @@ export const metadata = generateMeta({
 });
 
 export default async function GuideListPage() {
-  const articles = await db.article.findMany({
-    where: { published: true },
-    orderBy: { publishedAt: "desc" },
-    include: { category: { select: { name: true, slug: true } } },
-  });
+  const articles = getArticles();
 
-  // 文章类型显示名
   const typeLabel: Record<string, string> = {
     GUIDE: "行业指南",
     COMPARISON: "对比分析",
@@ -43,7 +36,6 @@ export default async function GuideListPage() {
     BEST: "bg-yellow-50 text-yellow-700",
   };
 
-  // 文章路径前缀
   const articlePrefix: Record<string, string> = {
     GUIDE: "guide",
     COMPARISON: "compare",

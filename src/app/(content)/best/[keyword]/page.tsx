@@ -4,19 +4,16 @@ import { FaqSection } from "@/components/directory/faq-section";
 import { JsonLd } from "@/components/seo/json-ld";
 import { generateMeta } from "@/lib/seo/meta";
 import { articleSchema, faqSchema, breadcrumbSchema } from "@/lib/seo/schema";
-import { db } from "@/lib/db";
-
-export const revalidate = 60;
+import { getArticle, getArticles } from "@/lib/content";
+import { markdownToHtml } from "@/lib/content/markdown";
 
 export async function generateMetadata({ params }: { params: Promise<{ keyword: string }> }) {
   const { keyword } = await params;
   const slug = decodeURIComponent(keyword);
-  const article = await db.article.findUnique({ where: { slug } });
-
+  const article = getArticle(slug);
   if (!article) {
     return generateMeta({ title: "页面未找到", description: "该推荐页面不存在" });
   }
-
   return generateMeta({
     title: article.metaTitle || article.title,
     description: article.metaDesc || article.excerpt || article.title,
@@ -25,20 +22,19 @@ export async function generateMetadata({ params }: { params: Promise<{ keyword: 
   });
 }
 
+export function generateStaticParams() {
+  return getArticles()
+    .filter((a) => a.type === "BEST")
+    .map((a) => ({ keyword: a.slug }));
+}
+
 export default async function BestKeywordPage({ params }: { params: Promise<{ keyword: string }> }) {
   const { keyword } = await params;
   const slug = decodeURIComponent(keyword);
+  const article = getArticle(slug);
+  if (!article) notFound();
 
-  const article = await db.article.findUnique({
-    where: { slug },
-    include: { category: { select: { name: true, slug: true } } },
-  });
-
-  if (!article) {
-    notFound();
-  }
-
-  const faqItems = (article.faqItems as Array<{ question: string; answer: string }>) || [];
+  const faqItems = article.faqItems;
 
   return (
     <>
@@ -50,6 +46,7 @@ export default async function BestKeywordPage({ params }: { params: Promise<{ ke
             slug: article.slug,
             publishedAt: article.publishedAt,
             updatedAt: article.updatedAt,
+            url: `/best/${article.slug}`,
           }),
           ...(faqItems.length > 0 ? [faqSchema(faqItems)] : []),
           breadcrumbSchema([
@@ -83,29 +80,12 @@ export default async function BestKeywordPage({ params }: { params: Promise<{ ke
           )}
         </div>
 
-        {/* 文章正文 */}
         <article className="prose prose-gray max-w-none mb-12">
           <div dangerouslySetInnerHTML={{ __html: markdownToHtml(article.content) }} />
         </article>
 
-        {/* FAQ */}
         {faqItems.length > 0 && <FaqSection items={faqItems} title="常见问题" />}
       </div>
     </>
   );
-}
-
-// 简易 Markdown 转 HTML
-function markdownToHtml(md: string): string {
-  return md
-    .replace(/^### (.+)$/gm, "<h3>$1</h3>")
-    .replace(/^## (.+)$/gm, "<h2>$1</h2>")
-    .replace(/^# (.+)$/gm, "<h1>$1</h1>")
-    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-    .replace(/\*(.+?)\*/g, "<em>$1</em>")
-    .replace(/^- (.+)$/gm, "<li>$1</li>")
-    .replace(/^> (.+)$/gm, "<blockquote>$1</blockquote>")
-    .replace(/\n\n/g, "</p><p>")
-    .replace(/^(?!<)(.+)$/gm, "<p>$1</p>")
-    .replace(/<p><\/p>/g, "");
 }

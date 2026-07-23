@@ -1,0 +1,18 @@
+# AooBee
+
+AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容源。
+
+## 内容清单
+
+- 分类 人工智能: https://www.aoobee.com/ai
+- 产品 ChatGPT: https://www.aoobee.com/ai/chatgpt
+- 文章 2026 年十大 AI 写作工具推荐: https://www.aoobee.com/best/ai-writing-tools-2026
+- 文章 ChatGPT vs Claude 全面对比: https://www.aoobee.com/compare/chatgpt-vs-claude
+- 文章 什么是 AI 写作工具？: https://www.aoobee.com/faq/what-is-ai-writing-tool
+- 文章 如何选择 AI 写作工具: https://www.aoobee.com/guide/how-to-choose-ai-writing-tool
+- 文章 ChatGPT 深度评测: https://www.aoobee.com/review/chatgpt-review
+- 点评 ChatGPT 真实使用点评: https://www.aoobee.com/reviews/chatgpt-honest-review
+
+## 说明
+- 所有内容以 Markdown 文件形式维护于 content/ 目录，可用 Obsidian 管理。
+- 站点地址：https://www.aoobee.com

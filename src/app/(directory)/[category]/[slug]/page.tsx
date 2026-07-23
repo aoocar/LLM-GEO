@@ -6,9 +6,7 @@ import { FaqSection } from "@/components/directory/faq-section";
 import { JsonLd } from "@/components/seo/json-ld";
 import { generateMeta } from "@/lib/seo/meta";
 import { productSchema, faqSchema, breadcrumbSchema } from "@/lib/seo/schema";
-import { db } from "@/lib/db";
-
-export const revalidate = 60;
+import { getProduct, getProductBySlug, getProducts } from "@/lib/content";
 
 export async function generateMetadata({
   params,
@@ -16,10 +14,7 @@ export async function generateMetadata({
   params: Promise<{ category: string; slug: string }>;
 }) {
   const { slug } = await params;
-  const product = await db.product.findUnique({
-    where: { slug },
-    include: { category: true },
-  });
+  const product = getProductBySlug(slug);
 
   if (!product) {
     return generateMeta({ title: "产品未找到", description: "该产品不存在" });
@@ -28,9 +23,13 @@ export async function generateMetadata({
   return generateMeta({
     title: `${product.name} - 功能介绍、定价、评测和替代品`,
     description: product.description,
-    keywords: [...product.tags, `${product.name}评测`, `${product.name}替代品`, `${product.name}定价`],
+    keywords: [...(product.tags || []), `${product.name}评测`, `${product.name}替代品`, `${product.name}定价`],
     url: `/${product.category.slug}/${product.slug}`,
   });
+}
+
+export function generateStaticParams() {
+  return getProducts().map((p) => ({ category: p.category.slug, slug: p.slug }));
 }
 
 export default async function ProductPage({
@@ -40,43 +39,15 @@ export default async function ProductPage({
 }) {
   const { category, slug } = await params;
 
-  const product = await db.product.findUnique({
-    where: { slug },
-    include: {
-      category: true,
-      reviews: { orderBy: { createdAt: "desc" }, take: 10 },
-    },
-  });
+  const product = getProduct(category, slug);
 
   if (!product || category !== product.category.slug) {
     notFound();
   }
 
-  // 获取替代品
-  const alternatives = product.alternatives.length > 0
-    ? await db.product.findMany({
-        where: { slug: { in: product.alternatives } },
-        include: { category: { select: { slug: true } } },
-      })
-    : await db.product.findMany({
-        where: { categoryId: product.categoryId, status: "ACTIVE", NOT: { id: product.id } },
-        orderBy: { rating: "desc" },
-        take: 5,
-        include: { category: { select: { slug: true } } },
-      });
-
-  // FAQ 数据
-  const faqItems = [
-    { question: `${product.name} 是什么？`, answer: product.description },
-    { question: `${product.name} 的定价是多少？`, answer: product.pricingDetail || `${product.pricing || "暂无定价信息"}，请访问官网了解详情。` },
-    { question: `${product.name} 适合哪些人使用？`, answer: product.useCases.length > 0 ? `适用于：${product.useCases.join("、")}。` : "适合各类用户使用。" },
-    { question: `${product.name} 的优点有哪些？`, answer: product.pros.length > 0 ? product.pros.join("；") + "。" : "暂无评价数据。" },
-    { question: `${product.name} 的缺点有哪些？`, answer: product.cons.length > 0 ? product.cons.join("；") + "。" : "暂无评价数据。" },
-    { question: `${product.name} 有哪些替代品？`, answer: alternatives.length > 0 ? alternatives.map(a => a.name).join("、") + "等都是不错的选择。" : "暂无替代品推荐。" },
-    { question: `${product.name} 的公司是哪家？`, answer: product.company ? `${product.name}由${product.company}开发，公司位于${product.location || "未知"}。` : "暂无公司信息。" },
-  ];
-
-  const features = (product.features as Array<{ name: string; description: string }> | null) || [];
+  const alternatives = product.alternatives;
+  const faqItems = product.faqItems;
+  const features = product.features;
 
   return (
     <>
@@ -151,7 +122,7 @@ export default async function ProductPage({
                 )}
               </div>
               <div className="mt-3 flex flex-wrap gap-2">
-                {product.tags.map((tag) => (
+                {(product.tags || []).map((tag) => (
                   <span
                     key={tag}
                     className="px-2.5 py-0.5 bg-gray-100 text-gray-600 text-xs rounded-full"
@@ -268,11 +239,11 @@ export default async function ProductPage({
               </section>
             )}
 
-            {/* 用户评价 */}
+            {/* 点评（内容类型，非交互） */}
             {product.reviews.length > 0 && (
               <section className="bg-white rounded-xl border border-gray-200 p-6 md:p-8 mb-6">
                 <h2 className="text-xl font-bold text-gray-900 mb-4">
-                  用户评价 ({product.reviews.length})
+                  产品点评 ({product.reviews.length})
                 </h2>
                 <div className="space-y-4">
                   {product.reviews.map((review) => (
@@ -327,7 +298,7 @@ export default async function ProductPage({
             <div className="bg-white rounded-xl border border-gray-200 p-6">
               <h3 className="font-bold text-gray-900 mb-4">相关标签</h3>
               <div className="flex flex-wrap gap-2">
-                {product.tags.map((tag) => (
+                {(product.tags || []).map((tag) => (
                   <Link
                     key={tag}
                     href={`/search?q=${encodeURIComponent(tag)}`}

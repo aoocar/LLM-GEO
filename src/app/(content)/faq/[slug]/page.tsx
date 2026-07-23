@@ -11,28 +11,26 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const article = getArticle(slug);
   if (!article) {
-    return generateMeta({ title: "页面未找到", description: "该对比页面不存在" });
+    return generateMeta({ title: "页面未找到", description: "该 FAQ 不存在" });
   }
   return generateMeta({
     title: article.metaTitle || article.title,
     description: article.metaDesc || article.excerpt || article.title,
     keywords: article.keywords,
-    url: `/compare/${slug}`,
+    url: `/faq/${slug}`,
   });
 }
 
 export function generateStaticParams() {
   return getArticles()
-    .filter((a) => a.type === "COMPARISON")
+    .filter((a) => a.type === "FAQ")
     .map((a) => ({ slug: a.slug }));
 }
 
-export default async function ComparePage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function FaqPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const article = getArticle(slug);
-  if (!article || article.type !== "COMPARISON") {
-    notFound();
-  }
+  if (!article || article.type !== "FAQ") notFound();
 
   const faqItems = article.faqItems;
 
@@ -46,13 +44,13 @@ export default async function ComparePage({ params }: { params: Promise<{ slug: 
             slug: article.slug,
             publishedAt: article.publishedAt,
             updatedAt: article.updatedAt,
-            url: `/compare/${article.slug}`,
+            url: `/faq/${article.slug}`,
           }),
           ...(faqItems.length > 0 ? [faqSchema(faqItems)] : []),
           breadcrumbSchema([
             { name: "首页", url: "https://www.aoobee.com" },
-            { name: "对比", url: "https://www.aoobee.com/compare" },
-            { name: article.title, url: `https://www.aoobee.com/compare/${article.slug}` },
+            { name: "常见问题", url: "https://www.aoobee.com/faq" },
+            { name: article.title, url: `https://www.aoobee.com/faq/${article.slug}` },
           ]),
         ]}
       />
@@ -60,8 +58,8 @@ export default async function ComparePage({ params }: { params: Promise<{ slug: 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Breadcrumb
           items={[
-            { label: "对比", href: "/compare" },
-            { label: article.title, href: `/compare/${article.slug}` },
+            { label: "常见问题", href: "/faq" },
+            { label: article.title, href: `/faq/${article.slug}` },
           ]}
         />
 
@@ -72,7 +70,6 @@ export default async function ComparePage({ params }: { params: Promise<{ slug: 
           {article.publishedAt && (
             <span>{new Date(article.publishedAt).toLocaleDateString("zh-CN")}</span>
           )}
-          {article.readTime && <span>约 {article.readTime} 分钟阅读</span>}
           {article.category && (
             <span className="px-2 py-0.5 bg-blue-50 text-blue-600 rounded-full text-xs">
               {article.category.name}

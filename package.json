@@ -4,15 +4,20 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build",
+    "gen:llms": "tsx scripts/gen-llms.ts",
+    "build": "tsx scripts/gen-llms.ts && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "gen": "tsx scripts/generate.ts",
+    "gen:batch": "tsx scripts/generate-batch.ts",
+    "gen:tpl": "tsx scripts/content-template.ts"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.8.0",
     "clsx": "^2.1.1",
     "date-fns": "^4.4.0",
+    "gray-matter": "^4.0.3",
     "lucide-react": "^1.21.0",
     "next": "16.2.9",
     "openai": "^6.45.0",

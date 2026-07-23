@@ -5,7 +5,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.aoobee.com";
  */
 export function productSchema(product: {
   name: string;
-  description: string;
+  description?: string | null;
   url?: string | null;
   logo?: string | null;
   rating?: number | null;
@@ -19,7 +19,7 @@ export function productSchema(product: {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: product.name,
-    description: product.description,
+    description: product.description || product.name,
     applicationCategory: product.category || "GeneralApplication",
     operatingSystem: "Web",
   };
@@ -82,17 +82,19 @@ export function articleSchema(article: {
   title: string;
   description: string;
   slug: string;
-  publishedAt?: Date | null;
-  updatedAt?: Date | null;
+  publishedAt?: string | null;
+  updatedAt?: string | null;
   image?: string | null;
   authorName?: string;
+  url?: string;
 }) {
+  const canonical = article.url || `${BASE_URL}/guide/${article.slug}`;
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.title,
     description: article.description,
-    url: `${BASE_URL}/guide/${article.slug}`,
+    url: canonical,
     author: {
       "@type": "Organization",
       name: article.authorName || "AooBee 编辑部",
@@ -108,10 +110,10 @@ export function articleSchema(article: {
   };
 
   if (article.publishedAt) {
-    schema.datePublished = article.publishedAt.toISOString();
+    schema.datePublished = new Date(article.publishedAt).toISOString();
   }
   if (article.updatedAt) {
-    schema.dateModified = article.updatedAt.toISOString();
+    schema.dateModified = new Date(article.updatedAt).toISOString();
   }
   if (article.image) {
     schema.image = article.image;
@@ -198,4 +200,51 @@ export function websiteSchema() {
       "query-input": "required name=search_term_string",
     },
   };
+}
+
+/**
+ * 点评结构化数据 (Review 内容类型，非交互评价)
+ */
+export function reviewSchema(review: {
+  title: string;
+  slug: string;
+  product: string;
+  author?: string | null;
+  rating?: number | null;
+  summary?: string | null;
+}) {
+  const schema: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    name: review.title,
+    url: `${BASE_URL}/reviews/${review.slug}`,
+    itemReviewed: {
+      "@type": "SoftwareApplication",
+      name: review.product,
+    },
+    author: {
+      "@type": "Organization",
+      name: review.author || "AooBee 编辑部",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "AooBee",
+      logo: {
+        "@type": "ImageObject",
+        url: `${BASE_URL}/logo.png`,
+      },
+    },
+  };
+
+  if (review.rating != null) {
+    schema.reviewRating = {
+      "@type": "Rating",
+      ratingValue: review.rating.toString(),
+      bestRating: "5",
+      worstRating: "1",
+    };
+  }
+  if (review.summary) schema.reviewBody = review.summary;
+
+  return schema;
 }

@@ -1,4 +1,4 @@
-import { callLLM, callLLMJson } from "@/lib/llm";
+import { callLLM, callLLMJson } from "./index";
 
 // ==================== 系统提示词 ====================
 
@@ -268,6 +268,102 @@ ${input.context ? `\n背景信息：${input.context}` : ""}
 - 涵盖入门、使用、对比、选择等不同角度`;
 
   return callLLMJson<Array<{ question: string; answer: string }>>(
+    BASE_SYSTEM_PROMPT,
+    userPrompt,
+    { temperature: 0.5 }
+  );
+}
+
+// ==================== REVIEW 文章生成（文章类型 REVIEW） ====================
+
+interface ReviewArticleInput {
+  product: string;
+  category: string;
+}
+
+interface ReviewArticleOutput {
+  title: string;
+  content: string;
+  excerpt: string;
+  metaTitle: string;
+  metaDesc: string;
+  keywords: string[];
+  readTime: number;
+  faqItems: Array<{ question: string; answer: string }>;
+}
+
+export async function generateReviewArticle(
+  input: ReviewArticleInput
+): Promise<ReviewArticleOutput> {
+  const userPrompt = `请生成一篇关于"${input.product}"的深度评测文章。
+
+所属行业：${input.category}
+
+请生成以下内容（JSON格式）：
+{
+  "title": "评测标题，如'ChatGPT 深度评测：能力边界全解析'",
+  "content": "2000-3000字评测，Markdown 格式，包含：\\n1. 产品概述\\n2. 核心能力实测\\n3. 优缺点分析\\n4. 适用人群\\n5. 总结与建议",
+  "excerpt": "150字内摘要",
+  "metaTitle": "SEO标题",
+  "metaDesc": "SEO描述",
+  "keywords": ["关键词"],
+  "readTime": 预计阅读分钟数,
+  "faqItems": [{"question": "...", "answer": "..."}]
+}
+
+要求：
+- 基于真实使用视角，客观拆解优缺点
+- 使用 H2/H3 层级分明的结构
+- faqItems 提供 6-8 个常见问题`;
+
+  return callLLMJson<ReviewArticleOutput>(
+    BASE_SYSTEM_PROMPT,
+    userPrompt,
+    { temperature: 0.5 }
+  );
+}
+
+// ==================== 点评内容生成（Review 内容类型，非交互） ====================
+
+interface ReviewContentInput {
+  product: string;
+  category: string;
+}
+
+interface ReviewContentOutput {
+  title: string;
+  author: string;
+  rating: number;
+  pros: string[];
+  cons: string[];
+  summary: string;
+  content: string;
+}
+
+export async function generateReviewContent(
+  input: ReviewContentInput
+): Promise<ReviewContentOutput> {
+  const userPrompt = `请生成一篇关于"${input.product}"的真实使用点评。
+
+所属行业：${input.category}
+
+请生成以下内容（JSON格式）：
+{
+  "title": "点评标题，如'ChatGPT 真实使用点评'",
+  "author": "AooBee 编辑部",
+  "rating": 4.5,
+  "pros": ["优点1", "优点2", "优点3"],
+  "cons": ["缺点1", "缺点2"],
+  "summary": "一句话总评，客观拆解优缺点与适用人群",
+  "content": "300-500字点评正文，客观拆解产品的优缺点与适用人群"
+}
+
+要求：
+- 评分取 1-5 之间的小数
+- 优点/缺点各 3 条左右
+- 内容客观、具体、不浮夸`;
+
+  return callLLMJson<ReviewContentOutput>(
     BASE_SYSTEM_PROMPT,
     userPrompt,
     { temperature: 0.5 }
