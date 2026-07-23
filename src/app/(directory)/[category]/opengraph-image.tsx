@@ -4,6 +4,7 @@ import { getCategories, getCategory } from "@/lib/content";
 export const alt = "AooBee 行业分类";
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
+export const dynamic = "force-static";
 
 export function generateStaticParams() {
   return getCategories().map((c) => ({ category: c.slug }));

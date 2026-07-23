@@ -4,6 +4,7 @@ import { getProducts, getProductBySlug } from "@/lib/content";
 export const alt = "AooBee 产品详情";
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
+export const dynamic = "force-static";
 
 export function generateStaticParams() {
   return getProducts().map((p) => ({ category: p.category.slug, slug: p.slug }));

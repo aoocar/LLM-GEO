@@ -4,6 +4,7 @@ import { getReviews } from "@/lib/content";
 export const alt = "AooBee 产品点评";
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
+export const dynamic = "force-static";
 
 export function generateStaticParams() {
   return getReviews().map((r) => ({ slug: r.slug }));

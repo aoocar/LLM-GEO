@@ -4,6 +4,7 @@ import { getArticles } from "@/lib/content";
 export const alt = "AooBee 最佳推荐";
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
+export const dynamic = "force-static";
 
 export function generateStaticParams() {
   return getArticles()
