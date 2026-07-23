@@ -6,6 +6,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 
 - 分类 人工智能: https://www.aoobee.com/ai
 - 产品 ChatGPT: https://www.aoobee.com/ai/chatgpt
+- 产品 Claude: https://www.aoobee.com/ai/claude
 - 文章 2026 年十大 AI 写作工具推荐: https://www.aoobee.com/best/ai-writing-tools-2026
 - 文章 ChatGPT vs Claude 全面对比: https://www.aoobee.com/compare/chatgpt-vs-claude
 - 文章 什么是 AI 写作工具？: https://www.aoobee.com/faq/what-is-ai-writing-tool

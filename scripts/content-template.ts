@@ -189,7 +189,12 @@ if (argv.length >= 2 && !argv.includes("--silent")) {
     process.exit(1);
   }
   const tmpl = buildTemplate(type as ContentType, slug, name);
-  const dir = TYPE_DIR[type as ContentType];
+  let dir = TYPE_DIR[type as ContentType];
+  // 产品按分类再分子目录，与 loader 的 content/products/<分类>/<slug>.md 约定一致
+  if (type === "product") {
+    const m = tmpl.match(/^\s*category:\s*(\S+)/m);
+    dir = `content/products/${m ? m[1] : "ai"}`;
+  }
   fs.mkdirSync(path.join(process.cwd(), dir), { recursive: true });
   const file = path.join(process.cwd(), dir, `${slug}.md`);
   if (fs.existsSync(file)) {
