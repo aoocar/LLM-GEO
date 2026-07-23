@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { Analytics } from "@/components/analytics";
 
 export const metadata: Metadata = {
   title: "AooBee - 全行业产品与服务平台目录",
@@ -49,6 +50,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
