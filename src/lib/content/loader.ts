@@ -36,12 +36,53 @@ function deriveDescription(content: string): string {
   return first.slice(0, 160);
 }
 
+/**
+ * 派生文章 meta description：FAQ 类文章正文为空、内容在 faqItems 中，
+ * 故优先用前几条问答拼接；其余类型回退到正文首段。避免 description 退化成仅标题。
+ */
+function deriveArticleDesc(
+  faqItems: Array<{ question?: string; answer?: string }>,
+  content: string
+): string {
+  if (Array.isArray(faqItems) && faqItems.length > 0) {
+    const combined = faqItems
+      .slice(0, 3)
+      .map((f) =>
+        `${(f.question || "").replace(/\s+/g, "")}${(f.answer || "").replace(/\s+/g, "")}`
+      )
+      .join("");
+    const text = combined.replace(/[*_`>#]/g, "").trim();
+    if (text) return text.slice(0, 160);
+  }
+  return deriveDescription(content);
+}
+
 function listMd(dir: string): string[] {
   if (!fs.existsSync(dir)) return [];
   return fs
     .readdirSync(dir)
     .filter((f) => f.endsWith(".md") && !f.startsWith("_"))
     .map((f) => path.join(dir, f));
+}
+
+/**
+ * 统计每个分类下的产品数量（只读 frontmatter 的 category 字段，避免触发 getProducts 产生递归）。
+ * 用于分类卡片 / 全部分类页展示真实产品数。
+ */
+function countProductsByCategory(): Record<string, number> {
+  const base = path.join(CONTENT_DIR, "products");
+  const counts: Record<string, number> = {};
+  if (!fs.existsSync(base)) return counts;
+  for (const catDir of fs.readdirSync(base, { withFileTypes: true })) {
+    if (!catDir.isDirectory()) continue;
+    for (const f of listMd(path.join(base, catDir.name))) {
+      const { data } = matter(fs.readFileSync(f, "utf-8"));
+      if (data.published === false) continue;
+      const catSlug = (data.category as string) || catDir.name;
+      counts[catSlug] = (counts[catSlug] || 0) + 1;
+    }
+  }
+  return counts;
 }
 
 // ---------- Categories ----------
@@ -67,7 +108,13 @@ function parseCategories(): Category[] {
 }
 
 export function getCategories(): Category[] {
-  if (!_cats) _cats = parseCategories();
+  if (!_cats) {
+    const counts = countProductsByCategory();
+    _cats = parseCategories().map((c) => ({
+      ...c,
+      productCount: counts[c.slug] || 0,
+    }));
+  }
   return _cats;
 }
 
@@ -221,7 +268,12 @@ function parseArticle(file: string, typeFromDir: string): Article | null {
     excerpt: (data.excerpt as string) || null,
     keywords: Array.isArray(data.keywords) ? data.keywords : [],
     metaTitle: (data.metaTitle as string) || null,
-    metaDesc: (data.metaDesc as string) || null,
+    metaDesc:
+      (data.metaDesc as string) ||
+      deriveArticleDesc(
+        Array.isArray(data.faqItems) ? data.faqItems : [],
+        content
+      ),
     content: content.trim(),
     contentHtml: markdownToHtml(content),
     faqItems: Array.isArray(data.faqItems) ? data.faqItems : [],

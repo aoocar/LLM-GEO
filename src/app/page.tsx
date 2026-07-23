@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import Link from "next/link";
 import { Search, ArrowRight } from "lucide-react";
 import { ProductList, StatBar } from "@/components/directory/product-card";
@@ -140,13 +139,11 @@ export default async function HomePage() {
       {products.length > 0 && (
         <section className="bg-white py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <Suspense fallback={<div>加载中...</div>}>
-              <ProductList
-                products={products}
-                title="热门产品推荐"
-                showMoreHref="/best"
-              />
-            </Suspense>
+            <ProductList
+              products={products}
+              title="热门产品推荐"
+              showMoreHref="/best"
+            />
           </div>
         </section>
       )}
