@@ -47,6 +47,8 @@ export default function RootLayout({
   return (
     <html lang="zh-CN" className="h-full antialiased">
       <body className="min-h-full flex flex-col bg-gray-50 text-gray-900">
+        <link rel="preconnect" href="https://www.clarity.ms" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
