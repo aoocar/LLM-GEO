@@ -222,6 +222,29 @@ export function websiteSchema() {
 }
 
 /**
+ * 组织实体结构化数据 (用于首页，声明品牌身份；sameAs 指向同实体官方/外部页面，
+ * 利于 AI 与搜索引擎理解"谁是 AooBee")
+ */
+export function organizationSchema() {
+  const sameAs = [
+    BASE_URL,
+    `${BASE_URL}/about`,
+    `${BASE_URL}/contact`,
+    // TODO: 补充真实品牌社媒 URL（微博/知乎/GitHub/微信公众号等）以强化实体识别
+  ];
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "AooBee",
+    alternateName: "AooBee 全行业平台",
+    url: BASE_URL,
+    logo: `${BASE_URL}/logo.svg`,
+    description: "全行业产品、工具与服务目录，提供专业评测、对比和推荐。",
+    sameAs,
+  };
+}
+
+/**
  * 点评结构化数据 (Review 内容类型，非交互评价)
  */
 export function reviewSchema(review: {

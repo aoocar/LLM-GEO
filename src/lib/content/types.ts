@@ -66,6 +66,9 @@ export interface Article {
   readTime?: number | null;
   authorName?: string | null;
   related?: string[];
+  definition?: string | null;
+  definitionTerm?: string | null;
+  audience?: string | null;
   category: { name: string; slug: string } | null;
   published: boolean;
 }

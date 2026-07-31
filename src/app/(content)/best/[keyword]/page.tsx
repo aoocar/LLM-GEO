@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumb } from "@/components/directory/breadcrumb";
 import { FaqSection } from "@/components/directory/faq-section";
 import { RelatedReads } from "@/components/directory/related-reads";
+import { DefinitionBlock } from "@/components/directory/definition-block";
 import { JsonLd } from "@/components/seo/json-ld";
 import { generateMeta } from "@/lib/seo/meta";
 import { articleSchema, faqSchema, breadcrumbSchema } from "@/lib/seo/schema";
@@ -80,6 +81,8 @@ export default async function BestKeywordPage({ params }: { params: Promise<{ ke
             </span>
           )}
         </div>
+
+        <DefinitionBlock article={article} />
 
         <article className="prose prose-gray max-w-none mb-12">
           <div dangerouslySetInnerHTML={{ __html: markdownToHtml(article.content) }} />

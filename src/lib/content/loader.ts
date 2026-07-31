@@ -283,6 +283,9 @@ function parseArticle(file: string, typeFromDir: string): Article | null {
     authorName: (data.authorName as string) || null,
     category: category ? { name: category.name, slug: category.slug } : null,
     related: Array.isArray(data.related) ? data.related.map((x: unknown) => String(x)) : [],
+    definition: (data.definition as string) || null,
+    definitionTerm: (data.definitionTerm as string) || null,
+    audience: (data.audience as string) || null,
     published: true,
   };
 }

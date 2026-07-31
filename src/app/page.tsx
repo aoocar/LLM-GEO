@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Search, ArrowRight } from "lucide-react";
 import { ProductList, StatBar } from "@/components/directory/product-card";
 import { JsonLd } from "@/components/seo/json-ld";
-import { websiteSchema } from "@/lib/seo/schema";
+import { websiteSchema, organizationSchema } from "@/lib/seo/schema";
 import { getCategories, getProducts, getArticles, getReviews } from "@/lib/content";
 import { generateMeta } from "@/lib/seo/meta";
 
@@ -32,7 +32,7 @@ export default async function HomePage() {
 
   return (
     <>
-      <JsonLd data={websiteSchema()} />
+      <JsonLd data={[websiteSchema(), organizationSchema()]} />
 
       {/* Hero 区域 */}
       <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white">
