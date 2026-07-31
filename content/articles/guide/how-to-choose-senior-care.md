@@ -7,6 +7,12 @@ excerpt: 从医疗配套、费用结构到试住体验，给出挑选养老社�
 description: 从医疗配套、费用结构到试住体验，提供一套挑选养老社区的决策清单，帮家庭少走弯路。
 authorName: AooBee 编辑部
 publishedAt: 2026-03-18
+related:
+  - /best/yanglao-best-communities-2026
+  - /compare/taikang-vs-qinheyuan
+  - /review/taikang-zhijia-review
+  - /faq/yanglao-common-questions
+  - /yanglao/taikang-zhijia
 ---
 # 如何选择适合的养老社区
 

@@ -10,4 +10,9 @@ faqItems:
     answer: 多按项目与工时计费，简单故障有预估价，复杂故障需师傅检测后报价再维修。
   - question: 维修后有保修吗？
     answer: 正规服务通常提供 30–90 天保修，记得留存凭证以便售后。
+related:
+  - /best/weixiu-best-platforms-2026
+  - /compare/wuba-daojia-vs-zhuomuniao
+  - /reviews/wuba-daojia-honest-review
+  - /guide/how-to-choose-appliance-repair
 ---

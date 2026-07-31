@@ -7,6 +7,12 @@ excerpt: 从师资、试听到节奏匹配，给出挑选在线辅导课程的�
 description: 从师资背景、试听体验到学习节奏匹配，提供挑选在线辅导课程的方法，避免盲目报班。
 authorName: AooBee 编辑部
 publishedAt: 2026-03-20
+related:
+  - /best/jiaoyu-best-online-courses-2026
+  - /compare/yuanfudao-vs-zuoyebang
+  - /review/yuanfudao-review
+  - /faq/jiaoyu-common-questions
+  - /jiaoyu/yuanfudao
 ---
 # 如何选择在线辅导课程
 

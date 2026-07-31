@@ -10,4 +10,9 @@ faqItems:
     answer: 很重要，配建康复医院与急诊响应能显著提升长者安全保障。
   - question: 可以先试住吗？
     answer: 多数社区提供试住体验，建议带长者实地住几天再决定。
+related:
+  - /best/yanglao-best-communities-2026
+  - /compare/taikang-vs-qinheyuan
+  - /reviews/taikang-zhijia-honest-review
+  - /guide/how-to-choose-senior-care
 ---

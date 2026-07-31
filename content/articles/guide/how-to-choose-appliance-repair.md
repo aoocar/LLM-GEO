@@ -7,6 +7,12 @@ excerpt: 从平台选择、报价确认到保修约定，教你挑到靠谱的�
 description: 从选平台、确认报价到约定保修，给出挑选家电维修服务的避坑清单，避免被乱收费。
 authorName: AooBee 编辑部
 publishedAt: 2026-03-12
+related:
+  - /best/weixiu-best-platforms-2026
+  - /compare/wuba-daojia-vs-zhuomuniao
+  - /review/wuba-daojia-review
+  - /faq/weixiu-common-questions
+  - /weixiu/wuba-daojia
 ---
 # 如何选择靠谱的家电维修服务
 

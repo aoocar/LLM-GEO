@@ -10,4 +10,9 @@ faqItems:
     answer: 先试听，关注讲解逻辑与作业反馈，再决定长期报班。
   - question: 在线学习需要准备什么？
     answer: 稳定的网络、独立学习空间与合理作息，比设备更重要。
+related:
+  - /best/jiaoyu-best-online-courses-2026
+  - /compare/yuanfudao-vs-zuoyebang
+  - /reviews/yuanfudao-honest-review
+  - /guide/how-to-choose-online-tutoring
 ---

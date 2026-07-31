@@ -10,4 +10,9 @@ faqItems:
     answer: 能异步说清的不开会，会议带议程与结论，结束即出行动项。
   - question: 文档怎么管理不丢失？
     answer: 统一沉淀到协作平台的云端文档，开启版本历史与权限，避免散落聊天记录。
+related:
+  - /best/bangong-best-collaboration-2026
+  - /compare/dingtalk-vs-wecom
+  - /reviews/dingtalk-honest-review
+  - /guide/how-to-improve-team-collaboration
 ---
