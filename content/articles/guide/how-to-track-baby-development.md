@@ -7,6 +7,10 @@ excerpt: 从记录内容、里程碑对照到早教融入，给出科学记录�
 description: 从记录哪些指标、对照发育里程碑到融入日常早教，提供一套记录宝宝成长发育的实用方法。
 authorName: AooBee 编辑部
 publishedAt: 2026-03-22
+related:
+  - /best/yuer-best-apps-2026
+  - /compare/qinbaobao-vs-babytree
+  - /review/qinbaobao-review
 ---
 # 如何科学记录宝宝成长发育
 

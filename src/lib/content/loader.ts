@@ -282,6 +282,7 @@ function parseArticle(file: string, typeFromDir: string): Article | null {
     readTime: typeof data.readTime === "number" ? data.readTime : null,
     authorName: (data.authorName as string) || null,
     category: category ? { name: category.name, slug: category.slug } : null,
+    related: Array.isArray(data.related) ? data.related.map((x: unknown) => String(x)) : [],
     published: true,
   };
 }
@@ -333,9 +334,10 @@ function parseReviews(): Review[] {
       cons: Array.isArray(data.cons) ? data.cons : [],
       summary: (data.summary as string) || null,
       content: content.trim(),
-      contentHtml: markdownToHtml(content),
-      published: data.published !== false,
-    };
+    contentHtml: markdownToHtml(content),
+    related: Array.isArray(data.related) ? data.related.map((x: unknown) => String(x)) : [],
+    published: data.published !== false,
+  };
   });
 }
 

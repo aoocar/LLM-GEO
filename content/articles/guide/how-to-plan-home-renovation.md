@@ -7,6 +7,10 @@ excerpt: 从需求清单、预算分配到验收节点，给出一套可落地�
 description: 从明确需求、拆分预算到关键验收节点，提供一套可落地的家庭装修规划清单，帮你控预算、避增项。
 authorName: AooBee 编辑部
 publishedAt: 2026-03-10
+related:
+  - /best/zhuangxiu-best-platforms-2026
+  - /compare/tujia-vs-qijia
+  - /review/tujia-review
 ---
 # 如何规划家庭装修不超预算
 

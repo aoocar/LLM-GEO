@@ -10,4 +10,8 @@ faqItems:
     answer: 个体有差异，明显偏离里程碑时咨询儿保评估，早干预效果好。
   - question: 育儿 App 会员值得开吗？
     answer: 基础记录免费够用，云空间与高级功能按需开通，先试用再决定。
+related:
+  - /best/yuer-best-apps-2026
+  - /compare/qinbaobao-vs-babytree
+  - /review/qinbaobao-review
 ---

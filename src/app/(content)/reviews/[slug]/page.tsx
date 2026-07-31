@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Star, ThumbsUp, ThumbsDown } from "lucide-react";
 import { Breadcrumb } from "@/components/directory/breadcrumb";
 import { JsonLd } from "@/components/seo/json-ld";
+import { RelatedReads } from "@/components/directory/related-reads";
 import { generateMeta } from "@/lib/seo/meta";
 import { reviewSchema, breadcrumbSchema } from "@/lib/seo/schema";
 import { getReview, getReviews, getProductBySlug } from "@/lib/content";
@@ -126,6 +127,8 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
         <article className="prose prose-gray max-w-none mb-12">
           <div dangerouslySetInnerHTML={{ __html: markdownToHtml(review.content) }} />
         </article>
+
+        <RelatedReads items={review.related} />
       </div>
     </>
   );

@@ -65,6 +65,7 @@ export interface Article {
   updatedAt?: string | null;
   readTime?: number | null;
   authorName?: string | null;
+  related?: string[];
   category: { name: string; slug: string } | null;
   published: boolean;
 }
@@ -79,6 +80,7 @@ export interface Review {
   pros: string[];
   cons: string[];
   summary?: string | null;
+  related?: string[];
   content: string;
   contentHtml: string;
   published: boolean;

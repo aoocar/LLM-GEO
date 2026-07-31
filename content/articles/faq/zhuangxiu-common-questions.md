@@ -10,4 +10,8 @@ faqItems:
     answer: 常见比例为硬装约 50%、主材约 30%、软装约 15%、设计约 5%，并预留 10% 应急金。
   - question: 如何避免装修增项？
     answer: 签约前确认报价明细与工程量，水电等隐蔽工程按实测结算，验收合格再放款。
+related:
+  - /best/zhuangxiu-best-platforms-2026
+  - /compare/tujia-vs-qijia
+  - /review/tujia-review
 ---

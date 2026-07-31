@@ -7,6 +7,10 @@ excerpt: 从互联协议、刚需优先级到售后，给出智能家电的选�
 description: 从互联协议、需求优先级到售后保障，提供一套智能家电选购方法，帮你买对不买贵。
 authorName: AooBee 编辑部
 publishedAt: 2026-03-14
+related:
+  - /best/jiadian-best-smart-2026
+  - /compare/haier-vs-midea
+  - /review/haier-review
 ---
 # 如何选购适合家庭的智能家电
 

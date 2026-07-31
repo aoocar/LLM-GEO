@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { Breadcrumb } from "@/components/directory/breadcrumb";
 import { FaqSection } from "@/components/directory/faq-section";
+import { RelatedReads } from "@/components/directory/related-reads";
 import { JsonLd } from "@/components/seo/json-ld";
 import { generateMeta } from "@/lib/seo/meta";
 import { articleSchema, faqSchema, breadcrumbSchema } from "@/lib/seo/schema";
@@ -85,6 +86,8 @@ export default async function ComparePage({ params }: { params: Promise<{ slug: 
         </article>
 
         {faqItems.length > 0 && <FaqSection items={faqItems} title="常见问题" />}
+
+        <RelatedReads items={article.related} />
       </div>
     </>
   );

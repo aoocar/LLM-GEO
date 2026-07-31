@@ -3,10 +3,11 @@ import { Star, ExternalLink, Check, X, Clock, MapPin, Building } from "lucide-re
 import Link from "next/link";
 import { Breadcrumb } from "@/components/directory/breadcrumb";
 import { FaqSection } from "@/components/directory/faq-section";
+import { RelatedReads } from "@/components/directory/related-reads";
 import { JsonLd } from "@/components/seo/json-ld";
 import { generateMeta } from "@/lib/seo/meta";
 import { productSchema, faqSchema, breadcrumbSchema } from "@/lib/seo/schema";
-import { getProduct, getProductBySlug, getProducts } from "@/lib/content";
+import { getProduct, getProductBySlug, getProducts, getArticles } from "@/lib/content";
 
 export async function generateMetadata({
   params,
@@ -269,6 +270,22 @@ export default async function ProductPage({
 
             {/* FAQ */}
             <FaqSection items={faqItems} title="常见问题" />
+
+            <RelatedReads
+              items={getArticles()
+                .filter((a) => a.category?.slug === product.category.slug)
+                .map((a) => {
+                  const seg: Record<string, string> = {
+                    BEST: "best",
+                    COMPARISON: "compare",
+                    REVIEW: "review",
+                    GUIDE: "guide",
+                    FAQ: "faq",
+                  };
+                  const s = seg[a.type] || a.type.toLowerCase();
+                  return `/${s}/${a.slug}`;
+                })}
+            />
           </div>
 
           {/* 侧边栏 */}
