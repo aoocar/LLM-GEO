@@ -16,3 +16,13 @@
 - **reviews 类型例外**：内容放独立目录 content/reviews/（parseReviews 解析），frontmatter 格式不同（title/product/author/rating/pros/cons/summary）。别放进 articles/reviews/。
 - related 内链：frontmatter 写 related: [路径数组]；lib/content/related.ts 的 resolveRelated 解析成 {title,href}，解析不到的自动过滤 → 结构上不会产生死链。
 - 产品页的"相关阅读"按分类自动聚合本类文章，无需手写 related；文章页/点评页需在 frontmatter 手写。
+
+## AdSense 接入约定（2026-08-01 接入）
+- 发布商 ID：`ca-pub-8752263153695128`（用户老账号，添加 www.aoobee.com 为新站点）。
+- 三处落盘：①`public/ads.txt` = `google.com, pub-8752263153695128, DIRECT, f08c47fec0942fa0`；②`src/app/layout.tsx` 的 `metadata.other` 含 `google-adsense-account` 元标记；③`src/components/analytics.tsx` 含 AdSense loader `<Script>`（与 GA/Clarity 同模式）。
+- 当前仅接入验证 + Auto Ads 启用；实际出广告取决于老账号状态与站点审核。手动固定广告位（`<AdSlot>`）为后续可选步骤。
+
+## 站点战略定位（2026-08-01 确立）
+- 站点根本目的 = **SEO（搜索引擎索引/排名）+ GEO（被 AI 引用）**，**不是**服务人类直接访问；人类流量只是副产品。
+- 优先级：**内容扩写 + 排名提升是绝对主线**，所有资源向这两件事倾斜。
+- AdSense 定位 = **set-and-forget（放着不用管）**：已接验证+loader，但**不主动优化广告位/不投入运营**；因人类流量有限，广告收入本就微薄，不值得占用主线精力。后续除非用户改口，否则不投入广告位设计。
