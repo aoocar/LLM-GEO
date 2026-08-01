@@ -261,6 +261,8 @@ function parseArticle(file: string, typeFromDir: string): Article | null {
   const type = (data.type as string) || typeFromDir;
   const catSlug = data.category as string | undefined;
   const category = catSlug ? getCategories().find((c) => c.slug === catSlug) : null;
+  // 剥离正文首行 `# 标题`：文章详情页模板已渲染 <h1>{title}</h1>，正文再保留 H1 会重复
+  const body = content.trim().replace(/^#\s+[^\n]*\n?/, "");
   return {
     slug,
     title: (data.title as string) || slug,
@@ -270,12 +272,13 @@ function parseArticle(file: string, typeFromDir: string): Article | null {
     metaTitle: (data.metaTitle as string) || null,
     metaDesc:
       (data.metaDesc as string) ||
+      (data.description as string) ||
       deriveArticleDesc(
         Array.isArray(data.faqItems) ? data.faqItems : [],
-        content
+        body
       ),
-    content: content.trim(),
-    contentHtml: markdownToHtml(content),
+    content: body,
+    contentHtml: markdownToHtml(body),
     faqItems: Array.isArray(data.faqItems) ? data.faqItems : [],
     publishedAt: data.publishedAt ? new Date(data.publishedAt as string).toISOString() : null,
     updatedAt: data.updatedAt ? new Date(data.updatedAt as string).toISOString() : null,
