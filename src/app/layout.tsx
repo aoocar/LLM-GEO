@@ -37,6 +37,9 @@ export const metadata: Metadata = {
     // google: "your-google-verification-code",
     // baidu: "your-baidu-verification-code",
   },
+  other: {
+    "google-adsense-account": "ca-pub-8752263153695128",
+  },
 };
 
 export default function RootLayout({
