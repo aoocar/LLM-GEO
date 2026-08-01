@@ -143,12 +143,13 @@ published: true
 1. 把 `.md` 放到对应目录（见 1.1）。
 2. 本地预览：`npm run dev` → 打开 `http://localhost:3000/<类型>/<slug>`，重点检查底部"相关阅读"是否渲染。
 3. 提交：`git add content/...` + `git commit -m "新增/修改 xx 内容"`。
-4. **push 由用户手动完成**（见 3）。
+4. **push 由 AI 直接完成**（commit 后顺手 push，偶发失败再回退手动；见 3）。
 5. 线上验证：访问 URL 看是否 200、OG 分享图是否正常、sitemap 是否收录。
 
-## 3. Git 分工（铁律）
+## 3. Git 分工
 
-- **AI 只 commit，绝不 push。** 远程是 HTTPS + Git Credential Manager，弹窗需 `/dev/tty`，沙箱无终端，push 必失败。因此分工固定：AI 做到 `git add` + `git commit`，**push 一律由用户在自己的终端跑**。
+- **AI 可直接 push。** 2026-08-01 实测：本沙箱已具备可用凭据机制（HTTPS + credential helper 缓存 token），`git push origin main` 可正常执行（已成功推送 `0375399..e391117`），无需用户手动推送。commit 后顺手 push 即可，省用户一步。
+- **若 push 偶发失败**（如凭据过期 / 沙箱网络受限），再回退到由用户在自己的终端跑；命令用 `;` 分隔、不用 `&&`。
 - **PowerShell 不支持 `&&`**：给用户的命令要用 `;` 或分两行写，不要给 `&&` 串联。
 - 不要替用户编造"不 push 就出事"的紧迫感。
 
@@ -176,7 +177,7 @@ published: true
 2. 改内容前，先用 `git status` 核对当前分支与工作区状态（跨轮次不要假设已提交 / 已 push）。
 3. 任何文件改动先给方案 → 等确认。
 4. 内容类改动用 `npm run dev` 预览即可；只有改代码 / 配置才需 `npm run build`。
-5. 完成后 commit，提醒用户手动 push；不要自行 push。
+5. 完成后 commit 并直接 push（新约定：本沙箱可推）；若 push 失败再提醒用户手动。
 
 > 人工可看的全套运营教程（手动增改 / Obsidian 管理 / 扩量升级）见 `docs/运营手册/` 系列文档（如尚未生成，可要求 AI 补齐）。
 <!-- END:aoobee-ai-ops -->
