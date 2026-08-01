@@ -108,9 +108,10 @@ faqItems:
     answer: 有免费版，Plus $20/月。
 alternatives: [claude]   # 可选；不填则自动取同分类评分 Top5
 ---
-# ChatGPT
-正文……
+正文……（纯段落，不要写 # 标题 / **加粗** 等 Markdown 符号；问答只写进 faqItems）
 ```
+
+> ⚠️ **产品页正文编写规矩**：产品页正文（`---` 以下部分）被解析为 `longDesc`，按空行切成**纯文本段落**渲染，**不解析 Markdown**——`#`/`##`/`**`/列表等会原样显示为文字。因此：① 正文只写纯段落，不要写 `# 标题`、`## 小标题` 等标记；② 所有问答**只写进 `faqItems`**，绝不要写进正文（否则会重复显示且带丑陋的 `##` 符号）。`faqItems` 由 FaqSection 渲染并自动生成 FAQPage 结构化数据。
 
 **分类类**（`content/categories/<slug>.md`）：
 ```yaml
