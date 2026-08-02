@@ -30,3 +30,8 @@
 ## 沙箱构建与删除环境限制（2026-08-01 实测）
 - **npm run build 必须加 `NODE_OPTIONS="--use-system-ca"`**：CLI 通过 NODE_OPTIONS 注入 genie-safe-delete 拦截器，Next 清理 .next（批量删 ≥50 文件）触发 SAFE_DELETE_BULK_CONFIRM_REQUIRED 硬中断构建；去掉 require 即可，实测构建成功。
 - **沙箱内无法删除文件**（rm / python os.remove 均被拦，回收站不可用 fail-closed）：临时文件清理交给用户终端 Remove-Item。
+
+## 变更记录约定（2026-08-02 用户确立）
+- **本手册 = 项目唯一变更台账**：凡本项目的**更新 / 升级 / 修改 / 运维**，均登记于 `docs/交接运维手册/整体交接运维手册.md` 的「变更记录（Changelog）」章节（最新在上），并同步 AGENTS.md 等专项文档。
+- 不要只在 agent memory / 临时会话里记——必须落到交接手册。每次变更在「变更记录」追加一条带日期 + HEAD 的摘要，重要修复另开章节（如 10.4 QA 修复记录）。
+- 手册顶部已加「变更记录约定」声明，底部 footer 也强化此约定。
