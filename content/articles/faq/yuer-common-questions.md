@@ -1,5 +1,6 @@
 ---
 title: 育儿常见问题
+description: "育儿高频问答：宝宝发育多久记录一次、睡眠倒退期正常吗、辅食几个月开始加、育儿 App 会员值不值得开、怎么选 App 不踩坑等实用建议。"
 type: FAQ
 category: yuer
 keywords: [育儿, 宝宝]

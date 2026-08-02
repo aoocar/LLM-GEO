@@ -1,5 +1,6 @@
 ---
 title: 办公协作常见问题
+description: "办公协作工具怎么选？汇总小企业免费版够不够用、如何减少无效会议、钉钉与企业微信怎么选、远程团队怎么保持信息同步等高频问题的实用解答。"
 type: FAQ
 category: bangong
 keywords: [办公, 协作]

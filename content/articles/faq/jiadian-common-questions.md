@@ -1,5 +1,6 @@
 ---
 title: 家电选购常见问题
+description: "家电选购避坑指南：以旧换新怎么操作、智能家电是否要同品牌、能效与价格如何权衡、线上线下购买差别、延保值不值得买等常见答疑。"
 type: FAQ
 category: jiadian
 keywords: [家电, 选购]

@@ -1,5 +1,6 @@
 ---
 title: 养老社区常见问题
+description: "养老社区怎么选？费用包含哪些、医养结合是否重要、公办和民办怎么选、护理等级如何评估、异地养老可行吗等常见问题解答。"
 type: FAQ
 category: yanglao
 keywords: [养老, 养老社区]

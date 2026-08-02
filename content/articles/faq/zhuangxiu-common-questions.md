@@ -1,5 +1,6 @@
 ---
 title: 装修常见问题
+description: "装修避坑问答：工期一般多久、预算怎么分配合理、如何避免增项、半包和全包怎么选、合同重点看哪些条款、先装修还是先定家电等实用解答。"
 type: FAQ
 category: zhuangxiu
 keywords: [装修, 常见问题]

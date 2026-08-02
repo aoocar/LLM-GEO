@@ -1,5 +1,6 @@
 ---
 title: 维修上门服务常见问题
+description: "上门维修避坑问答：一般多久能约到、价格怎么定、保修期内该找谁修、维修前要不要先报价、怎么判断师傅靠不靠谱等实用建议。"
 type: FAQ
 category: weixiu
 keywords: [维修, 上门服务]

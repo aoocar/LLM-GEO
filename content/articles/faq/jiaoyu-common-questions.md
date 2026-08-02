@@ -1,5 +1,6 @@
 ---
 title: 在线教育常见问题
+description: "在线教育怎么选不踩坑？直播录播怎么选、如何判断课程与孩子是否适配、报课包还是按月买、怎么看老师讲得好不好等家长高频答疑。"
 type: FAQ
 category: jiaoyu
 keywords: [教育, 在线辅导]
