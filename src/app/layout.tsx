@@ -34,8 +34,10 @@ export const metadata: Metadata = {
     "max-video-preview": -1,
   },
   verification: {
-    // google: "your-google-verification-code",
-    // baidu: "your-baidu-verification-code",
+    // google: "your-google-verification-code", // GSC 已通过 DNS 域名属性验证，无需 meta 标签
+    other: {
+      "baidu-site-verification": "codeva-pifSw0Dfib",
+    },
   },
   other: {
     "google-adsense-account": "ca-pub-8752263153695128",
