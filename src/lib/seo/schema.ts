@@ -20,8 +20,16 @@ function normUrl(u: string): string {
 }
 
 /**
- * 产品页结构化数据 - SoftwareApplication
+ * 产品 @type 按分类映射：实体家电=Product，维修/装修/养老等服务=Service，
+ * AI/办公/教育/育儿等软件或应用保持 SoftwareApplication（省略即默认）。
  */
+const PRODUCT_SCHEMA_TYPE: Record<string, string> = {
+  jiadian: "Product",
+  weixiu: "Service",
+  zhuangxiu: "Service",
+  yanglao: "Service",
+};
+
 export function productSchema(product: {
   name: string;
   description?: string | null;
@@ -36,7 +44,7 @@ export function productSchema(product: {
 }) {
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
+    "@type": PRODUCT_SCHEMA_TYPE[product.category ?? ""] ?? "SoftwareApplication",
     name: product.name,
     description: product.description || product.name,
     applicationCategory: product.category || "GeneralApplication",
@@ -254,6 +262,7 @@ export function reviewSchema(review: {
   author?: string | null;
   rating?: number | null;
   summary?: string | null;
+  category?: string | null;
 }) {
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
@@ -261,7 +270,7 @@ export function reviewSchema(review: {
     name: review.title,
     url: normUrl(`${BASE_URL}/reviews/${review.slug}`),
     itemReviewed: {
-      "@type": "SoftwareApplication",
+      "@type": PRODUCT_SCHEMA_TYPE[review.category ?? ""] ?? "SoftwareApplication",
       name: review.product,
     },
     author: {
