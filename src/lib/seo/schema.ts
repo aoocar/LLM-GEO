@@ -5,7 +5,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.aoobee.com";
  * 实际生成的链接（/guide/slug/）保持一致，避免爬虫把 /guide/slug 与 /guide/slug/ 视为重复。
  * 根域名、带文件后缀、已含斜杠的地址原样返回。
  */
-function normUrl(u: string): string {
+export function normUrl(u: string): string {
   if (!/^https?:\/\//.test(u)) return u;
   const clean = u.split("#")[0].split("?")[0];
   if (/\.[a-z0-9]{2,}$/i.test(clean)) return u;
@@ -42,14 +42,20 @@ export function productSchema(product: {
   category?: string | null;
   features?: Array<{ name: string; description?: string }> | null;
 }) {
+  const type = PRODUCT_SCHEMA_TYPE[product.category ?? ""] ?? "SoftwareApplication";
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
-    "@type": PRODUCT_SCHEMA_TYPE[product.category ?? ""] ?? "SoftwareApplication",
+    "@type": type,
     name: product.name,
     description: product.description || product.name,
-    applicationCategory: product.category || "GeneralApplication",
-    operatingSystem: "Web",
   };
+
+  // applicationCategory / operatingSystem 是 SoftwareApplication 专有属性，
+  // 对 Product / Service 属非法字段，仅在该类型下输出，避免富结果被拒。
+  if (type === "SoftwareApplication") {
+    schema.applicationCategory = product.category || "GeneralApplication";
+    schema.operatingSystem = "Web";
+  }
 
   if (product.url) schema.url = normUrl(product.url);
   if (product.logo) schema.image = product.logo;
@@ -60,13 +66,24 @@ export function productSchema(product: {
     };
   }
 
+  // offers：仅当能可靠解析出价格时才输出，避免非法空 price Offer 拖累富结果。
   if (product.pricing) {
-    schema.offers = {
-      "@type": "Offer",
-      price: product.pricing === "免费" ? "0" : "",
-      priceCurrency: "CNY",
-      availability: "https://schema.org/OnlineOnly",
-    };
+    let price: string | null = null;
+    if (product.pricing === "免费") {
+      price = "0";
+    } else {
+      const m = product.pricing.match(/(\d+(?:\.\d+)?)/);
+      if (m) price = m[1];
+    }
+    if (price !== null) {
+      const currency = /\$/.test(product.pricing) ? "USD" : "CNY";
+      schema.offers = {
+        "@type": "Offer",
+        price,
+        priceCurrency: currency,
+        availability: "https://schema.org/OnlineOnly",
+      };
+    }
   }
 
   if (product.rating && product.reviewCount) {
@@ -115,7 +132,8 @@ export function articleSchema(article: {
   authorName?: string;
   url?: string;
 }) {
-  const canonical = normUrl(article.url || `${BASE_URL}/guide/${article.slug}`);
+  const raw = article.url || `${BASE_URL}/guide/${article.slug}`;
+  const canonical = normUrl(raw.startsWith("http") ? raw : `${BASE_URL}${raw}`);
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Article",

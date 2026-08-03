@@ -63,7 +63,7 @@ export default async function ProductPage({
             reviewCount: product.reviewCount,
             pricing: product.pricing,
             company: product.company,
-            category: product.category.name,
+            category: product.category.slug,
           }),
           faqSchema(faqItems),
           breadcrumbSchema([

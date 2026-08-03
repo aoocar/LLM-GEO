@@ -1,3 +1,5 @@
+import { normUrl } from "./schema";
+
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.aoobee.com";
 
 /**
@@ -19,7 +21,8 @@ export function generateMeta({
   type?: string;
 }) {
   const fullTitle = title.includes("AooBee") ? title : `${title} | AooBee`;
-  const fullUrl = url ? `${BASE_URL}${url}` : BASE_URL;
+  // 归一为尾斜杠，与 trailingSlash:true 服务地址 / sitemap / JSON-LD canonical 保持一致，避免重复页判定。
+  const fullUrl = normUrl(url ? `${BASE_URL}${url}` : BASE_URL);
   const desc = description || "";
 
   return {

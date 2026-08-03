@@ -23,24 +23,26 @@ const INFO_PATHS = ["about", "contact", "privacy", "terms"] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
+  // 静态 / 枢纽 / 信息页内容基本不变，用固定部署日期而非构建时刻，避免每次构建都把 lastmod 刷成 now 导致变更信号失真。
+  const STATIC_LASTMOD = new Date("2026-08-01");
 
   const staticPages: MetadataRoute.Sitemap = [
-    { url: BASE_URL, lastModified: now, changeFrequency: "daily", priority: 1 },
+    { url: BASE_URL, lastModified: STATIC_LASTMOD, changeFrequency: "daily", priority: 1 },
     {
       url: `${BASE_URL}/categories/`,
-      lastModified: now,
+      lastModified: STATIC_LASTMOD,
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
     ...HUB_PATHS.map((p) => ({
       url: `${BASE_URL}/${p}/`,
-      lastModified: now,
+      lastModified: STATIC_LASTMOD,
       changeFrequency: "daily" as const,
       priority: 0.7,
     })),
     ...INFO_PATHS.map((p) => ({
       url: `${BASE_URL}/${p}/`,
-      lastModified: now,
+      lastModified: STATIC_LASTMOD,
       changeFrequency: "yearly" as const,
       priority: 0.3,
     })),
