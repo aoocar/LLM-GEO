@@ -15,6 +15,12 @@ const ARTICLE_PREFIX: Record<string, string> = {
   BEST: "best",
 };
 
+// 内容聚合枢纽页（列表页）：承接「XX推荐 / XX对比 / XX指南」这类列表型查询
+const HUB_PATHS = ["best", "compare", "review", "reviews", "guide", "faq"] as const;
+
+// 信息页（About/Contact/Privacy/Terms）：E-E-A-T 信任信号，需被收录但权重低
+const INFO_PATHS = ["about", "contact", "privacy", "terms"] as const;
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
@@ -26,6 +32,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
+    ...HUB_PATHS.map((p) => ({
+      url: `${BASE_URL}/${p}/`,
+      lastModified: now,
+      changeFrequency: "daily" as const,
+      priority: 0.7,
+    })),
+    ...INFO_PATHS.map((p) => ({
+      url: `${BASE_URL}/${p}/`,
+      lastModified: now,
+      changeFrequency: "yearly" as const,
+      priority: 0.3,
+    })),
   ];
 
   const categoryPages: MetadataRoute.Sitemap = getCategories().map((cat) => ({
