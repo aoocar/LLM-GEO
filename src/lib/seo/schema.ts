@@ -230,16 +230,20 @@ export function websiteSchema() {
 }
 
 /**
- * 组织实体结构化数据 (用于首页，声明品牌身份；sameAs 指向同实体官方/外部页面，
+ * 品牌实体外部权威档案 URL（schema.org sameAs 语义 = 指向"同一实体"的**站外**权威页面，
+ * 如微博/知乎/B站/GitHub/企查查主体页等）。
+ *
+ * 注意：**不要放本站自己的 URL**（如首页 / /about / /contact）——自指对实体识别无效，
+ * 反而是错误信号。没有真实外部档案时保持为空数组，schema 中直接不输出 sameAs 字段。
+ * 将来拿到真实链接时，只需在此数组补 URL，无需改动其他代码。
+ */
+const ORG_SAME_AS: string[] = [];
+
+/**
+ * 组织实体结构化数据 (用于首页，声明品牌身份；有外部权威档案时输出 sameAs，
  * 利于 AI 与搜索引擎理解"谁是 AooBee")
  */
 export function organizationSchema() {
-  const sameAs = [
-    BASE_URL,
-    `${BASE_URL}/about`,
-    `${BASE_URL}/contact`,
-    // TODO: 补充真实品牌社媒 URL（微博/知乎/GitHub/微信公众号等）以强化实体识别
-  ];
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -248,7 +252,7 @@ export function organizationSchema() {
     url: BASE_URL,
     logo: `${BASE_URL}/logo.svg`,
     description: "全行业产品、工具与服务目录，提供专业评测、对比和推荐。",
-    sameAs,
+    ...(ORG_SAME_AS.length > 0 ? { sameAs: ORG_SAME_AS } : {}),
   };
 }
 
