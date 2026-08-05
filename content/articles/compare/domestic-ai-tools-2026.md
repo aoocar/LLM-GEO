@@ -25,6 +25,8 @@ related:
   - /ai/deepseek
   - /ai/kimi
   - /ai/doubao
+  - /ai/wenxin-yiyan
+  - /ai/tongyi-qianwen
 ---
 # 国产 AI 助手怎么选？五强横向对比
 

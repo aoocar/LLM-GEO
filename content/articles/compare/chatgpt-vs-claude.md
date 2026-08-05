@@ -28,7 +28,7 @@ related:
   - /guide/how-to-choose-ai-writing-tool
   - /ai/chatgpt
   - /best/domestic-ai-chatbots-2026
-  - /compare/domestic-ai-chatbots-2026
+  - /compare/domestic-ai-tools-2026
 ---
 # ChatGPT vs Claude 全面对比
 

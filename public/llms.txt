@@ -47,7 +47,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 ChatGPT vs Claude 全面对比: https://www.aoobee.com/compare/chatgpt-vs-claude/
 - 文章 DeepSeek vs 通义千问：两大国产开源大模型全面对比: https://www.aoobee.com/compare/deepseek-vs-tongyi-qianwen/
 - 文章 钉钉 vs 企业微信 全面对比: https://www.aoobee.com/compare/dingtalk-vs-wecom/
-- 文章 国产 AI 助手怎么选？DeepSeek、Kimi、豆包、文心一言、通义千问五强对比: https://www.aoobee.com/compare/domestic-ai-chatbots-2026/
+- 文章 国产 AI 助手怎么选？DeepSeek、Kimi、豆包、文心一言、通义千问五强对比: https://www.aoobee.com/compare/domestic-ai-tools-2026/
 - 文章 海尔 vs 美的 全面对比: https://www.aoobee.com/compare/haier-vs-midea/
 - 文章 亲宝宝 vs 宝宝树 全面对比: https://www.aoobee.com/compare/qinbaobao-vs-babytree/
 - 文章 泰康之家 vs 亲和源 全面对比: https://www.aoobee.com/compare/taikang-vs-qinheyuan/

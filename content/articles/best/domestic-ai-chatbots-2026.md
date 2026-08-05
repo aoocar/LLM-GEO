@@ -20,7 +20,7 @@ faqItems:
   - question: 国产大模型能替代 ChatGPT 吗？
     answer: 对多数中文用户日常场景已经可以；需要多模态广度、插件生态或全球化服务时，ChatGPT 仍有优势，可混合使用。
 related:
-  - /compare/domestic-ai-chatbots-2026
+  - /compare/domestic-ai-tools-2026
   - /compare/deepseek-vs-tongyi-qianwen
   - /guide/how-to-choose-ai-writing-tool
   - /ai/deepseek

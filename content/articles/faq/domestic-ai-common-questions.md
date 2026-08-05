@@ -26,7 +26,7 @@ faqItems:
   - question: 国产 AI 会取代人工吗？
     answer: 不会，它是提速工具。生成初稿、润色、整理结构最擅长，观点、判断与真实经验仍需人来把关，重要事实与数据务必人工核实。
 related:
-  - /compare/domestic-ai-chatbots-2026
+  - /compare/domestic-ai-tools-2026
   - /best/domestic-ai-chatbots-2026
   - /guide/how-to-choose-ai-writing-tool
   - /ai/deepseek
