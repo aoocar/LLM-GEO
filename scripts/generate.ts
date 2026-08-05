@@ -137,7 +137,15 @@ async function main() {
           review: "REVIEW",
         };
         const topic = opts.topic || name;
-        let out: any;
+        let out: {
+          title?: string;
+          content?: string;
+          keywords?: string[];
+          excerpt?: string;
+          metaTitle?: string;
+          metaDesc?: string;
+          readTime?: number;
+        };
         if (kind === "guide") {
           out = await generateGuide({ category, topic, targetKeywords: listToArray(opts.keywords) || [] });
         } else if (kind === "best") {

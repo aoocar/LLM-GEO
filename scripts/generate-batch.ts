@@ -64,8 +64,9 @@ async function runItem(item: SpecItem): Promise<{ ok: boolean; msg: string }> {
       { encoding: "utf-8", stdio: ["ignore", "pipe", "pipe"] }
     );
     return { ok: true, msg: out.trim().split("\n").pop() || "done" };
-  } catch (err: any) {
-    return { ok: false, msg: (err.stderr || err.message || String(err)).trim().split("\n").slice(-3).join(" | ") };
+  } catch (err: unknown) {
+    const e = err as { stderr?: string; message?: string };
+    return { ok: false, msg: (e.stderr || e.message || String(err)).trim().split("\n").slice(-3).join(" | ") };
   }
 }
 
