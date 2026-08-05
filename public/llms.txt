@@ -63,6 +63,19 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 养老社区常见问题: https://www.aoobee.com/faq/yanglao-common-questions/
 - 文章 育儿常见问题: https://www.aoobee.com/faq/yuer-common-questions/
 - 文章 装修常见问题: https://www.aoobee.com/faq/zhuangxiu-common-questions/
+- 文章 2026专坑老人的AI骗局：换脸冒充子女，3招当场识破: https://www.aoobee.com/guide/2026-ai-pianju-lianhuan-maochong/
+- 文章 2026年养老金调整通知迟迟未出——但3件事你现在就要查: https://www.aoobee.com/guide/2026-yanglaojin-tiaozheng-tongzhi/
+- 文章 抱团养老火了，普通人能不能学？先看清这3个前提: https://www.aoobee.com/guide/baotuan-yanglao-putongren-neng-bu-neng-xue/
+- 文章 长护险怎么申请3步看懂家里有失能老人能省护理费: https://www.aoobee.com/guide/changhuxian-zenme-shenqing/
+- 文章 长期炎症是癌症"帮凶"？3类老人炎症别拖，越早查越好: https://www.aoobee.com/guide/changqi-yanzheng-aizheng-bangxiong/
+- 文章 重庆彭水山体崩塌8死34失联——灾区老人的养老金和医保怎么办？: https://www.aoobee.com/guide/chongqing-pengshui-shantiben-ta/
+- 文章 存钱过万为什么一定要办纸质存单？4个理由+6个必问，建议收藏: https://www.aoobee.com/guide/cunqian-guowan-zhizhi-cundan-2/
+- 文章 存钱过万为什么一定要办纸质存单？4个理由+6个必问，建议收藏: https://www.aoobee.com/guide/cunqian-guowan-zhizhi-cundan/
+- 文章 大暑来了！老人防中暑记住"移降补送"4个字，关键时刻能救命: https://www.aoobee.com/guide/dashu-laoren-fang-zhongshu/
+- 文章 电视"长辈模式"变收费陷阱？3步关掉自动续费，爸妈的遥控器你替他把关: https://www.aoobee.com/guide/dianshi-changbeimoshi-shoufei-xianjing/
+- 文章 电子社保卡怎么领？能办这8件事: https://www.aoobee.com/guide/dianzi-shebaoka-zenme-ling/
+- 文章 电子医保亲情账户怎么绑？3步搞定，老人看病不用带卡: https://www.aoobee.com/guide/dianzi-yibao-qinqing-zhanghu/
+- 文章 儿媳妇是北京人，我这个农村婆婆跟她说话老是小心翼翼的: https://www.aoobee.com/guide/erxifu-shi-beijingren/
 - 文章 如何选择 AI 写作工具: https://www.aoobee.com/guide/how-to-choose-ai-writing-tool/
 - 文章 如何选择靠谱的家电维修服务: https://www.aoobee.com/guide/how-to-choose-appliance-repair/
 - 文章 如何选择在线辅导课程: https://www.aoobee.com/guide/how-to-choose-online-tutoring/
@@ -71,6 +84,46 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 如何提升团队远程协作效率: https://www.aoobee.com/guide/how-to-improve-team-collaboration/
 - 文章 如何规划家庭装修不超预算: https://www.aoobee.com/guide/how-to-plan-home-renovation/
 - 文章 如何科学记录宝宝成长发育: https://www.aoobee.com/guide/how-to-track-baby-development/
+- 文章 央视《焦点访谈》20260714期  39万亩上报、23万亩实种——15万亩水稻，到底"种"到哪去了？: https://www.aoobee.com/guide/jiaodian-fangtan-15-wan-mu-shuidao/
+- 文章 空调26度最省电是误区？老人吹空调3个做法+晒背注意: https://www.aoobee.com/guide/kongtiao-26du-shengdian/
+- 文章 老年人每年必查的10个体检项目，别白花冤枉钱: https://www.aoobee.com/guide/laonianren-meinian-bi-cha-10-xiang/
+- 文章 老人最常见4类骗局+3个保命动作: https://www.aoobee.com/guide/laoren-zui-changjian-4lei-pianju/
+- 文章 邻居问我燕郊养老院多少钱一个月，我打听完没敢说话: https://www.aoobee.com/guide/linju-wen-yanjiao-yanglaoyuan-duoshao-qian/
+- 文章 路过燕达养老院门口，我站了十分钟（退休金不够住）: https://www.aoobee.com/guide/luguo-yanda-yanglaoyuan-menkou/
+- 文章 门诊慢特病网上怎么申请？国家医保小程序办理，不用跑医保局: https://www.aoobee.com/guide/menzhen-man-te-bing-wangshang-shenqing/
+- 文章 免密支付被盗刷上热搜？3步立刻关掉，爸妈手机必查: https://www.aoobee.com/guide/mianmi-zhifu-beidaoshua/
+- 文章 爱吃牛蛙的老人注意：多批次检出抗生素超标，3招避开问题牛蛙: https://www.aoobee.com/guide/niaowa-kangshengsu-chaobiao/
+- 文章 钱给了村干部医保却没交？3步查清父母缴没缴: https://www.aoobee.com/guide/qian-gei-cunganbu-yibao-mei-jiao/
+- 文章 燃气费余额怎么查？手机3步，帮爸妈搞定: https://www.aoobee.com/guide/ranqi-fei-yue-cha/
+- 文章 任泽平VIP群亏千万，退休老人别再信"财经大V"的内部消息: https://www.aoobee.com/guide/renzeping-vip-qun-kui-qianwan/
+- 文章 手机里藏了多少自动扣费？微信+支付宝一次查清，帮爸妈排查: https://www.aoobee.com/guide/shouji-zidong-koufei-cha/
+- 文章 台风天北京让居家办公，我儿子在燕郊冒着雨往回赶: https://www.aoobee.com/guide/taifeng-beijing-jujia-bangong/
+- 文章 同一盒药涨到十八块，老王说退休金够花，我算了半天: https://www.aoobee.com/guide/tongyi-yao-zhang-dao-shiba/
+- 文章 退休差点多等11年领养老金！3个条件没满足，你可能也一样: https://www.aoobee.com/guide/tuixiu-cha-dian-duo-deng-11-nian/
+- 文章 退休后认认真真写了三篇东西，后台一看：零个人看: https://www.aoobee.com/guide/tuixiu-hou-renren-zhenzhen-xie-le-sanpian/
+- 文章 退休后没事干，孙子说写公众号能赚钱，我写了六篇，收益：零: https://www.aoobee.com/guide/tuixiu-hou-xie-gongzhonghao-zhuanqian/
+- 文章 退休后和子女怎么处？这3条边界让两家都舒服: https://www.aoobee.com/guide/tuixiu-hou-zinv-zenme-chu/
+- 文章 退休金3000怎么分？4笔账算清，少吃亏多安心: https://www.aoobee.com/guide/tuixiujin-3000-zenme-fen/
+- 文章 我吃了十年的降压药，上个月三块五，今天去拿涨到十八了: https://www.aoobee.com/guide/wo-chi-le-shinian-jiangyayao/
+- 文章 我们那茬人把命交给国家了，现在每月领六百二退休金: https://www.aoobee.com/guide/women-nacha-ren-ba-ming-jiaoguo/
+- 文章 五年期大额存单回来了？是什么、受存款保险保障、去哪办（一篇讲清）: https://www.aoobee.com/guide/wunianqi-dae-cundan/
+- 文章 夏天降压药能不能停？3个误区害了不少老人: https://www.aoobee.com/guide/xiatian-jiangyayao-neng-bu-neng-ting/
+- 文章 燕达、大爱城、荣华齐山怎么选？3类老人对号入座不踩坑: https://www.aoobee.com/guide/yanda-daicheng-ronghua-qishan-zenme-xuan/
+- 文章 想去燕达养老院参观？2026年最新地址、电话、班车、入住流程一次说清: https://www.aoobee.com/guide/yanda-yanglaoyuan-canguan-liucheng/
+- 文章 养老房选燕郊还是武清，我跟老伴算了三个晚上，最后没说话: https://www.aoobee.com/guide/yanglaofang-yanjiao-haishi-wuqing/
+- 文章 养老金补助1.2万亿、医保补助3864亿！财政部刚公布，这笔钱和你每月到手有关: https://www.aoobee.com/guide/yanglaojin-buzhu-1-2-wanyi/
+- 文章 亚洲父母养大的孩子，为什么难和解？3个心理学视角: https://www.aoobee.com/guide/yazhou-fumu-haizi-nan-hejie/
+- 文章 医保缴费记录怎么查？2026年3种方法，手机2分钟搞定建议收藏医保缴费记录查不到？手机上2分: https://www.aoobee.com/guide/yibao-jiaofei-jilu-cha-2026/
+- 文章 医保缴费记录怎么查？手机3步，国家医保服务平台搞定: https://www.aoobee.com/guide/yibao-jiaofei-jilu-cha/
+- 文章 医保家庭共济怎么开？3步把个人账户的钱给家人用: https://www.aoobee.com/guide/yibao-jiating-gongji-zenme-kai/
+- 文章 医保家庭共济怎么用？3步绑定+4个注意，帮全家省几千: https://www.aoobee.com/guide/yibao-jiating-gongji-zenme-yong/
+- 文章 医保卡千万别借给别人买药——3个后果，十年后才发现: https://www.aoobee.com/guide/yibao-ka-qianwan-bie-jie-gei-bieren/
+- 文章 医保亲情账户绑定：子女给父母代缴全流程，一部手机就搞定: https://www.aoobee.com/guide/yibao-qinqing-zhanghu-daijiao/
+- 文章 异地就医备案手机怎么办？国家医保平台3步，别等住院才办: https://www.aoobee.com/guide/yidi-yizhen-beian-shouji/
+- 文章 一篮鸡蛋换走一个证券账户——64岁文盲老人被银行跨省开户始末: https://www.aoobee.com/guide/yilangan-dan-huan-zhengquan-zhanghu/
+- 文章 医院晚上关空调，老伴热得整宿没睡，护士说"规定就这样": https://www.aoobee.com/guide/yiyuan-wanshang-guan-kongtiao/
+- 文章 遗嘱怎么写才有效？3要点+去哪公证: https://www.aoobee.com/guide/yizhu-zenme-xie-cai-youxiao/
+- 文章 9月成立！中国牵头40国建反诈联盟，农村老人的养老钱更安全了: https://www.aoobee.com/guide/zhongguo-qiantou-40guo-fanzha-lianmeng/
 - 文章 ChatGPT 深度评测: https://www.aoobee.com/review/chatgpt-review/
 - 文章 钉钉 深度评测: https://www.aoobee.com/review/dingtalk-review/
 - 文章 海尔 深度评测: https://www.aoobee.com/review/haier-review/
