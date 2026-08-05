@@ -47,3 +47,60 @@ main:
           script: npm run build
         - name: lint
           script: npm run lint
+  # 每日定时拉取 GSC/GA4 数据并生成 SEO 报告
+  "crontab: 30 6 * * *":
+    - name: fetch-seo-report
+      docker:
+        image: node:22
+      stages:
+        - name: fetch-and-push
+          script: |
+            echo "=== [SEO拉数] 读取 Google 服务账号密钥 ==="
+            curl -s -o /tmp/sa.json -H "Authorization: Bearer $CNB_TOKEN" "https://api.cnb.cool/aoobee/aoobee-secrets/-/git/raw/main/gen-lang-client-0803005687-0f2590780ae7.json"
+            if [ ! -s /tmp/sa.json ]; then
+              echo "ERROR: Google 服务账号密钥读取失败"
+              exit 1
+            fi
+            echo "密钥已读取，大小: $(wc -c < /tmp/sa.json) 字节"
+
+            echo ""
+            echo "=== 运行 GSC + GA4 拉数脚本 ==="
+            export GOOGLE_SA_FILE=/tmp/sa.json
+            node scripts/fetch-seo-data.mjs || echo "⚠️ 拉数脚本异常退出（数据不足或 API 暂时失败）"
+
+            if [ ! -d docs/seo-reports ]; then
+              echo "没有报告目录，无需提交"
+              exit 0
+            fi
+            REPORT_FILE=$(ls -t docs/seo-reports/seo-*.md 2>/dev/null | head -1 || true)
+            if [ -z "$REPORT_FILE" ]; then
+              echo "没有报告文件，无需提交"
+              exit 0
+            fi
+            echo "最新报告: $REPORT_FILE"
+
+            git add docs/seo-reports/
+            if git diff --cached --quiet; then
+              echo "报告无变更（今天已生成过），无需提交"
+              exit 0
+            fi
+
+            echo ""
+            echo "=== 提交报告 ==="
+            git config user.name "AooBee SEO Bot"
+            git config user.email "seo-bot@aoobee.com"
+            git commit -m "docs(seo): 自动 SEO 数据报告更新 [ci skip]"
+
+            echo "=== 1/2 推送到 CNB（[ci skip] 防死循环）==="
+            git push origin "HEAD:main" 2>&1 | grep -viE 'password|username|hint:|remote: Resolving' || true
+
+            echo "=== 2/2 推送到 GitHub（触发 Vercel 部署）==="
+            export GH_TOKEN="$(curl -s -H "Authorization: Bearer $CNB_TOKEN" -H "Accept: application/json" "https://api.cnb.cool/aoobee/aoobee-secrets/-/git/raw/main/LLM-GEO")"
+            if [ -z "$GH_TOKEN" ]; then
+              echo "ERROR: GitHub token 读取失败"
+              exit 1
+            fi
+            git remote remove github 2>/dev/null || true
+            git remote add github "https://x-access-token:${GH_TOKEN}@github.com/aoocar/LLM-GEO.git"
+            git push github "HEAD:main" 2>&1 | grep -viE 'password|username|hint:|remote: Resolving' || true
+            echo "=== 推送完成 ==="
