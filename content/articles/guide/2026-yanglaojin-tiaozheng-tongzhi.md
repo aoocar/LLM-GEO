@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 通知迟早会出，但3件事你现在就要查，查了不吃亏。
 
 为什么迟迟没出？不是不涨，是算得更细了。
@@ -64,5 +63,7 @@ related:
 
 养老金22年连涨的方向不会变，不用焦虑。
 
-转发给身边退休的人——这3件事查了不吃亏。
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
 
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)

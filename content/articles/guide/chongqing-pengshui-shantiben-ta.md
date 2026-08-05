@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 7月17日9时8分，重庆市彭水县汉葭街道突发山体崩塌。
 
 崩塌体长60米、高30米、厚10米，总体积1.8万立方米。
@@ -88,5 +87,7 @@ related:
 
 但灾后的日子还要过——养老金不能断，医保不能停，救助不能少。
 
-重庆的乡亲们，把这条转出去——可能比捐款更管用。
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
 
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)

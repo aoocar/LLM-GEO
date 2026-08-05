@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 怎么领（1分钟搞定）
 
 先确认自己已经持有实体社保卡，然后任选一个渠道：
@@ -62,5 +61,7 @@ related:
 
 电子社保卡是现在最常用的人社便民工具，早领早方便。
 
-收藏备用，也转发给不会操作的父母，顺便帮他们把亲情账户绑上。
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
 
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)

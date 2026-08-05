@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 老伴住院那几天，晚上七点，护士来关空调。
 
 不是关一会儿。是关一宿。
@@ -166,4 +165,7 @@ related:
 
 原来那么多人，都熬过这种夜。
 
-你们那边医院咋样？晚上关不关空调？底下说两句，老张记着呢。转给家里有老人住过院的，他们肯定也熬过这种夜。
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
+
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)

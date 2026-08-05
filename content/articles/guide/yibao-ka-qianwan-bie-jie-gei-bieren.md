@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 但这3个后果，可能十年后才找上门——最狠的一个，直接让你买不了保险。
 
 后果一：保险直接拒保，体检正常也没用。
@@ -70,5 +69,7 @@ related:
 
 医保卡只能本人用。家人需要用→开通医保家庭共济，合法共享余额。
 
-转发给家人——别再借卡了，十年后后悔来不及。
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
 
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)

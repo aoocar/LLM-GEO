@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 湖南江华县，上报水稻种植面积39万亩。
 
 实际领取稻谷补贴的面积，23.8万亩。
@@ -88,5 +87,7 @@ related:
 
 这笔账，到底该怎么算？
 
-你怎么看？留言聊聊。
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
 
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)

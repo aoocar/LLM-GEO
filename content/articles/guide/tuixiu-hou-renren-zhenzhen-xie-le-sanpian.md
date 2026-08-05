@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 我说我写什么。他说您就写您平时跟我爷唠的那些。
 
 我想了想，也行。
@@ -74,4 +73,7 @@ related:
 
 就像我给闺女发消息，她也不知道该怎么回一样。
 
-今天就聊到这。你那边怎么样？有空在底下说两句。要是你身边也有人在写东西，转给她看看，她肯定也经历过0阅读。
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
+
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)

@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 topic_candidate: "㉟（选题库_v5.0 · P0 自动扣费系列）"
 
 source: ["快自查!你的手机App可能在偷偷自动扣费! https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS4HbLx4e5rvL5FopeiADL11PnldlUqS3iFqXa8Fplpd9ILTc6bdzBEH8FAH8DeC2MRLH8rNIAQfENhZDqLbDgaoie7FfT8dbP5ec18HLhxaQruzJ2pRnltVBAFzMvsHfkNOH7qIybj9oJCarhfELrIcobHQTnmT0AO_iNAwaXI8nHvSLgNPHqZ9G1kQq2VeQXnbi2cSBIJlWrfatITWRE1TS-e4Yz84xMA..&type=2&query=%E6%89%8B%E6%9C%BA%E8%87%AA%E5%8A%A8%E6%89%A3%E8%B4%B9%E6%80%8E%E4%B9%88%E6%9F%A5&token=D373508A231542308781D0674AFC69F7880F40186A6C277C", "几年没用过的APP,每年都在“自动扣费”!赶紧拿出手机查查看~~ https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS4HbLx4e5rvL5FopeiADL11PnldlUqS3iFqXa8Fplpd9PVm50dhI2-J6aMkVD7jKNHPFWS_sCK0GONxwAatNDVY_Jg0gB2KRos2TLc4Jmp61hgexIcNRg1hnFFZaq5NYWVJSvvboEohyGMldUnJHXnXrDjsB-RrQSKHOjo64PFT7G0Mhsqxh2e4i-PDSW2vzVsMgvJVSr9zzU4LWGp60y_4tPujwwRB2Pw..&type=2&query=%E6%89%8B%E6%9C%BA%E8%87%AA%E5%8A%A8%E6%89%A3%E8%B4%B9%E6%80%8E%E4%B9%88%E6%9F%A5&token=D373508A231542308781D0674AFC69F7880F40186A6C277C", "老年人用手机看小说被自动扣了会员费怎么退? https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS4HbLx4e5rvL5FopeiADL11PnldlUqS3iFqXa8Fplpd9rmHOfuQx6w6yfZ0HoVGBm8ba0KbG-ZF1pY6ODqMFwUf19BmFXht9ELDwSnjdpsq35_Agh4h7ajkS2Fwfyh7oPncqcV6mVMQB8rOB0-K803cAlgr2dpDoaQPeuPPcb-Tu1aiTNs1eRNi_1TUNivwt54mnhJyT5RkWEWOiRT0Qw9PFcvUoAZZH7Q..&type=2&query=%E6%89%8B%E6%9C%BA%E8%87%AA%E5%8A%A8%E6%89%A3%E8%B4%B9%E6%80%8E%E4%B9%88%E6%9F%A5&token=D373508A231542308781D0674AFC69F7880F40186A6C277C"]
@@ -48,5 +47,7 @@ source: ["快自查!你的手机App可能在偷偷自动扣费! https://weixin.s
 
 给爸妈排查的小技巧：直接拿过老人的手机，四个地方从头翻到尾，把"还在扣钱但不用的"列一张清单，当场关掉。每个月花十分钟，比事后追退款省事得多。
 
-转发给家里管手机、管钱的那个人——帮爸妈查一次，可能就省下一年冤枉钱。
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
 
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)

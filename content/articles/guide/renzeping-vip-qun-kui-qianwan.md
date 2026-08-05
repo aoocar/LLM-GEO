@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 1000万。
 
 这是一位退休老人，听信"财经大V"内部消息后，账户里亏掉的钱。
@@ -80,7 +79,7 @@ related:
 
 但下一个"任泽平"还在路上。
 
-把这条转给咱爸妈——比啥理财课都管用。
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
 
-你怎么看？留言聊聊。
-
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)

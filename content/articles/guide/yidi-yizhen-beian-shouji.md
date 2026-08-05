@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 异地就医备案相关事宜提示
 
 【医保课堂】异地就医备案如何办理?
@@ -52,5 +51,7 @@ related:
 
 打开国家医保服务平台App，看"备案记录"里有没有生效的备案；没有的，趁身体好提前办一个长期居住备案，等于给异地看病上了道保险。
 
-转发给家人群，让在外子女帮爸妈把备案办了——真到生病那天，这一步能省下大笔垫付款和无数跑腿。
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
 
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)

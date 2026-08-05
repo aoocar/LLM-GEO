@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 福建省公安厅《96110来电，请务必接听！》
 
 骗局一：养老投资高息陷阱
@@ -48,5 +47,7 @@ related:
 
 这类骗局年年翻新，但核心套路就这4类。多一个老人看到，就少一个家庭被骗。
 
-转发给家里的老人，也转给身边有老人的朋友，多一人看到少一人中招。
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
 
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)

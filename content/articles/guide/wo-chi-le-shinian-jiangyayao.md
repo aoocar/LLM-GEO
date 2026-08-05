@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 我吃了十年降压药了。
 
 以前去药店拿，一盒三块五。我一个月吃两盒，七块钱。七块钱能管一个月的血压，我觉得值。
@@ -90,4 +89,7 @@ related:
 
 今天先不想。先吃这盒。
 
-今天就聊到这。你家吃的药涨了没？有没有跟我一样掰着吃的？底下说两句，老张等着听。转给身边也在吃药的老姐妹看看，她们肯定也遇到了。
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
+
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)

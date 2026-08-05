@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 央视网《上半年下达基本养老保险补助1.2万亿元 育儿补贴资金约1000亿元》
 
 腾讯新闻《上半年多笔补助、补贴资金下达》
@@ -56,3 +55,7 @@ related:
 
 如果你或家里老人属于低保、特困、失能范围，记得去村委会或社区问问救助金的申领条件，别让该拿的钱漏了。
 
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
+
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)

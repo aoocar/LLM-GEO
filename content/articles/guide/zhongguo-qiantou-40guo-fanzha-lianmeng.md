@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 中国日报《China to initiate international alliance against telecom, online fraud》
 
 网易《今年将成立国际打击电信网络诈骗联盟》（新华社）
@@ -42,5 +41,7 @@ related:
 
 写在最后40国联手，说明这事已经上升到国家层面去办了。对咱们农村老人来说，这是好事——但自己的养老钱，自己得先捂紧。
 
-你怎么看？留言聊聊，也转发给家里老人提个醒。
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
 
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)

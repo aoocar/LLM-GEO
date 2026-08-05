@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 一篮鸡蛋。
 
 这就是64岁的胡女士，换来一个证券账户的全部代价。
@@ -82,5 +81,7 @@ related:
 
 下一个"财经大V"和"银行工作人员"还在路上。
 
-把这条转给咱爸妈——别让一篮鸡蛋，换走一辈子的积蓄。
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
 
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)

@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 门诊慢特病可网上申办了!操作流程
 
 关于兰州市门诊慢特病网上申报的通知
@@ -48,5 +47,7 @@ related:
 
 翻翻爸妈常用药，如果是高血压/糖尿病等长期病，查查参保地有没有门慢通道、材料齐不齐。早点办，长期药费能省一截。
 
-转发给家人群，让在外子女帮爸妈把慢特病认定办了——这是慢病老人最实在的省钱动作。
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
 
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)

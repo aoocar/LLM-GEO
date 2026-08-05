@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 topic_candidate: "㊾（选题库_v5.0 · P1 健康养生）"
 
 source: ["长期慢性炎症可能引发癌症病变! https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS4HbLx4e5rvLgU0ASZWUP19PnldlUqS3iFqXa8Fplpd9mnMMPrZbygZmBA73IlonpWMXywgoscy4SLxYPiGbEGrU25JxNw4-s2-Qx56MqZmFT1VVIWl1BaN9ELjjBQID-8DeuENgYLKRrp8FxZ8Kpd2X0bIBFWcyIR6m3PUU_Ebqs6cVI-6jzZSJxWRwubKtahiwGR6zsMDX6gNQ3oqE9MoYJSSFPgfogQ..&type=2&query=%E6%85%A2%E6%80%A7%E7%82%8E%E7%97%87 %E7%99%8C%E7%97%87 %E8%80%81%E4%BA%BA&token=D3735A296850087BCCCA9B2C005F9D24CDEC60236A6C277D", "4种长期炎症容易引发癌症!3种“促炎”饮食要狠狠避开 https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS4HbLx4e5rvLgU0ASZWUP19PnldlUqS3iFqXa8Fplpd9fys1rTYK_cKTgG55MQnxkATCdFQ5AS2hPJJY4Mp9hPAHGHkUUx_2fHwN3LJcA9zW6G68QnWxEQ-ECjLG59xm3iJaXseeYA99kEnq5Qer9QEmo7l0AFflv_4wOQX995rnLeqYGdYi9UM87hbqPcOJeY3a9qdbf7I2FFEaM0QEPj9535pjGOOjYg..&type=2&query=%E6%85%A2%E6%80%A7%E7%82%8E%E7%97%87 %E7%99%8C%E7%97%87 %E8%80%81%E4%BA%BA&token=D3735A296850087BCCCA9B2C005F9D24CDEC60236A6C277D", "从慢性炎症到癌症究竟有多远 https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS4HbLx4e5rvLgU0ASZWUP19PnldlUqS3iFqXa8Fplpd9Bz0pKONZUTvYUt0CgdeYxAnwWgACiriMLOlOVDCPeAkRa4Aq2uD3cuMoaG_8yBZ_IJGcphKmfWKWhsIygzYYFlw5FNKALDNtiCZTZqN0FwITWDSvBMHOkFc1B0IJPIkRH8jp2OvnFZwWGSh6gMXyHkeRZ8SWaziMgVb3wMufIm71AfaFW2DefQ..&type=2&query=%E6%85%A2%E6%80%A7%E7%82%8E%E7%97%87 %E7%99%8C%E7%97%87 %E8%80%81%E4%BA%BA&token=D3735A296850087BCCCA9B2C005F9D24CDEC60236A6C277D"]
@@ -46,7 +45,9 @@ source: ["长期慢性炎症可能引发癌症病变! https://weixin.sogou.com/l
 
 四、关键一条
 
-炎症要不要治、怎么治，以医院检查为准。本文只做提醒，不替代诊疗。有症状早点去正规医院，别信"偏方断根"。
+炎症要不要治、怎么治，以医院检查为准。本文只做提醒，不替代诊疗。有症状早点去正规医院，别信"偏方断根"
 
-转发给家里老人——牙疼胃疼肝区不适别硬扛，早查早放心。
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
 
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)

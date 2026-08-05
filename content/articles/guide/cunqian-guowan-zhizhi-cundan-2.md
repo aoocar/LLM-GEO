@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 但手机丢了，密码泄露了，养老本可能一夜归零。
 
 最近"存钱过万一定要办纸质存单"冲上热搜，评论区一堆人晒自家长辈的执念："手机上看不见，心里不踏实。"
@@ -130,7 +129,7 @@ related:
 
 方便是给日常消费的，踏实是给家底的。
 
-收藏备用。
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
 
-转给咱爸妈，存养老钱之前看一遍，少踩99%的坑。
-
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)

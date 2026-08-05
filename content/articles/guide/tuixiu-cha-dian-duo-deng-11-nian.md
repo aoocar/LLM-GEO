@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 新浪财经《退休年龄前差数月缴费中断，上海阿姨险些延迟11年领养老金》2026-07-22
 
 今日头条热搜"女子临近退休差点多等11年领养老金"
@@ -66,3 +65,7 @@ related:
 
 翁女士差点多等11年，好在有人帮她找到了。但绝大多数人没有这种幸运——自己查，别等别人通知你。
 
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
+
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)

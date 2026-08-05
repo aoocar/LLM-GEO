@@ -17,7 +17,6 @@ related:
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
 ---
-
 人民日报客户端《退休后的父母解锁"叛逆"新生活》
 
 边界一：经济不捆绑
@@ -34,5 +33,7 @@ related:
 
 一句话心法：退而不"退位"。做顾问，不做总管；给建议，不替做主。子女需要的是被尊重的父母，不是第二个领导。
 
-把这篇转给儿女看看，两代人少点摩擦、多点体谅。
+**联系我们**
+联系电话：15532661565　|　微信号：aoo697　|　邮箱：aoobee@sina.com
 
+![扫码加入 AooBee 微信交流群](/huomaAIfens.png)
