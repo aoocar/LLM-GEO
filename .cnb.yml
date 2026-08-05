@@ -8,6 +8,34 @@ main:
           script: npm ci
         - name: build
           script: npm run build
+    - name: sync-to-github
+      stages:
+        - name: push-to-github
+          script: |
+            echo "=== 同步 CNB main 到 GitHub aoocar/LLM-GEO ==="
+            # 从密钥仓库读取 GitHub token（不回显 token 值）
+            export GH_TOKEN="$(curl -s -H "Authorization: Bearer $CNB_TOKEN" -H "Accept: application/json" "https://api.cnb.cool/aoobee/aoobee-secrets/-/git/raw/main/LLM-GEO")"
+            if [ -z "$GH_TOKEN" ]; then
+              echo "ERROR: GitHub token 读取失败"
+              exit 1
+            fi
+            echo "Token loaded, length=${#GH_TOKEN}"
+            # 确保 main 分支存在且最新
+            git checkout main 2>/dev/null || true
+            # 配置 git 身份
+            git config user.name "cnb.c4ejfLqtAfAA"
+            git config user.email "XlETCNISXrwdXD66uicfzE+cnb.c4ejfLqtAfAA@noreply.cnb.cool"
+            # 配置 GitHub remote（token 隐藏）
+            git remote remove github 2>/dev/null || true
+            git remote add github "https://x-access-token:${GH_TOKEN}@github.com/aoocar/LLM-GEO.git"
+            # 推送 main 到 GitHub
+            echo "--- 推送前 GitHub HEAD ---"
+            git ls-remote github HEAD || true
+            echo "--- 开始推送 ---"
+            git push github "main:refs/heads/main" 2>&1 | grep -viE 'password|username|hint:|remote: Resolving' || true
+            echo "--- 推送后 GitHub HEAD ---"
+            git ls-remote github HEAD || true
+            echo "=== 同步完成 ==="
   pull_request:
     - name: pr-build-verify
       docker:
