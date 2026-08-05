@@ -1,0 +1,21 @@
+main:
+  push:
+    - name: build-verify
+      docker:
+        image: node:22
+      stages:
+        - name: install-deps
+          script: npm ci
+        - name: build
+          script: npm run build
+  pull_request:
+    - name: pr-build-verify
+      docker:
+        image: node:22
+      stages:
+        - name: install-deps
+          script: npm ci
+        - name: build
+          script: npm run build
+        - name: lint
+          script: npm run lint
