@@ -37,3 +37,59 @@ h1, h2, h3, h4, h5, h6 {
 p, li {
   line-height: 1.8;
 }
+
+/* 文章正文排版（渲染器输出的 h2 / 列表 / 引用等） */
+article h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: 1.5rem 0 0.75rem;
+}
+
+article h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 1.75rem 0 0.75rem;
+  color: #111827;
+}
+
+article h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.5rem;
+}
+
+article ol,
+article ul {
+  padding-left: 1.6rem;
+  margin: 0.75rem 0;
+}
+
+article ol {
+  list-style: decimal;
+}
+
+article ul {
+  list-style: disc;
+}
+
+article li {
+  margin: 0.35rem 0;
+}
+
+article blockquote {
+  border-left: 3px solid #d1d5db;
+  padding-left: 1rem;
+  color: #4b5563;
+  margin: 1rem 0;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+article strong {
+  font-weight: 600;
+}
