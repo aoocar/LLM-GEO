@@ -26,6 +26,8 @@ related:
   - /review/chatgpt-review
   - /faq/what-is-ai-writing-tool
   - /ai/chatgpt
+  - /best/domestic-ai-chatbots-2026
+  - /ai/deepseek
 ---
 # 如何选择 AI 写作工具
 

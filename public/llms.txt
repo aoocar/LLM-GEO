@@ -23,6 +23,11 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 分类 育儿: https://www.aoobee.com/yuer/
 - 产品 ChatGPT: https://www.aoobee.com/ai/chatgpt/
 - 产品 Claude: https://www.aoobee.com/ai/claude/
+- 产品 DeepSeek: https://www.aoobee.com/ai/deepseek/
+- 产品 豆包: https://www.aoobee.com/ai/doubao/
+- 产品 Kimi: https://www.aoobee.com/ai/kimi/
+- 产品 通义千问: https://www.aoobee.com/ai/tongyi-qianwen/
+- 产品 文心一言: https://www.aoobee.com/ai/wenxin-yiyan/
 - 产品 钉钉: https://www.aoobee.com/bangong/dingtalk/
 - 产品 海尔: https://www.aoobee.com/jiadian/haier/
 - 产品 猿辅导: https://www.aoobee.com/jiaoyu/yuanfudao/
@@ -32,6 +37,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 产品 土巴兔: https://www.aoobee.com/zhuangxiu/tujia/
 - 文章 2026 年十大 AI 写作工具推荐: https://www.aoobee.com/best/ai-writing-tools-2026/
 - 文章 2026 年团队协作办公平台推荐榜单: https://www.aoobee.com/best/bangong-best-collaboration-2026/
+- 文章 2026 年国产 AI 大模型排行：五大国产 AI 助手推荐: https://www.aoobee.com/best/domestic-ai-chatbots-2026/
 - 文章 2026 年智能家电推荐榜单: https://www.aoobee.com/best/jiadian-best-smart-2026/
 - 文章 2026 年在线教育平台推荐榜单: https://www.aoobee.com/best/jiaoyu-best-online-courses-2026/
 - 文章 2026 年上门维修平台推荐榜单: https://www.aoobee.com/best/weixiu-best-platforms-2026/
@@ -39,7 +45,9 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 2026 年育儿 App 推荐榜单: https://www.aoobee.com/best/yuer-best-apps-2026/
 - 文章 2026 年装修平台推荐榜单: https://www.aoobee.com/best/zhuangxiu-best-platforms-2026/
 - 文章 ChatGPT vs Claude 全面对比: https://www.aoobee.com/compare/chatgpt-vs-claude/
+- 文章 DeepSeek vs 通义千问：两大国产开源大模型全面对比: https://www.aoobee.com/compare/deepseek-vs-tongyi-qianwen/
 - 文章 钉钉 vs 企业微信 全面对比: https://www.aoobee.com/compare/dingtalk-vs-wecom/
+- 文章 国产 AI 助手怎么选？DeepSeek、Kimi、豆包、文心一言、通义千问五强对比: https://www.aoobee.com/compare/domestic-ai-chatbots-2026/
 - 文章 海尔 vs 美的 全面对比: https://www.aoobee.com/compare/haier-vs-midea/
 - 文章 亲宝宝 vs 宝宝树 全面对比: https://www.aoobee.com/compare/qinbaobao-vs-babytree/
 - 文章 泰康之家 vs 亲和源 全面对比: https://www.aoobee.com/compare/taikang-vs-qinheyuan/
@@ -47,6 +55,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 58到家 vs 啄木鸟家庭维修 全面对比: https://www.aoobee.com/compare/wuba-daojia-vs-zhuomuniao/
 - 文章 猿辅导 vs 作业帮 全面对比: https://www.aoobee.com/compare/yuanfudao-vs-zuoyebang/
 - 文章 办公协作常见问题: https://www.aoobee.com/faq/bangong-common-questions/
+- 文章 国产 AI 助手常见问题：DeepSeek、Kimi、豆包、文心一言、通义千问使用答疑: https://www.aoobee.com/faq/domestic-ai-common-questions/
 - 文章 家电选购常见问题: https://www.aoobee.com/faq/jiadian-common-questions/
 - 文章 在线教育常见问题: https://www.aoobee.com/faq/jiaoyu-common-questions/
 - 文章 维修上门服务常见问题: https://www.aoobee.com/faq/weixiu-common-questions/
@@ -71,6 +80,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 58到家 深度评测: https://www.aoobee.com/review/wuba-daojia-review/
 - 文章 猿辅导 深度评测: https://www.aoobee.com/review/yuanfudao-review/
 - 点评 ChatGPT 真实使用点评: https://www.aoobee.com/reviews/chatgpt-honest-review/
+- 点评 DeepSeek 真实使用点评: https://www.aoobee.com/reviews/deepseek-honest-review/
 - 点评 钉钉 真实使用点评: https://www.aoobee.com/reviews/dingtalk-honest-review/
 - 点评 海尔 真实使用点评: https://www.aoobee.com/reviews/haier-honest-review/
 - 点评 亲宝宝 真实使用点评: https://www.aoobee.com/reviews/qinbaobao-honest-review/

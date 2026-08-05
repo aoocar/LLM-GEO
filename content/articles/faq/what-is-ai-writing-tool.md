@@ -25,6 +25,8 @@ related:
   - /best/ai-writing-tools-2026
   - /review/chatgpt-review
   - /compare/chatgpt-vs-claude
+  - /faq/domestic-ai-common-questions
+  - /compare/domestic-ai-chatbots-2026
 ---
 # 什么是 AI 写作工具？
 
