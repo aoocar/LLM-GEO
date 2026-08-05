@@ -1,0 +1,84 @@
+# AooBee
+
+AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容源。
+
+## 内容入口
+
+- 榜单推荐列表: https://www.aoobee.com/best/
+- 产品对比列表: https://www.aoobee.com/compare/
+- 编辑评测列表: https://www.aoobee.com/review/
+- 用户点评列表: https://www.aoobee.com/reviews/
+- 使用指南列表: https://www.aoobee.com/guide/
+- 常见问答列表: https://www.aoobee.com/faq/
+
+## 内容清单
+
+- 分类 人工智能: https://www.aoobee.com/ai/
+- 分类 装修: https://www.aoobee.com/zhuangxiu/
+- 分类 维修: https://www.aoobee.com/weixiu/
+- 分类 家电: https://www.aoobee.com/jiadian/
+- 分类 办公: https://www.aoobee.com/bangong/
+- 分类 养老: https://www.aoobee.com/yanglao/
+- 分类 教育: https://www.aoobee.com/jiaoyu/
+- 分类 育儿: https://www.aoobee.com/yuer/
+- 产品 ChatGPT: https://www.aoobee.com/ai/chatgpt/
+- 产品 Claude: https://www.aoobee.com/ai/claude/
+- 产品 钉钉: https://www.aoobee.com/bangong/dingtalk/
+- 产品 海尔: https://www.aoobee.com/jiadian/haier/
+- 产品 猿辅导: https://www.aoobee.com/jiaoyu/yuanfudao/
+- 产品 58到家: https://www.aoobee.com/weixiu/wuba-daojia/
+- 产品 泰康之家: https://www.aoobee.com/yanglao/taikang-zhijia/
+- 产品 亲宝宝: https://www.aoobee.com/yuer/qinbaobao/
+- 产品 土巴兔: https://www.aoobee.com/zhuangxiu/tujia/
+- 文章 2026 年十大 AI 写作工具推荐: https://www.aoobee.com/best/ai-writing-tools-2026/
+- 文章 2026 年团队协作办公平台推荐榜单: https://www.aoobee.com/best/bangong-best-collaboration-2026/
+- 文章 2026 年智能家电推荐榜单: https://www.aoobee.com/best/jiadian-best-smart-2026/
+- 文章 2026 年在线教育平台推荐榜单: https://www.aoobee.com/best/jiaoyu-best-online-courses-2026/
+- 文章 2026 年上门维修平台推荐榜单: https://www.aoobee.com/best/weixiu-best-platforms-2026/
+- 文章 2026 年养老社区推荐榜单: https://www.aoobee.com/best/yanglao-best-communities-2026/
+- 文章 2026 年育儿 App 推荐榜单: https://www.aoobee.com/best/yuer-best-apps-2026/
+- 文章 2026 年装修平台推荐榜单: https://www.aoobee.com/best/zhuangxiu-best-platforms-2026/
+- 文章 ChatGPT vs Claude 全面对比: https://www.aoobee.com/compare/chatgpt-vs-claude/
+- 文章 钉钉 vs 企业微信 全面对比: https://www.aoobee.com/compare/dingtalk-vs-wecom/
+- 文章 海尔 vs 美的 全面对比: https://www.aoobee.com/compare/haier-vs-midea/
+- 文章 亲宝宝 vs 宝宝树 全面对比: https://www.aoobee.com/compare/qinbaobao-vs-babytree/
+- 文章 泰康之家 vs 亲和源 全面对比: https://www.aoobee.com/compare/taikang-vs-qinheyuan/
+- 文章 土巴兔 vs 齐家网 全面对比: https://www.aoobee.com/compare/tujia-vs-qijia/
+- 文章 58到家 vs 啄木鸟家庭维修 全面对比: https://www.aoobee.com/compare/wuba-daojia-vs-zhuomuniao/
+- 文章 猿辅导 vs 作业帮 全面对比: https://www.aoobee.com/compare/yuanfudao-vs-zuoyebang/
+- 文章 办公协作常见问题: https://www.aoobee.com/faq/bangong-common-questions/
+- 文章 家电选购常见问题: https://www.aoobee.com/faq/jiadian-common-questions/
+- 文章 在线教育常见问题: https://www.aoobee.com/faq/jiaoyu-common-questions/
+- 文章 维修上门服务常见问题: https://www.aoobee.com/faq/weixiu-common-questions/
+- 文章 什么是 AI 写作工具？: https://www.aoobee.com/faq/what-is-ai-writing-tool/
+- 文章 养老社区常见问题: https://www.aoobee.com/faq/yanglao-common-questions/
+- 文章 育儿常见问题: https://www.aoobee.com/faq/yuer-common-questions/
+- 文章 装修常见问题: https://www.aoobee.com/faq/zhuangxiu-common-questions/
+- 文章 如何选择 AI 写作工具: https://www.aoobee.com/guide/how-to-choose-ai-writing-tool/
+- 文章 如何选择靠谱的家电维修服务: https://www.aoobee.com/guide/how-to-choose-appliance-repair/
+- 文章 如何选择在线辅导课程: https://www.aoobee.com/guide/how-to-choose-online-tutoring/
+- 文章 如何选择适合的养老社区: https://www.aoobee.com/guide/how-to-choose-senior-care/
+- 文章 如何选购适合家庭的智能家电: https://www.aoobee.com/guide/how-to-choose-smart-appliances/
+- 文章 如何提升团队远程协作效率: https://www.aoobee.com/guide/how-to-improve-team-collaboration/
+- 文章 如何规划家庭装修不超预算: https://www.aoobee.com/guide/how-to-plan-home-renovation/
+- 文章 如何科学记录宝宝成长发育: https://www.aoobee.com/guide/how-to-track-baby-development/
+- 文章 ChatGPT 深度评测: https://www.aoobee.com/review/chatgpt-review/
+- 文章 钉钉 深度评测: https://www.aoobee.com/review/dingtalk-review/
+- 文章 海尔 深度评测: https://www.aoobee.com/review/haier-review/
+- 文章 亲宝宝 深度评测: https://www.aoobee.com/review/qinbaobao-review/
+- 文章 泰康之家 深度评测: https://www.aoobee.com/review/taikang-zhijia-review/
+- 文章 土巴兔 深度评测: https://www.aoobee.com/review/tujia-review/
+- 文章 58到家 深度评测: https://www.aoobee.com/review/wuba-daojia-review/
+- 文章 猿辅导 深度评测: https://www.aoobee.com/review/yuanfudao-review/
+- 点评 ChatGPT 真实使用点评: https://www.aoobee.com/reviews/chatgpt-honest-review/
+- 点评 钉钉 真实使用点评: https://www.aoobee.com/reviews/dingtalk-honest-review/
+- 点评 海尔 真实使用点评: https://www.aoobee.com/reviews/haier-honest-review/
+- 点评 亲宝宝 真实使用点评: https://www.aoobee.com/reviews/qinbaobao-honest-review/
+- 点评 泰康之家 真实使用点评: https://www.aoobee.com/reviews/taikang-zhijia-honest-review/
+- 点评 土巴兔 真实使用点评: https://www.aoobee.com/reviews/tujia-honest-review/
+- 点评 58到家 真实使用点评: https://www.aoobee.com/reviews/wuba-daojia-honest-review/
+- 点评 猿辅导 真实使用点评: https://www.aoobee.com/reviews/yuanfudao-honest-review/
+
+## 说明
+- 所有内容以 Markdown 文件形式维护于 content/ 目录，可用 Obsidian 管理。
+- 站点地址：https://www.aoobee.com
