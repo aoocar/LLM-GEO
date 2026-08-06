@@ -24,6 +24,10 @@ related:
   - /best/bangong-best-collaboration-2026
   - /compare/dingtalk-vs-wecom
   - /review/dingtalk-review
+  - /reviews/notion-honest-review
+  - /reviews/slack-honest-review
+  - /bangong/notion
+  - /bangong/slack
   - /faq/bangong-common-questions
   - /bangong/dingtalk
 ---

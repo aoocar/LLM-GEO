@@ -24,6 +24,9 @@ related:
   - /best/zhuangxiu-best-platforms-2026
   - /compare/tujia-vs-qijia
   - /review/tujia-review
+  - /reviews/haohaozhu-honest-review
+  - /zhuangxiu/haohaozhu
+  - /faq/zhuangxiu-common-questions
 ---
 # 如何规划家庭装修不超预算
 

@@ -24,6 +24,11 @@ related:
   - /best/jiadian-best-smart-2026
   - /compare/haier-vs-midea
   - /review/haier-review
+  - /reviews/fangtai-honest-review
+  - /reviews/dyson-honest-review
+  - /jiadian/fangtai
+  - /jiadian/dyson
+  - /faq/jiadian-common-questions
 ---
 # 如何选购适合家庭的智能家电
 

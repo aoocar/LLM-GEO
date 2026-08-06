@@ -3,8 +3,8 @@ title: 2026 年团队协作办公平台推荐榜单
 type: BEST
 category: bangong
 keywords: [协同办公, 团队协作, 推荐]
-excerpt: 从组织管理、文档协作到成本结构，盘点 2026 年主流团队协作平台（钉钉/企业微信/飞书/腾讯会议/WPS 365）。
-description: 2026 年团队协作平台推荐：对比钉钉、企业微信、飞书、腾讯会议、WPS 365 的组织管理、文档协作与成本结构，帮不同规模团队选对工具。
+excerpt: 从组织管理、文档协作到成本结构，盘点 2026 年主流团队协作平台（钉钉/企业微信/飞书/腾讯会议/WPS 365/Notion/Slack）。
+description: 2026 年团队协作平台推荐：对比钉钉、企业微信、飞书、腾讯会议、WPS 365、Notion、Slack 的组织管理、文档协作与成本结构，帮不同规模团队选对工具。
 authorName: AooBee 编辑部
 publishedAt: 2026-07-31
 faqItems:
@@ -25,11 +25,15 @@ related:
   - /review/dingtalk-review
   - /reviews/wecom-honest-review
   - /reviews/feishu-honest-review
+  - /reviews/notion-honest-review
+  - /reviews/slack-honest-review
   - /guide/how-to-improve-team-collaboration
   - /faq/bangong-common-questions
   - /bangong/dingtalk
   - /bangong/wecom
   - /bangong/feishu
+  - /bangong/notion
+  - /bangong/slack
 ---
 # 2026 年团队协作办公平台推荐榜单
 
@@ -50,12 +54,20 @@ related:
 ## WPS 365：办公文档的务实之选
 国产办公全家桶，**深度兼容微软 Office 格式**，文字、表格、演示、PDF 与云文档一体。对预算有限、需要正版办公软件的团队和政府采购场景，它是性价比极高的替代方案；个人免费版即可覆盖日常文档需求。
 
+## Notion：灵活度最高的 All-in-One
+块编辑器 + 数据库的组合让它兼具笔记、知识库与轻量项目管理能力，**一套数据多视图（表格/看板/日历）**，模板生态极其丰富。适合个人知识库与小型团队；学习成本高、国内访问需注意网络，重型流程审批仍是短板。
+
+## Slack：技术团队的沟通中枢
+以频道化沟通见长，**第三方集成生态（GitHub/Jira/CI 等）业内最强**，远程与跨国团队协作体验一流；国内访问稳定性与本地化弱于钉钉/企微，免费版消息历史有限，适合技术团队与跨时区协作。
+
 ## 按团队类型选
 - **有实体办公、考勤审批刚需**：钉钉的组织能力最省事；
 - **销售/客服驱动、要连客户**：企业微信的微信生态是硬优势；
 - **知识型团队、重文档协作**：飞书的文档体系效率更高；
 - **远程办公、会议频繁**：腾讯会议的入会门槛与 AI 纪要最省心；
 - **预算敏感、文档为主**：WPS 365 的兼容性与价格最务实；
+- **个人知识库/小团队 All-in-One**：Notion 的灵活度与模板生态最顺手；
+- **技术团队、重集成与异步协作**：Slack 的频道化与生态集成最对口；
 - **10 人以内小团队**：优先选免费版够用的，别为暂时用不到的功能付费。
 
 ## 选型时最容易忽略的三点
