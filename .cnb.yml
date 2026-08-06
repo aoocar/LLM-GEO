@@ -141,3 +141,40 @@ main:
             git remote add github "https://x-access-token:${GH_TOKEN}@github.com/aoocar/LLM-GEO.git"
             git push github "HEAD:main" 2>&1 | grep -viE 'password|username|hint:|remote: Resolving' || true
             echo "=== 榜单时效刷新完成 ==="
+
+  # 每周三 08:30 (Asia/Shanghai) 自动生成"城市+本地生活服务"长尾内容（地域/行业不限）
+  "crontab: 30 8 * * 3":
+    - name: generate-local-pages
+      docker:
+        image: node:22
+      stages:
+        - name: generate-and-push
+          script: |
+            echo "=== [长尾内容] 自动生成城市本地服务 FAQ 文章 ==="
+            git config user.name "AooBee SEO Bot"
+            git config user.email "seo-bot@aoobee.com"
+
+            # 幂等：仅生成不存在的 slug，无新内容时 git 无 diff 不产生空提交
+            node scripts/generate-local-pages.mjs
+
+            git add content/articles/faq/
+            if git diff --cached --quiet; then
+              echo "无新增长尾页面，无需提交"
+              exit 0
+            fi
+
+            git commit -m "content(seo): 新增城市本地服务长尾 FAQ 页面 [ci skip]"
+
+            echo "=== 1/2 推送到 CNB（[ci skip] 防死循环）==="
+            git push origin "HEAD:main" 2>&1 | grep -viE 'password|username|hint:|remote: Resolving' || true
+
+            echo "=== 2/2 推送到 GitHub（触发 Vercel 部署）==="
+            export GH_TOKEN="$(curl -s -H "Authorization: Bearer $CNB_TOKEN" -H "Accept: application/json" "https://api.cnb.cool/aoobee/aoobee-secrets/-/git/raw/main/LLM-GEO")"
+            if [ -z "$GH_TOKEN" ]; then
+              echo "ERROR: GitHub token 读取失败"
+              exit 1
+            fi
+            git remote remove github 2>/dev/null || true
+            git remote add github "https://x-access-token:${GH_TOKEN}@github.com/aoocar/LLM-GEO.git"
+            git push github "HEAD:main" 2>&1 | grep -viE 'password|username|hint:|remote: Resolving' || true
+            echo "=== 长尾内容生成完成 ==="
