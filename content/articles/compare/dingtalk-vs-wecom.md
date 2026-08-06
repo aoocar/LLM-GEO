@@ -25,8 +25,10 @@ related:
   - /best/bangong-best-collaboration-2026
   - /review/dingtalk-review
   - /reviews/dingtalk-honest-review
+  - /reviews/wecom-honest-review
   - /guide/how-to-improve-team-collaboration
   - /bangong/dingtalk
+  - /bangong/wecom
 ---
 # 钉钉 vs 企业微信 全面对比
 

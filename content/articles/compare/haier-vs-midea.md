@@ -25,8 +25,10 @@ related:
   - /best/jiadian-best-smart-2026
   - /review/haier-review
   - /reviews/haier-honest-review
+  - /reviews/midea-honest-review
   - /guide/how-to-choose-smart-appliances
   - /jiadian/haier
+  - /jiadian/midea
 ---
 # 海尔 vs 美的 全面对比
 

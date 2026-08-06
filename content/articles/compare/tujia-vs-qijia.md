@@ -25,8 +25,10 @@ related:
   - /best/zhuangxiu-best-platforms-2026
   - /review/tujia-review
   - /reviews/tujia-honest-review
+  - /reviews/qijia-honest-review
   - /guide/how-to-plan-home-renovation
   - /zhuangxiu/tujia
+  - /zhuangxiu/qijia
 ---
 # 土巴兔 vs 齐家网 全面对比
 

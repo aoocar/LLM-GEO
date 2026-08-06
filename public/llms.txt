@@ -29,12 +29,22 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 产品 通义千问: https://www.aoobee.com/ai/tongyi-qianwen/
 - 产品 文心一言: https://www.aoobee.com/ai/wenxin-yiyan/
 - 产品 钉钉: https://www.aoobee.com/bangong/dingtalk/
+- 产品 飞书: https://www.aoobee.com/bangong/feishu/
+- 产品 腾讯会议: https://www.aoobee.com/bangong/tencent-meeting/
+- 产品 企业微信: https://www.aoobee.com/bangong/wecom/
+- 产品 WPS 365: https://www.aoobee.com/bangong/wps365/
+- 产品 格力: https://www.aoobee.com/jiadian/gree/
 - 产品 海尔: https://www.aoobee.com/jiadian/haier/
+- 产品 美的: https://www.aoobee.com/jiadian/midea/
+- 产品 小米家电: https://www.aoobee.com/jiadian/xiaomi-home/
 - 产品 猿辅导: https://www.aoobee.com/jiaoyu/yuanfudao/
 - 产品 58到家: https://www.aoobee.com/weixiu/wuba-daojia/
 - 产品 泰康之家: https://www.aoobee.com/yanglao/taikang-zhijia/
 - 产品 亲宝宝: https://www.aoobee.com/yuer/qinbaobao/
+- 产品 酷家乐: https://www.aoobee.com/zhuangxiu/kujiale/
+- 产品 齐家网: https://www.aoobee.com/zhuangxiu/qijia/
 - 产品 土巴兔: https://www.aoobee.com/zhuangxiu/tujia/
+- 产品 住小帮: https://www.aoobee.com/zhuangxiu/zhuxiaobang/
 - 文章 2026 年十大 AI 写作工具推荐: https://www.aoobee.com/best/ai-writing-tools-2026/
 - 文章 2026 年团队协作办公平台推荐榜单: https://www.aoobee.com/best/bangong-best-collaboration-2026/
 - 文章 2026 年国产 AI 大模型排行：五大国产 AI 助手推荐: https://www.aoobee.com/best/domestic-ai-chatbots-2026/
@@ -135,12 +145,17 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 点评 ChatGPT 真实使用点评: https://www.aoobee.com/reviews/chatgpt-honest-review/
 - 点评 DeepSeek 真实使用点评: https://www.aoobee.com/reviews/deepseek-honest-review/
 - 点评 钉钉 真实使用点评: https://www.aoobee.com/reviews/dingtalk-honest-review/
+- 点评 飞书 真实使用点评: https://www.aoobee.com/reviews/feishu-honest-review/
 - 点评 海尔 真实使用点评: https://www.aoobee.com/reviews/haier-honest-review/
+- 点评 美的 真实使用点评: https://www.aoobee.com/reviews/midea-honest-review/
+- 点评 齐家网 真实使用点评: https://www.aoobee.com/reviews/qijia-honest-review/
 - 点评 亲宝宝 真实使用点评: https://www.aoobee.com/reviews/qinbaobao-honest-review/
 - 点评 泰康之家 真实使用点评: https://www.aoobee.com/reviews/taikang-zhijia-honest-review/
 - 点评 土巴兔 真实使用点评: https://www.aoobee.com/reviews/tujia-honest-review/
+- 点评 企业微信 真实使用点评: https://www.aoobee.com/reviews/wecom-honest-review/
 - 点评 58到家 真实使用点评: https://www.aoobee.com/reviews/wuba-daojia-honest-review/
 - 点评 猿辅导 真实使用点评: https://www.aoobee.com/reviews/yuanfudao-honest-review/
+- 点评 住小帮 真实使用点评: https://www.aoobee.com/reviews/zhuxiaobang-honest-review/
 
 ## 说明
 - 所有内容以 Markdown 文件形式维护于 content/ 目录，可用 Obsidian 管理。
