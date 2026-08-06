@@ -32,6 +32,8 @@ related:
   - /zhuangxiu/qijia
   - /zhuangxiu/zhuxiaobang
   - /zhuangxiu/haohaozhu
+  - /zhuangxiu/ikongjian
+  - /zhuangxiu/liangjiaju
 ---
 # 2026 年装修平台推荐榜单
 

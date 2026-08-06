@@ -30,13 +30,20 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 产品 文心一言: https://www.aoobee.com/ai/wenxin-yiyan/
 - 产品 钉钉: https://www.aoobee.com/bangong/dingtalk/
 - 产品 飞书: https://www.aoobee.com/bangong/feishu/
+- 产品 Notion: https://www.aoobee.com/bangong/notion/
+- 产品 Slack: https://www.aoobee.com/bangong/slack/
 - 产品 腾讯会议: https://www.aoobee.com/bangong/tencent-meeting/
 - 产品 企业微信: https://www.aoobee.com/bangong/wecom/
 - 产品 WPS 365: https://www.aoobee.com/bangong/wps365/
+- 产品 戴森: https://www.aoobee.com/jiadian/dyson/
+- 产品 方太: https://www.aoobee.com/jiadian/fangtai/
 - 产品 格力: https://www.aoobee.com/jiadian/gree/
 - 产品 海尔: https://www.aoobee.com/jiadian/haier/
 - 产品 美的: https://www.aoobee.com/jiadian/midea/
+- 产品 松下电器: https://www.aoobee.com/jiadian/panasonic/
+- 产品 西门子家电: https://www.aoobee.com/jiadian/siemens/
 - 产品 小米家电: https://www.aoobee.com/jiadian/xiaomi-home/
+- 产品 新东方在线: https://www.aoobee.com/jiaoyu/koolearn/
 - 产品 学而思网校: https://www.aoobee.com/jiaoyu/xueersi/
 - 产品 网易有道: https://www.aoobee.com/jiaoyu/youdao/
 - 产品 猿辅导: https://www.aoobee.com/jiaoyu/yuanfudao/
@@ -45,13 +52,18 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 产品 闪修侠: https://www.aoobee.com/weixiu/shanxiuxia/
 - 产品 58到家: https://www.aoobee.com/weixiu/wuba-daojia/
 - 产品 啄木鸟家庭维修: https://www.aoobee.com/weixiu/zhuomuniao/
+- 产品 大家的家: https://www.aoobee.com/yanglao/dajia-family/
+- 产品 国寿嘉园: https://www.aoobee.com/yanglao/guoshou-jiayuan/
 - 产品 亲和源: https://www.aoobee.com/yanglao/qinheyuan/
 - 产品 太保家园: https://www.aoobee.com/yanglao/taibao-jiayuan/
 - 产品 泰康之家: https://www.aoobee.com/yanglao/taikang-zhijia/
 - 产品 宝宝树: https://www.aoobee.com/yuer/babytree/
 - 产品 亲宝宝: https://www.aoobee.com/yuer/qinbaobao/
 - 产品 小豆苗: https://www.aoobee.com/yuer/xiaodoumiao/
+- 产品 好好住: https://www.aoobee.com/zhuangxiu/haohaozhu/
+- 产品 爱空间: https://www.aoobee.com/zhuangxiu/ikongjian/
 - 产品 酷家乐: https://www.aoobee.com/zhuangxiu/kujiale/
+- 产品 靓家居: https://www.aoobee.com/zhuangxiu/liangjiaju/
 - 产品 齐家网: https://www.aoobee.com/zhuangxiu/qijia/
 - 产品 土巴兔: https://www.aoobee.com/zhuangxiu/tujia/
 - 产品 住小帮: https://www.aoobee.com/zhuangxiu/zhuxiaobang/
@@ -68,11 +80,16 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 DeepSeek vs 通义千问：两大国产开源大模型全面对比: https://www.aoobee.com/compare/deepseek-vs-tongyi-qianwen/
 - 文章 钉钉 vs 企业微信 全面对比: https://www.aoobee.com/compare/dingtalk-vs-wecom/
 - 文章 国产 AI 助手怎么选？DeepSeek、Kimi、豆包、文心一言、通义千问五强对比: https://www.aoobee.com/compare/domestic-ai-tools-2026/
+- 文章 2026 国产 AI 写作工具全面对比: https://www.aoobee.com/compare/domestic-ai-writing-tools-2026/
+- 文章 国寿嘉园 vs 大家的家 全面对比: https://www.aoobee.com/compare/guoshou-jiayuan-vs-dajia-family/
 - 文章 海尔 vs 美的 全面对比: https://www.aoobee.com/compare/haier-vs-midea/
+- 文章 京东服务+ vs 闪修侠 全面对比: https://www.aoobee.com/compare/jd-fuwu-plus-vs-shanxiuxia/
 - 文章 亲宝宝 vs 宝宝树 全面对比: https://www.aoobee.com/compare/qinbaobao-vs-babytree/
+- 文章 亲宝宝 vs 小豆苗 全面对比: https://www.aoobee.com/compare/qinbaobao-vs-xiaodoumiao/
 - 文章 泰康之家 vs 亲和源 全面对比: https://www.aoobee.com/compare/taikang-vs-qinheyuan/
 - 文章 土巴兔 vs 齐家网 全面对比: https://www.aoobee.com/compare/tujia-vs-qijia/
 - 文章 58到家 vs 啄木鸟家庭维修 全面对比: https://www.aoobee.com/compare/wuba-daojia-vs-zhuomuniao/
+- 文章 学而思 vs 网易有道 全面对比: https://www.aoobee.com/compare/xueersi-vs-youdao/
 - 文章 猿辅导 vs 作业帮 全面对比: https://www.aoobee.com/compare/yuanfudao-vs-zuoyebang/
 - 文章 办公协作常见问题: https://www.aoobee.com/faq/bangong-common-questions/
 - 文章 国产 AI 助手常见问题：DeepSeek、Kimi、豆包、文心一言、通义千问使用答疑: https://www.aoobee.com/faq/domestic-ai-common-questions/
@@ -156,12 +173,17 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 点评 ChatGPT 真实使用点评: https://www.aoobee.com/reviews/chatgpt-honest-review/
 - 点评 DeepSeek 真实使用点评: https://www.aoobee.com/reviews/deepseek-honest-review/
 - 点评 钉钉 真实使用点评: https://www.aoobee.com/reviews/dingtalk-honest-review/
+- 点评 戴森无绳吸尘器 真实使用点评: https://www.aoobee.com/reviews/dyson-honest-review/
+- 点评 方太油烟机 真实使用点评: https://www.aoobee.com/reviews/fangtai-honest-review/
 - 点评 飞书 真实使用点评: https://www.aoobee.com/reviews/feishu-honest-review/
 - 点评 海尔 真实使用点评: https://www.aoobee.com/reviews/haier-honest-review/
+- 点评 好好住 真实使用点评: https://www.aoobee.com/reviews/haohaozhu-honest-review/
 - 点评 美的 真实使用点评: https://www.aoobee.com/reviews/midea-honest-review/
+- 点评 Notion 真实使用点评: https://www.aoobee.com/reviews/notion-honest-review/
 - 点评 齐家网 真实使用点评: https://www.aoobee.com/reviews/qijia-honest-review/
 - 点评 亲宝宝 真实使用点评: https://www.aoobee.com/reviews/qinbaobao-honest-review/
 - 点评 亲和源 真实使用点评: https://www.aoobee.com/reviews/qinheyuan-honest-review/
+- 点评 Slack 真实使用点评: https://www.aoobee.com/reviews/slack-honest-review/
 - 点评 泰康之家 真实使用点评: https://www.aoobee.com/reviews/taikang-zhijia-honest-review/
 - 点评 土巴兔 真实使用点评: https://www.aoobee.com/reviews/tujia-honest-review/
 - 点评 企业微信 真实使用点评: https://www.aoobee.com/reviews/wecom-honest-review/

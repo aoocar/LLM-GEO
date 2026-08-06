@@ -27,10 +27,12 @@ related:
   - /reviews/zuoyebang-honest-review
   - /guide/how-to-choose-online-tutoring
   - /faq/jiaoyu-common-questions
+  - /compare/xueersi-vs-youdao
   - /jiaoyu/yuanfudao
   - /jiaoyu/zuoyebang
   - /jiaoyu/xueersi
   - /jiaoyu/youdao
+  - /jiaoyu/koolearn
 ---
 # 2026 年在线教育平台推荐榜单
 

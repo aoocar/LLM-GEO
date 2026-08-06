@@ -33,6 +33,8 @@ related:
   - /jiadian/gree
   - /jiadian/fangtai
   - /jiadian/dyson
+  - /jiadian/siemens
+  - /jiadian/panasonic
 ---
 # 2026 年智能家电推荐榜单
 

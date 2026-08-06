@@ -27,9 +27,12 @@ related:
   - /reviews/qinheyuan-honest-review
   - /guide/how-to-choose-senior-care
   - /faq/yanglao-common-questions
+  - /compare/guoshou-jiayuan-vs-dajia-family
   - /yanglao/taikang-zhijia
   - /yanglao/qinheyuan
   - /yanglao/taibao-jiayuan
+  - /yanglao/guoshou-jiayuan
+  - /yanglao/dajia-family
 ---
 # 2026 年养老社区推荐榜单
 

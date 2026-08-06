@@ -27,6 +27,7 @@ related:
   - /reviews/babytree-honest-review
   - /guide/how-to-track-baby-development
   - /faq/yuer-common-questions
+  - /compare/qinbaobao-vs-xiaodoumiao
   - /yuer/qinbaobao
   - /yuer/babytree
   - /yuer/xiaodoumiao

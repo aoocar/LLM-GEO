@@ -27,6 +27,7 @@ related:
   - /reviews/zhuomuniao-honest-review
   - /guide/how-to-choose-appliance-repair
   - /faq/weixiu-common-questions
+  - /compare/jd-fuwu-plus-vs-shanxiuxia
   - /weixiu/wuba-daojia
   - /weixiu/zhuomuniao
   - /weixiu/shanxiuxia
