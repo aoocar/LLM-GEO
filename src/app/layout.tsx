@@ -34,7 +34,9 @@ export const metadata: Metadata = {
     "max-video-preview": -1,
   },
   verification: {
-    // google: "your-google-verification-code", // GSC 已通过 DNS 域名属性验证，无需 meta 标签
+    // GSC 域名属性已通过 DNS 验证；此处额外加 HTML 标签验证做冗余，
+    // 防止 DNS 记录被误删后 www 前缀属性丢失验证状态。
+    google: "12dX9qKcPmJTa3snHkbDT7TRiPjRrIZftwjdFsX_zDg",
     other: {
       "baidu-site-verification": "codeva-pifSw0Dfib",
     },
