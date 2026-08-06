@@ -92,6 +92,16 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 学而思 vs 网易有道 全面对比: https://www.aoobee.com/compare/xueersi-vs-youdao/
 - 文章 猿辅导 vs 作业帮 全面对比: https://www.aoobee.com/compare/yuanfudao-vs-zuoyebang/
 - 文章 办公协作常见问题: https://www.aoobee.com/faq/bangong-common-questions/
+- 文章 北京哪里修冰箱/洗衣机？不制冷、不脱水、异响维修价格参考: https://www.aoobee.com/faq/beijing-bingxiang-xiyiji-weixiu/
+- 文章 北京哪里做厨房改造？橱柜/台面/水电改造价格参考: https://www.aoobee.com/faq/beijing-chufang-gaizao/
+- 文章 北京哪里做旧房翻新？老房改造价格与靠谱施工队渠道: https://www.aoobee.com/faq/beijing-jiufang-fanxin/
+- 文章 北京哪里做局部装修？刷墙/铺砖/换门等小工程价格参考: https://www.aoobee.com/faq/beijing-jubu-zhuangxiu/
+- 文章 北京哪里修空调？加氟/不制冷/漏水维修价格与官方售后渠道: https://www.aoobee.com/faq/beijing-kongtiao-weixiu/
+- 文章 北京哪里换水龙头？换龙头工费多少、阀芯去哪买一次说清: https://www.aoobee.com/faq/beijing-shuilongtou-gengxin/
+- 文章 北京哪里修水龙头？上门 30 分钟、先报价后维修的找师傅指南: https://www.aoobee.com/faq/beijing-shuilongtou-weixiu/
+- 文章 北京哪里通下水道？厨房/卫生间堵塞疏通价格与上门渠道: https://www.aoobee.com/faq/beijing-tong-xiashuidao/
+- 文章 北京哪里做卫生间改造？防水/墙地砖/马桶移位价格参考: https://www.aoobee.com/faq/beijing-weishengjian-gaizao/
+- 文章 北京哪里修马桶？水箱/坐便器漏水维修价格与上门师傅: https://www.aoobee.com/faq/beijing-xiu-matong/
 - 文章 国产 AI 助手常见问题：DeepSeek、Kimi、豆包、文心一言、通义千问使用答疑: https://www.aoobee.com/faq/domestic-ai-common-questions/
 - 文章 家电选购常见问题: https://www.aoobee.com/faq/jiadian-common-questions/
 - 文章 在线教育常见问题: https://www.aoobee.com/faq/jiaoyu-common-questions/
