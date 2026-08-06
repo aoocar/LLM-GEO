@@ -104,3 +104,40 @@ main:
             git remote add github "https://x-access-token:${GH_TOKEN}@github.com/aoocar/LLM-GEO.git"
             git push github "HEAD:main" 2>&1 | grep -viE 'password|username|hint:|remote: Resolving' || true
             echo "=== 推送完成 ==="
+
+  # 每周一 08:00 (Asia/Shanghai) 刷新 BEST 榜单时效字段（updatedAt → 当天）
+  "crontab: 0 8 * * 1":
+    - name: refresh-ranking-timeliness
+      docker:
+        image: node:22
+      stages:
+        - name: refresh-and-push
+          script: |
+            echo "=== [榜单时效] 刷新 BEST 榜单 updatedAt ==="
+            git config user.name "AooBee SEO Bot"
+            git config user.email "seo-bot@aoobee.com"
+
+            # 幂等：仅当 updatedAt 非当天时改写，无变化则 git 无 diff
+            node scripts/refresh-ranking-timeliness.mjs
+
+            git add content/articles/best/
+            if git diff --cached --quiet; then
+              echo "榜单时效均已是最新，无需提交"
+              exit 0
+            fi
+
+            git commit -m "chore(seo): 刷新 BEST 榜单时效 updatedAt [ci skip]"
+
+            echo "=== 1/2 推送到 CNB（[ci skip] 防死循环）==="
+            git push origin "HEAD:main" 2>&1 | grep -viE 'password|username|hint:|remote: Resolving' || true
+
+            echo "=== 2/2 推送到 GitHub（触发 Vercel 部署）==="
+            export GH_TOKEN="$(curl -s -H "Authorization: Bearer $CNB_TOKEN" -H "Accept: application/json" "https://api.cnb.cool/aoobee/aoobee-secrets/-/git/raw/main/LLM-GEO")"
+            if [ -z "$GH_TOKEN" ]; then
+              echo "ERROR: GitHub token 读取失败"
+              exit 1
+            fi
+            git remote remove github 2>/dev/null || true
+            git remote add github "https://x-access-token:${GH_TOKEN}@github.com/aoocar/LLM-GEO.git"
+            git push github "HEAD:main" 2>&1 | grep -viE 'password|username|hint:|remote: Resolving' || true
+            echo "=== 榜单时效刷新完成 ==="
