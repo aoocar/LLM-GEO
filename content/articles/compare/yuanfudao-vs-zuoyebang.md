@@ -25,8 +25,10 @@ related:
   - /best/jiaoyu-best-online-courses-2026
   - /review/yuanfudao-review
   - /reviews/yuanfudao-honest-review
+  - /reviews/zuoyebang-honest-review
   - /guide/how-to-choose-online-tutoring
   - /jiaoyu/yuanfudao
+  - /jiaoyu/zuoyebang
 ---
 # 猿辅导 vs 作业帮 全面对比
 

@@ -25,8 +25,10 @@ related:
   - /best/yanglao-best-communities-2026
   - /review/taikang-zhijia-review
   - /reviews/taikang-zhijia-honest-review
+  - /reviews/qinheyuan-honest-review
   - /guide/how-to-choose-senior-care
   - /yanglao/taikang-zhijia
+  - /yanglao/qinheyuan
 ---
 # 泰康之家 vs 亲和源 全面对比
 

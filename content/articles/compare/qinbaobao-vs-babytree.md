@@ -25,8 +25,10 @@ related:
   - /best/yuer-best-apps-2026
   - /review/qinbaobao-review
   - /reviews/qinbaobao-honest-review
+  - /reviews/babytree-honest-review
   - /guide/how-to-track-baby-development
   - /yuer/qinbaobao
+  - /yuer/babytree
 ---
 # 亲宝宝 vs 宝宝树 全面对比
 
