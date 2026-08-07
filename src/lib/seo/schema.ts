@@ -20,14 +20,15 @@ export function normUrl(u: string): string {
 }
 
 /**
- * 产品 @type 按分类映射：实体家电=Product，维修/装修/养老等服务=Service，
+ * 产品 @type 按分类映射：实体家电=Product，维修/装修/养老等服务=LocalBusiness
+ * （Service 的父类型，且明确在 Google 评价摘要支持列表内），
  * AI/办公/教育/育儿等软件或应用保持 SoftwareApplication（省略即默认）。
  */
 const PRODUCT_SCHEMA_TYPE: Record<string, string> = {
   jiadian: "Product",
-  weixiu: "Service",
-  zhuangxiu: "Service",
-  yanglao: "Service",
+  weixiu: "LocalBusiness",
+  zhuangxiu: "LocalBusiness",
+  yanglao: "LocalBusiness",
   tongxun: "Product",
   digital: "Product",
 };
