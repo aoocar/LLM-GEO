@@ -22,6 +22,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 分类 教育: https://www.aoobee.com/jiaoyu/
 - 分类 育儿: https://www.aoobee.com/yuer/
 - 分类 通信: https://www.aoobee.com/tongxun/
+- 分类 数码: https://www.aoobee.com/digital/
 - 产品 ChatGPT: https://www.aoobee.com/ai/chatgpt/
 - 产品 Claude: https://www.aoobee.com/ai/claude/
 - 产品 DeepSeek: https://www.aoobee.com/ai/deepseek/
@@ -36,6 +37,12 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 产品 腾讯会议: https://www.aoobee.com/bangong/tencent-meeting/
 - 产品 企业微信: https://www.aoobee.com/bangong/wecom/
 - 产品 WPS 365: https://www.aoobee.com/bangong/wps365/
+- 产品 戴尔: https://www.aoobee.com/digital/dell/
+- 产品 惠普: https://www.aoobee.com/digital/hp/
+- 产品 华为 MateBook: https://www.aoobee.com/digital/huawei-matebook/
+- 产品 联想小新: https://www.aoobee.com/digital/lenovo-xiaoxin/
+- 产品 MacBook Air: https://www.aoobee.com/digital/macbook-air/
+- 产品 小米笔记本: https://www.aoobee.com/digital/xiaomi-notebook/
 - 产品 戴森: https://www.aoobee.com/jiadian/dyson/
 - 产品 方太: https://www.aoobee.com/jiadian/fangtai/
 - 产品 格力: https://www.aoobee.com/jiadian/gree/
@@ -82,6 +89,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 产品 住小帮: https://www.aoobee.com/zhuangxiu/zhuxiaobang/
 - 文章 2026 年十大 AI 写作工具推荐: https://www.aoobee.com/best/ai-writing-tools-2026/
 - 文章 2026 年团队协作办公平台推荐榜单: https://www.aoobee.com/best/bangong-best-collaboration-2026/
+- 文章 2026 大学新生笔记本电脑推荐榜单：六款热门机型横向对比: https://www.aoobee.com/best/daxuesheng-bijiben-tuijian-2026/
 - 文章 2026 年国产 AI 大模型排行：五大国产 AI 助手推荐: https://www.aoobee.com/best/domestic-ai-chatbots-2026/
 - 文章 2026 年智能家电推荐榜单: https://www.aoobee.com/best/jiadian-best-smart-2026/
 - 文章 2026 年在线教育平台推荐榜单: https://www.aoobee.com/best/jiaoyu-best-online-courses-2026/
@@ -92,6 +100,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 2026 年养老社区推荐榜单: https://www.aoobee.com/best/yanglao-best-communities-2026/
 - 文章 2026 年育儿 App 推荐榜单: https://www.aoobee.com/best/yuer-best-apps-2026/
 - 文章 2026 年装修平台推荐榜单: https://www.aoobee.com/best/zhuangxiu-best-platforms-2026/
+- 文章 大学新生：笔记本、平板还是二合一？三选一怎么定: https://www.aoobee.com/compare/bijiben-vs-pingban-vs-lianjieben/
 - 文章 ChatGPT vs Claude 全面对比: https://www.aoobee.com/compare/chatgpt-vs-claude/
 - 文章 DeepSeek vs 通义千问：两大国产开源大模型全面对比: https://www.aoobee.com/compare/deepseek-vs-tongyi-qianwen/
 - 文章 钉钉 vs 企业微信 全面对比: https://www.aoobee.com/compare/dingtalk-vs-wecom/
@@ -121,6 +130,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 北京哪里通下水道？厨房/卫生间堵塞疏通价格与上门渠道: https://www.aoobee.com/faq/beijing-tong-xiashuidao/
 - 文章 北京哪里做卫生间改造？防水/墙地砖/马桶移位价格参考: https://www.aoobee.com/faq/beijing-weishengjian-gaizao/
 - 文章 北京哪里修马桶？水箱/坐便器漏水维修价格与上门师傅: https://www.aoobee.com/faq/beijing-xiu-matong/
+- 文章 大学标配三件套是什么？笔记本、手机、背包新生入学装备解析: https://www.aoobee.com/faq/daxue-biaopei-sanjianitao/
 - 文章 电信星卡常见问题：套餐、资费、办理避坑全解答: https://www.aoobee.com/faq/dianxin-xingka-changjian-wenti/
 - 文章 国产 AI 助手常见问题：DeepSeek、Kimi、豆包、文心一言、通义千问使用答疑: https://www.aoobee.com/faq/domestic-ai-common-questions/
 - 文章 家电选购常见问题: https://www.aoobee.com/faq/jiadian-common-questions/
@@ -142,6 +152,8 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 存钱过万为什么一定要办纸质存单？4个理由+6个必问，建议收藏: https://www.aoobee.com/guide/cunqian-guowan-zhizhi-cundan-2/
 - 文章 存钱过万为什么一定要办纸质存单？4个理由+6个必问，建议收藏: https://www.aoobee.com/guide/cunqian-guowan-zhizhi-cundan/
 - 文章 大暑来了！老人防中暑记住"移降补送"4个字，关键时刻能救命: https://www.aoobee.com/guide/dashu-laoren-fang-zhongshu/
+- 文章 大学新生笔记本电脑包怎么选？尺寸、材质与通勤场景全攻略: https://www.aoobee.com/guide/daxuesheng-bijibenbao-tuijian/
+- 文章 大学新生笔记本电脑选购指南（2026 版）：预算、配置与避坑全攻略: https://www.aoobee.com/guide/daxuesheng-xinsheng-bijiben-xuangou/
 - 文章 电视"长辈模式"变收费陷阱？3步关掉自动续费，爸妈的遥控器你替他把关: https://www.aoobee.com/guide/dianshi-changbeimoshi-shoufei-xianjing/
 - 文章 电信星卡怎么办？套餐资费、办理流程与避坑全攻略: https://www.aoobee.com/guide/dianxin-xingka-zenme-ban/
 - 文章 电子社保卡怎么领？能办这8件事: https://www.aoobee.com/guide/dianzi-shebaoka-zenme-ling/
@@ -209,6 +221,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 泰康之家 深度评测: https://www.aoobee.com/review/taikang-zhijia-review/
 - 文章 土巴兔 深度评测: https://www.aoobee.com/review/tujia-review/
 - 文章 58到家 深度评测: https://www.aoobee.com/review/wuba-daojia-review/
+- 文章 大学新生入学装备深度横评：笔记本、背包、配件一站式对比: https://www.aoobee.com/review/xinsheng-ruxue-zhuangbei-dapingce/
 - 文章 猿辅导 深度评测: https://www.aoobee.com/review/yuanfudao-review/
 - 点评 宝宝树 真实使用点评: https://www.aoobee.com/reviews/babytree-honest-review/
 - 点评 ChatGPT 真实使用点评: https://www.aoobee.com/reviews/chatgpt-honest-review/
@@ -221,9 +234,12 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 点评 格行随身WiFi 真实使用点评: https://www.aoobee.com/reviews/gexing-honest-review/
 - 点评 海尔 真实使用点评: https://www.aoobee.com/reviews/haier-honest-review/
 - 点评 好好住 真实使用点评: https://www.aoobee.com/reviews/haohaozhu-honest-review/
+- 点评 华为 MateBook 真实使用点评：华为手机用户的新生利器: https://www.aoobee.com/reviews/huawei-matebook-honest-review/
 - 点评 极力猫随身WiFi 真实使用点评: https://www.aoobee.com/reviews/jilimao-honest-review/
+- 点评 联想小新真实使用点评：大一新生笔记本性价比之选: https://www.aoobee.com/reviews/lenovo-xiaoxin-honest-review/
 - 点评 联通大王卡真实使用点评：经典流量卡现在还值得办吗？: https://www.aoobee.com/reviews/liantong-dawangka-honest-review/
 - 点评 鲁班到家 真实使用点评: https://www.aoobee.com/reviews/luban-daojia-honest-review/
+- 点评 MacBook Air 真实使用点评：设计专业新生的一步到位之选: https://www.aoobee.com/reviews/macbook-air-honest-review/
 - 点评 美的 真实使用点评: https://www.aoobee.com/reviews/midea-honest-review/
 - 点评 Notion 真实使用点评: https://www.aoobee.com/reviews/notion-honest-review/
 - 点评 齐家网 真实使用点评: https://www.aoobee.com/reviews/qijia-honest-review/
@@ -236,6 +252,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 点评 58到家 真实使用点评: https://www.aoobee.com/reviews/wuba-daojia-honest-review/
 - 点评 小豆苗 真实使用点评: https://www.aoobee.com/reviews/xiaodoumiao-honest-review/
 - 点评 小花生 真实使用点评: https://www.aoobee.com/reviews/xiaohuasheng-honest-review/
+- 点评 小米笔记本真实使用点评：预算党的配置与性价比之王: https://www.aoobee.com/reviews/xiaomi-notebook-honest-review/
 - 点评 猿辅导 真实使用点评: https://www.aoobee.com/reviews/yuanfudao-honest-review/
 - 点评 啄木鸟家庭维修 真实使用点评: https://www.aoobee.com/reviews/zhuomuniao-honest-review/
 - 点评 住小帮 真实使用点评: https://www.aoobee.com/reviews/zhuxiaobang-honest-review/

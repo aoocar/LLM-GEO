@@ -13,6 +13,7 @@ const CATEGORY_AUDIENCE: Record<string, string> = {
   yanglao: "关注父母养老的家庭、养老机构从业者与适老化改造服务商。",
   jiaoyu: "学生、家长、教师与需要职业培训、技能提升的成人学习者。",
   tongxun: "需要办理手机流量卡、选购随身WiFi或优化上网套餐的个人用户，以及租房、出差、直播等对灵活上网有需求的群体。",
+  digital: "准备入学的大学生、准大学生与其家长，以及需要选购笔记本电脑、笔记本包等数码装备的学生与职场新人。",
 };
 
 export function DefinitionBlock({ article }: { article: Article }) {
