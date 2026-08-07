@@ -22,6 +22,9 @@ related:
   - /best/daxuesheng-bijiben-tuijian-2026
   - /digital/lenovo-xiaoxin
   - /digital/huawei-matebook
+  - /digital/ipad
+  - /digital/yidong-yingpan
+  - /digital/jiangzao-erji
 ---
 # 大学标配三件套是什么？笔记本、手机、背包新生入学装备解析
 

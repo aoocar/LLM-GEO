@@ -27,6 +27,8 @@ related:
   - /digital/huawei-matebook
   - /digital/macbook-air
   - /digital/xiaomi-notebook
+  - /digital/kuozhanwu
+  - /digital/jiangzao-erji
 ---
 # 2026 大学新生笔记本电脑推荐榜单：六款热门机型横向对比
 

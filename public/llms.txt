@@ -40,9 +40,16 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 产品 戴尔: https://www.aoobee.com/digital/dell/
 - 产品 惠普: https://www.aoobee.com/digital/hp/
 - 产品 华为 MateBook: https://www.aoobee.com/digital/huawei-matebook/
+- 产品 华为平板: https://www.aoobee.com/digital/huawei-pingban/
+- 产品 iPad: https://www.aoobee.com/digital/ipad/
+- 产品 降噪耳机: https://www.aoobee.com/digital/jiangzao-erji/
+- 产品 机械键盘: https://www.aoobee.com/digital/jixie-jianpan/
+- 产品 扩展坞: https://www.aoobee.com/digital/kuozhanwu/
 - 产品 联想小新: https://www.aoobee.com/digital/lenovo-xiaoxin/
 - 产品 MacBook Air: https://www.aoobee.com/digital/macbook-air/
+- 产品 无线鼠标: https://www.aoobee.com/digital/wuxian-shubiao/
 - 产品 小米笔记本: https://www.aoobee.com/digital/xiaomi-notebook/
+- 产品 移动硬盘: https://www.aoobee.com/digital/yidong-yingpan/
 - 产品 戴森: https://www.aoobee.com/jiadian/dyson/
 - 产品 方太: https://www.aoobee.com/jiadian/fangtai/
 - 产品 格力: https://www.aoobee.com/jiadian/gree/
@@ -146,6 +153,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 2026专坑老人的AI骗局：换脸冒充子女，3招当场识破: https://www.aoobee.com/guide/2026-ai-pianju-lianhuan-maochong/
 - 文章 2026年养老金调整通知迟迟未出——但3件事你现在就要查: https://www.aoobee.com/guide/2026-yanglaojin-tiaozheng-tongzhi/
 - 文章 抱团养老火了，普通人能不能学？先看清这3个前提: https://www.aoobee.com/guide/baotuan-yanglao-putongren-neng-bu-neng-xue/
+- 文章 笔记本电脑保养指南：电池、散热、屏幕与系统，四年不卡的正确用法: https://www.aoobee.com/guide/bijiben-baoyang-zhinan/
 - 文章 长护险怎么申请3步看懂家里有失能老人能省护理费: https://www.aoobee.com/guide/changhuxian-zenme-shenqing/
 - 文章 长期炎症是癌症"帮凶"？3类老人炎症别拖，越早查越好: https://www.aoobee.com/guide/changqi-yanzheng-aizheng-bangxiong/
 - 文章 重庆彭水山体崩塌8死34失联——灾区老人的养老金和医保怎么办？: https://www.aoobee.com/guide/chongqing-pengshui-shantiben-ta/
@@ -153,6 +161,8 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 存钱过万为什么一定要办纸质存单？4个理由+6个必问，建议收藏: https://www.aoobee.com/guide/cunqian-guowan-zhizhi-cundan/
 - 文章 大暑来了！老人防中暑记住"移降补送"4个字，关键时刻能救命: https://www.aoobee.com/guide/dashu-laoren-fang-zhongshu/
 - 文章 大学新生笔记本电脑包怎么选？尺寸、材质与通勤场景全攻略: https://www.aoobee.com/guide/daxuesheng-bijibenbao-tuijian/
+- 文章 大学宿舍好物推荐：真正提升幸福感与学习效率的 10 件神器: https://www.aoobee.com/guide/daxuesheng-sushe-haowu/
+- 文章 大学新生报到清单（2026 完整版）：入学材料、数码装备与宿舍物品一次备齐: https://www.aoobee.com/guide/daxuesheng-xinsheng-baodao-qingdan/
 - 文章 大学新生笔记本电脑选购指南（2026 版）：预算、配置与避坑全攻略: https://www.aoobee.com/guide/daxuesheng-xinsheng-bijiben-xuangou/
 - 文章 电视"长辈模式"变收费陷阱？3步关掉自动续费，爸妈的遥控器你替他把关: https://www.aoobee.com/guide/dianshi-changbeimoshi-shoufei-xianjing/
 - 文章 电信星卡怎么办？套餐资费、办理流程与避坑全攻略: https://www.aoobee.com/guide/dianxin-xingka-zenme-ban/
@@ -168,6 +178,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 如何规划家庭装修不超预算: https://www.aoobee.com/guide/how-to-plan-home-renovation/
 - 文章 如何科学记录宝宝成长发育: https://www.aoobee.com/guide/how-to-track-baby-development/
 - 文章 央视《焦点访谈》20260714期  39万亩上报、23万亩实种——15万亩水稻，到底"种"到哪去了？: https://www.aoobee.com/guide/jiaodian-fangtan-15-wan-mu-shuidao/
+- 文章 开学季省钱攻略：学生认证、教育优惠与以旧换新，数码装备立省上千: https://www.aoobee.com/guide/kaixueji-shengqian-gonglue/
 - 文章 空调26度最省电是误区？老人吹空调3个做法+晒背注意: https://www.aoobee.com/guide/kongtiao-26du-shengdian/
 - 文章 老年人每年必查的10个体检项目，别白花冤枉钱: https://www.aoobee.com/guide/laonianren-meinian-bi-cha-10-xiang/
 - 文章 老人最常见4类骗局+3个保命动作: https://www.aoobee.com/guide/laoren-zui-changjian-4lei-pianju/
@@ -235,7 +246,12 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 点评 海尔 真实使用点评: https://www.aoobee.com/reviews/haier-honest-review/
 - 点评 好好住 真实使用点评: https://www.aoobee.com/reviews/haohaozhu-honest-review/
 - 点评 华为 MateBook 真实使用点评：华为手机用户的新生利器: https://www.aoobee.com/reviews/huawei-matebook-honest-review/
+- 点评 华为平板真实使用点评：华为手机用户的 MatePad 学习体验: https://www.aoobee.com/reviews/huawei-pingban-honest-review/
+- 点评 iPad 真实使用点评：手写笔记党的无纸化学习利器: https://www.aoobee.com/reviews/ipad-honest-review/
+- 点评 降噪耳机真实使用点评：宿舍图书馆的专注力结界: https://www.aoobee.com/reviews/jiangzao-erji-honest-review/
 - 点评 极力猫随身WiFi 真实使用点评: https://www.aoobee.com/reviews/jilimao-honest-review/
+- 点评 机械键盘真实使用点评：宿舍码字党的效率与手感提升: https://www.aoobee.com/reviews/jixie-jianpan-honest-review/
+- 点评 扩展坞真实使用点评：轻薄本用户告别"没接口"的尴尬: https://www.aoobee.com/reviews/kuozhanwu-honest-review/
 - 点评 联想小新真实使用点评：大一新生笔记本性价比之选: https://www.aoobee.com/reviews/lenovo-xiaoxin-honest-review/
 - 点评 联通大王卡真实使用点评：经典流量卡现在还值得办吗？: https://www.aoobee.com/reviews/liantong-dawangka-honest-review/
 - 点评 鲁班到家 真实使用点评: https://www.aoobee.com/reviews/luban-daojia-honest-review/
@@ -250,9 +266,11 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 点评 土巴兔 真实使用点评: https://www.aoobee.com/reviews/tujia-honest-review/
 - 点评 企业微信 真实使用点评: https://www.aoobee.com/reviews/wecom-honest-review/
 - 点评 58到家 真实使用点评: https://www.aoobee.com/reviews/wuba-daojia-honest-review/
+- 点评 无线鼠标真实使用点评：图书馆自习党的静音标配: https://www.aoobee.com/reviews/wuxian-shubiao-honest-review/
 - 点评 小豆苗 真实使用点评: https://www.aoobee.com/reviews/xiaodoumiao-honest-review/
 - 点评 小花生 真实使用点评: https://www.aoobee.com/reviews/xiaohuasheng-honest-review/
 - 点评 小米笔记本真实使用点评：预算党的配置与性价比之王: https://www.aoobee.com/reviews/xiaomi-notebook-honest-review/
+- 点评 移动硬盘真实使用点评：毕业设计数据全靠它兜底: https://www.aoobee.com/reviews/yidong-yingpan-honest-review/
 - 点评 猿辅导 真实使用点评: https://www.aoobee.com/reviews/yuanfudao-honest-review/
 - 点评 啄木鸟家庭维修 真实使用点评: https://www.aoobee.com/reviews/zhuomuniao-honest-review/
 - 点评 住小帮 真实使用点评: https://www.aoobee.com/reviews/zhuxiaobang-honest-review/

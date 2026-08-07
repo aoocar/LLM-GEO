@@ -22,6 +22,8 @@ related:
   - /faq/daxue-biaopei-sanjianitao
   - /digital/macbook-air
   - /digital/lenovo-xiaoxin
+  - /digital/ipad
+  - /digital/huawei-pingban
 ---
 # 大学新生：笔记本、平板还是二合一？三选一怎么定
 

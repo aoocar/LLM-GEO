@@ -24,6 +24,10 @@ related:
   - /compare/bijiben-vs-pingban-vs-lianjieben
   - /digital/lenovo-xiaoxin
   - /digital/macbook-air
+  - /digital/ipad
+  - /digital/jixie-jianpan
+  - /digital/kuozhanwu
+  - /digital/yidong-yingpan
 ---
 # 大学新生入学装备深度横评：笔记本、背包、配件一站式对比
 

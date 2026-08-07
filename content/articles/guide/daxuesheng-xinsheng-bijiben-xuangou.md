@@ -25,6 +25,7 @@ related:
   - /guide/daxuesheng-bijibenbao-tuijian
   - /digital/lenovo-xiaoxin
   - /digital/huawei-matebook
+  - /digital/kuozhanwu
 ---
 # 大学新生笔记本电脑选购指南（2026 版）：预算、配置与避坑全攻略
 
