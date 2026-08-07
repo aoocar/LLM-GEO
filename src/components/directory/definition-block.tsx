@@ -12,6 +12,7 @@ const CATEGORY_AUDIENCE: Record<string, string> = {
   bangong: "企业行政、团队管理者、自由职业者与需要协同办公的各类组织。",
   yanglao: "关注父母养老的家庭、养老机构从业者与适老化改造服务商。",
   jiaoyu: "学生、家长、教师与需要职业培训、技能提升的成人学习者。",
+  tongxun: "需要办理手机流量卡、选购随身WiFi或优化上网套餐的个人用户，以及租房、出差、直播等对灵活上网有需求的群体。",
 };
 
 export function DefinitionBlock({ article }: { article: Article }) {

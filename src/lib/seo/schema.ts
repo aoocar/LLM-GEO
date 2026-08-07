@@ -28,6 +28,7 @@ const PRODUCT_SCHEMA_TYPE: Record<string, string> = {
   weixiu: "Service",
   zhuangxiu: "Service",
   yanglao: "Service",
+  tongxun: "Product",
 };
 
 export function productSchema(product: {

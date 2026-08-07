@@ -13,7 +13,7 @@ export const metadata = generateMeta({
 });
 
 function getHomePageData() {
-  const categories = getCategories().slice(0, 8);
+  const categories = getCategories().slice(0, 9);
   const allProducts = getProducts();
   const products = [...allProducts]
     .sort((a, b) => (b.rating || 0) - (a.rating || 0))
