@@ -44,6 +44,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             title: review.title,
             slug: review.slug,
             product: review.product,
+            productName: product?.name ?? null,
             author: review.author,
             rating: review.rating,
             summary: review.summary,
