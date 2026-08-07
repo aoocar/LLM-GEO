@@ -19,7 +19,9 @@ import path from "node:path";
 // ---------- 配置 ----------
 const DAYS = 30; // GSC 拉取窗口
 const WEEKS = 2; // GA4 拉取窗口（周）
-const GSC_SITE = process.env.GSC_SITE || "sc-domain:aoobee.com";
+// GSC 站点：使用 www 网址前缀属性（已由大强在 GSC 验证 HTML 标签并授权服务账号），
+// 避免 sc-domain 域名属性把 base.aoobee.com 旧站噪音统计进来。
+const GSC_SITE = process.env.GSC_SITE || "https://www.aoobee.com/";
 const GA4_PROPERTY = process.env.GA4_PROPERTY || "properties/327364970"; // Aoobee_www业务
 const REPO_DIR = process.cwd();
 

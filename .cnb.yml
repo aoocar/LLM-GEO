@@ -105,7 +105,27 @@ main:
             git push github "HEAD:main" 2>&1 | grep -viE 'password|username|hint:|remote: Resolving' || true
             echo "=== 推送完成 ==="
 
-  # 每周一 08:00 (Asia/Shanghai) 刷新 BEST 榜单时效字段（updatedAt → 当天）
+  # 每日 07:30 向百度普通收录 API 提交 sitemap URL（每日 10 条轮转，配额友好）
+  # token 从 aoobee-secrets 密钥仓库的 BAIDU_TOKEN 文件注入，不写明文、不打日志
+  "crontab: 30 7 * * *":
+    - name: submit-baidu-urls
+      docker:
+        image: node:22
+      stages:
+        - name: submit
+          script: |
+            echo "=== [百度收录] 读取 BAIDU_TOKEN ==="
+            BAIDU_TOKEN="$(curl -s -H "Authorization: Bearer $CNB_TOKEN" "https://api.cnb.cool/aoobee/aoobee-secrets/-/git/raw/main/BAIDU_TOKEN")"
+            if [ -z "$BAIDU_TOKEN" ]; then
+              echo "ERROR: 百度 token 读取失败（请在 aoobee-secrets 仓库新增 BAIDU_TOKEN 文件）"
+              exit 1
+            fi
+            echo "token 已读取，长度=${#BAIDU_TOKEN}"
+
+            echo "=== 提交 sitemap URL 到百度收录（每日 10 条轮转）==="
+            export BAIDU_TOKEN
+            node scripts/submit-baidu-urls.mjs --rotate || echo "⚠️ 百度提交异常（配额/网络/临时失败），不影响主流程"
+            echo "=== 百度收录提交完成 ==="
   "crontab: 0 8 * * 1":
     - name: refresh-ranking-timeliness
       docker:

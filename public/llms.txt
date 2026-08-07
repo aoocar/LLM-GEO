@@ -49,6 +49,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 产品 猿辅导: https://www.aoobee.com/jiaoyu/yuanfudao/
 - 产品 作业帮: https://www.aoobee.com/jiaoyu/zuoyebang/
 - 产品 京东服务+: https://www.aoobee.com/weixiu/jd-fuwu-plus/
+- 产品 鲁班到家: https://www.aoobee.com/weixiu/luban-daojia/
 - 产品 闪修侠: https://www.aoobee.com/weixiu/shanxiuxia/
 - 产品 58到家: https://www.aoobee.com/weixiu/wuba-daojia/
 - 产品 啄木鸟家庭维修: https://www.aoobee.com/weixiu/zhuomuniao/
@@ -60,6 +61,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 产品 宝宝树: https://www.aoobee.com/yuer/babytree/
 - 产品 亲宝宝: https://www.aoobee.com/yuer/qinbaobao/
 - 产品 小豆苗: https://www.aoobee.com/yuer/xiaodoumiao/
+- 产品 小花生: https://www.aoobee.com/yuer/xiaohuasheng/
 - 产品 好好住: https://www.aoobee.com/zhuangxiu/haohaozhu/
 - 产品 爱空间: https://www.aoobee.com/zhuangxiu/ikongjian/
 - 产品 酷家乐: https://www.aoobee.com/zhuangxiu/kujiale/
@@ -188,6 +190,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 点评 飞书 真实使用点评: https://www.aoobee.com/reviews/feishu-honest-review/
 - 点评 海尔 真实使用点评: https://www.aoobee.com/reviews/haier-honest-review/
 - 点评 好好住 真实使用点评: https://www.aoobee.com/reviews/haohaozhu-honest-review/
+- 点评 鲁班到家 真实使用点评: https://www.aoobee.com/reviews/luban-daojia-honest-review/
 - 点评 美的 真实使用点评: https://www.aoobee.com/reviews/midea-honest-review/
 - 点评 Notion 真实使用点评: https://www.aoobee.com/reviews/notion-honest-review/
 - 点评 齐家网 真实使用点评: https://www.aoobee.com/reviews/qijia-honest-review/
@@ -199,6 +202,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 点评 企业微信 真实使用点评: https://www.aoobee.com/reviews/wecom-honest-review/
 - 点评 58到家 真实使用点评: https://www.aoobee.com/reviews/wuba-daojia-honest-review/
 - 点评 小豆苗 真实使用点评: https://www.aoobee.com/reviews/xiaodoumiao-honest-review/
+- 点评 小花生 真实使用点评: https://www.aoobee.com/reviews/xiaohuasheng-honest-review/
 - 点评 猿辅导 真实使用点评: https://www.aoobee.com/reviews/yuanfudao-honest-review/
 - 点评 啄木鸟家庭维修 真实使用点评: https://www.aoobee.com/reviews/zhuomuniao-honest-review/
 - 点评 住小帮 真实使用点评: https://www.aoobee.com/reviews/zhuxiaobang-honest-review/
