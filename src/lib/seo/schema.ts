@@ -284,6 +284,8 @@ export function reviewSchema(review: {
   title: string;
   slug: string;
   product: string;
+  /** 产品真实名称（如“土巴兔”），缺省回退到产品 slug */
+  productName?: string | null;
   author?: string | null;
   rating?: number | null;
   summary?: string | null;
@@ -296,7 +298,7 @@ export function reviewSchema(review: {
     url: normUrl(`${BASE_URL}/reviews/${review.slug}`),
     itemReviewed: {
       "@type": PRODUCT_SCHEMA_TYPE[review.category ?? ""] ?? "SoftwareApplication",
-      name: review.product,
+      name: review.productName || review.product,
     },
     author: {
       "@type": "Organization",
