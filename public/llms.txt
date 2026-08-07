@@ -49,10 +49,15 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 产品 网易有道: https://www.aoobee.com/jiaoyu/youdao/
 - 产品 猿辅导: https://www.aoobee.com/jiaoyu/yuanfudao/
 - 产品 作业帮: https://www.aoobee.com/jiaoyu/zuoyebang/
+- 产品 中国移动: https://www.aoobee.com/tongxun/china-mobile/
+- 产品 中国电信: https://www.aoobee.com/tongxun/china-telecom/
+- 产品 中国联通: https://www.aoobee.com/tongxun/china-unicom/
+- 产品 电信星卡: https://www.aoobee.com/tongxun/dianxin-xingka/
 - 产品 飞猫智联: https://www.aoobee.com/tongxun/feimao/
 - 产品 格行随身WiFi: https://www.aoobee.com/tongxun/gexing/
 - 产品 华为随身WiFi: https://www.aoobee.com/tongxun/huawei/
 - 产品 极力猫: https://www.aoobee.com/tongxun/jilimao/
+- 产品 联通大王卡: https://www.aoobee.com/tongxun/liantong-dawangka/
 - 产品 中兴随身WiFi: https://www.aoobee.com/tongxun/zte-mf/
 - 产品 京东服务+: https://www.aoobee.com/weixiu/jd-fuwu-plus/
 - 产品 鲁班到家: https://www.aoobee.com/weixiu/luban-daojia/
@@ -81,6 +86,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 2026 年智能家电推荐榜单: https://www.aoobee.com/best/jiadian-best-smart-2026/
 - 文章 2026 年在线教育平台推荐榜单: https://www.aoobee.com/best/jiaoyu-best-online-courses-2026/
 - 文章 2026 年流量卡推荐榜单: https://www.aoobee.com/best/liuliangka-tuijian-2026/
+- 文章 2026 三大运营商流量卡型号推荐榜单: https://www.aoobee.com/best/liuliangka-xinghao-tuijian-2026/
 - 文章 2026 年随身WiFi推荐榜单: https://www.aoobee.com/best/suishenwifi-tuijian-2026/
 - 文章 2026 年上门维修平台推荐榜单: https://www.aoobee.com/best/weixiu-best-platforms-2026/
 - 文章 2026 年养老社区推荐榜单: https://www.aoobee.com/best/yanglao-best-communities-2026/
@@ -101,6 +107,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 土巴兔 vs 齐家网 全面对比: https://www.aoobee.com/compare/tujia-vs-qijia/
 - 文章 58到家 vs 啄木鸟家庭维修 全面对比: https://www.aoobee.com/compare/wuba-daojia-vs-zhuomuniao/
 - 文章 学而思 vs 网易有道 全面对比: https://www.aoobee.com/compare/xueersi-vs-youdao/
+- 文章 中国移动 vs 中国联通 vs 中国电信：三大运营商官方套餐全面对比: https://www.aoobee.com/compare/yidong-vs-liantong-vs-dianxin/
 - 文章 猿辅导 vs 作业帮 全面对比: https://www.aoobee.com/compare/yuanfudao-vs-zuoyebang/
 - 文章 中兴 vs 格行 vs 极力猫：随身WiFi三强对比: https://www.aoobee.com/compare/zte-vs-gexing-vs-jilimao/
 - 文章 办公协作常见问题: https://www.aoobee.com/faq/bangong-common-questions/
@@ -114,9 +121,11 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 北京哪里通下水道？厨房/卫生间堵塞疏通价格与上门渠道: https://www.aoobee.com/faq/beijing-tong-xiashuidao/
 - 文章 北京哪里做卫生间改造？防水/墙地砖/马桶移位价格参考: https://www.aoobee.com/faq/beijing-weishengjian-gaizao/
 - 文章 北京哪里修马桶？水箱/坐便器漏水维修价格与上门师傅: https://www.aoobee.com/faq/beijing-xiu-matong/
+- 文章 电信星卡常见问题：套餐、资费、办理避坑全解答: https://www.aoobee.com/faq/dianxin-xingka-changjian-wenti/
 - 文章 国产 AI 助手常见问题：DeepSeek、Kimi、豆包、文心一言、通义千问使用答疑: https://www.aoobee.com/faq/domestic-ai-common-questions/
 - 文章 家电选购常见问题: https://www.aoobee.com/faq/jiadian-common-questions/
 - 文章 在线教育常见问题: https://www.aoobee.com/faq/jiaoyu-common-questions/
+- 文章 联通大王卡常见问题：套餐、资费、办理避坑全解答: https://www.aoobee.com/faq/liantong-dawangka-changjian-wenti/
 - 文章 什么是流量卡？常见问题全解答: https://www.aoobee.com/faq/shenme-shi-liuliangka/
 - 文章 什么是随身WiFi？常见问题全解答: https://www.aoobee.com/faq/shenme-shi-suishenwifi/
 - 文章 维修上门服务常见问题: https://www.aoobee.com/faq/weixiu-common-questions/
@@ -134,6 +143,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 存钱过万为什么一定要办纸质存单？4个理由+6个必问，建议收藏: https://www.aoobee.com/guide/cunqian-guowan-zhizhi-cundan/
 - 文章 大暑来了！老人防中暑记住"移降补送"4个字，关键时刻能救命: https://www.aoobee.com/guide/dashu-laoren-fang-zhongshu/
 - 文章 电视"长辈模式"变收费陷阱？3步关掉自动续费，爸妈的遥控器你替他把关: https://www.aoobee.com/guide/dianshi-changbeimoshi-shoufei-xianjing/
+- 文章 电信星卡怎么办？套餐资费、办理流程与避坑全攻略: https://www.aoobee.com/guide/dianxin-xingka-zenme-ban/
 - 文章 电子社保卡怎么领？能办这8件事: https://www.aoobee.com/guide/dianzi-shebaoka-zenme-ling/
 - 文章 电子医保亲情账户怎么绑？3步搞定，老人看病不用带卡: https://www.aoobee.com/guide/dianzi-yibao-qinqing-zhanghu/
 - 文章 儿媳妇是北京人，我这个农村婆婆跟她说话老是小心翼翼的: https://www.aoobee.com/guide/erxifu-shi-beijingren/
@@ -149,6 +159,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 空调26度最省电是误区？老人吹空调3个做法+晒背注意: https://www.aoobee.com/guide/kongtiao-26du-shengdian/
 - 文章 老年人每年必查的10个体检项目，别白花冤枉钱: https://www.aoobee.com/guide/laonianren-meinian-bi-cha-10-xiang/
 - 文章 老人最常见4类骗局+3个保命动作: https://www.aoobee.com/guide/laoren-zui-changjian-4lei-pianju/
+- 文章 联通大王卡怎么办？套餐资费、办理流程与避坑全攻略: https://www.aoobee.com/guide/liantong-dawangka-zenme-ban/
 - 文章 邻居问我燕郊养老院多少钱一个月，我打听完没敢说话: https://www.aoobee.com/guide/linju-wen-yanjiao-yanglaoyuan-duoshao-qian/
 - 文章 流量卡怎么选不踩坑？2026 办卡避坑指南: https://www.aoobee.com/guide/liuliangka-zenme-xuan-bu-caikeng/
 - 文章 路过燕达养老院门口，我站了十分钟（退休金不够住）: https://www.aoobee.com/guide/luguo-yanda-yanglaoyuan-menkou/
@@ -202,6 +213,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 点评 宝宝树 真实使用点评: https://www.aoobee.com/reviews/babytree-honest-review/
 - 点评 ChatGPT 真实使用点评: https://www.aoobee.com/reviews/chatgpt-honest-review/
 - 点评 DeepSeek 真实使用点评: https://www.aoobee.com/reviews/deepseek-honest-review/
+- 点评 电信星卡真实使用点评：19元100G 到底值不值？: https://www.aoobee.com/reviews/dianxin-xingka-honest-review/
 - 点评 钉钉 真实使用点评: https://www.aoobee.com/reviews/dingtalk-honest-review/
 - 点评 戴森无绳吸尘器 真实使用点评: https://www.aoobee.com/reviews/dyson-honest-review/
 - 点评 方太油烟机 真实使用点评: https://www.aoobee.com/reviews/fangtai-honest-review/
@@ -210,6 +222,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 点评 海尔 真实使用点评: https://www.aoobee.com/reviews/haier-honest-review/
 - 点评 好好住 真实使用点评: https://www.aoobee.com/reviews/haohaozhu-honest-review/
 - 点评 极力猫随身WiFi 真实使用点评: https://www.aoobee.com/reviews/jilimao-honest-review/
+- 点评 联通大王卡真实使用点评：经典流量卡现在还值得办吗？: https://www.aoobee.com/reviews/liantong-dawangka-honest-review/
 - 点评 鲁班到家 真实使用点评: https://www.aoobee.com/reviews/luban-daojia-honest-review/
 - 点评 美的 真实使用点评: https://www.aoobee.com/reviews/midea-honest-review/
 - 点评 Notion 真实使用点评: https://www.aoobee.com/reviews/notion-honest-review/
