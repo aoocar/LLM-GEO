@@ -64,6 +64,12 @@ export default async function ProductPage({
             pricing: product.pricing,
             company: product.company,
             category: product.category.slug,
+            reviews: product.reviews.map((r) => ({
+              id: r.id,
+              author: r.author,
+              rating: r.rating,
+              content: r.content,
+            })),
           }),
           faqSchema(faqItems),
           breadcrumbSchema([

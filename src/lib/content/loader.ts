@@ -158,6 +158,10 @@ function resolveAlternatives(
     .map(toSummary);
 }
 
+// 全站产品图兜底：优先用各产品 frontmatter 的 logo 字段（真实 logo），
+// 缺失时统一回退到 AooBee 自有 logo（public/aoobee-logo.jpg，无版权风险）。
+const DEFAULT_PRODUCT_LOGO = "/aoobee-logo.jpg";
+
 function parseProduct(file: string, catDirName: string): Product | null {
   const raw = fs.readFileSync(file, "utf-8");
   const { data, content } = matter(raw);
@@ -174,6 +178,9 @@ function parseProduct(file: string, catDirName: string): Product | null {
     category: { name: category?.name || categorySlug, slug: categorySlug },
     url: (data.url as string) || null,
     company: (data.company as string) || null,
+    // logo：frontmatter 显式提供则用之；否则统一用 AooBee 自有 logo 兜底，
+    // 保证所有产品页 image 字段非空，解决 GSC「未填写字段 image」严重问题。
+    logo: (data.logo as string) || DEFAULT_PRODUCT_LOGO,
     founded: (data.founded as string) || null,
     location: (data.location as string) || null,
     pricing: (data.pricing as string) || null,

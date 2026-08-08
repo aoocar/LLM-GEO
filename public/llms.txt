@@ -113,6 +113,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 钉钉 vs 企业微信 全面对比: https://www.aoobee.com/compare/dingtalk-vs-wecom/
 - 文章 国产 AI 助手怎么选？DeepSeek、Kimi、豆包、文心一言、通义千问五强对比: https://www.aoobee.com/compare/domestic-ai-tools-2026/
 - 文章 2026 国产 AI 写作工具全面对比: https://www.aoobee.com/compare/domestic-ai-writing-tools-2026/
+- 文章 GEO 与 SEO 的区别：AI 时代的流量入口之争: https://www.aoobee.com/compare/geo-vs-seo/
 - 文章 国寿嘉园 vs 大家的家 全面对比: https://www.aoobee.com/compare/guoshou-jiayuan-vs-dajia-family/
 - 文章 海尔 vs 美的 全面对比: https://www.aoobee.com/compare/haier-vs-midea/
 - 文章 京东服务+ vs 闪修侠 全面对比: https://www.aoobee.com/compare/jd-fuwu-plus-vs-shanxiuxia/
@@ -140,6 +141,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 大学标配三件套是什么？笔记本、手机、背包新生入学装备解析: https://www.aoobee.com/faq/daxue-biaopei-sanjianitao/
 - 文章 电信星卡常见问题：套餐、资费、办理避坑全解答: https://www.aoobee.com/faq/dianxin-xingka-changjian-wenti/
 - 文章 国产 AI 助手常见问题：DeepSeek、Kimi、豆包、文心一言、通义千问使用答疑: https://www.aoobee.com/faq/domestic-ai-common-questions/
+- 文章 GEO 常见问题解答：收费、效果周期与适用行业: https://www.aoobee.com/faq/geo-common-questions/
 - 文章 家电选购常见问题: https://www.aoobee.com/faq/jiadian-common-questions/
 - 文章 在线教育常见问题: https://www.aoobee.com/faq/jiaoyu-common-questions/
 - 文章 联通大王卡常见问题：套餐、资费、办理避坑全解答: https://www.aoobee.com/faq/liantong-dawangka-changjian-wenti/
@@ -174,6 +176,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 如何选择在线辅导课程: https://www.aoobee.com/guide/how-to-choose-online-tutoring/
 - 文章 如何选择适合的养老社区: https://www.aoobee.com/guide/how-to-choose-senior-care/
 - 文章 如何选购适合家庭的智能家电: https://www.aoobee.com/guide/how-to-choose-smart-appliances/
+- 文章 GEO 优化怎么做？生成式引擎优化的实操指南: https://www.aoobee.com/guide/how-to-do-geo/
 - 文章 如何提升团队远程协作效率: https://www.aoobee.com/guide/how-to-improve-team-collaboration/
 - 文章 如何规划家庭装修不超预算: https://www.aoobee.com/guide/how-to-plan-home-renovation/
 - 文章 如何科学记录宝宝成长发育: https://www.aoobee.com/guide/how-to-track-baby-development/
@@ -202,6 +205,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 退休后没事干，孙子说写公众号能赚钱，我写了六篇，收益：零: https://www.aoobee.com/guide/tuixiu-hou-xie-gongzhonghao-zhuanqian/
 - 文章 退休后和子女怎么处？这3条边界让两家都舒服: https://www.aoobee.com/guide/tuixiu-hou-zinv-zenme-chu/
 - 文章 退休金3000怎么分？4笔账算清，少吃亏多安心: https://www.aoobee.com/guide/tuixiujin-3000-zenme-fen/
+- 文章 GEO 是什么？一文读懂生成式引擎优化: https://www.aoobee.com/guide/what-is-geo/
 - 文章 我吃了十年的降压药，上个月三块五，今天去拿涨到十八了: https://www.aoobee.com/guide/wo-chi-le-shinian-jiangyayao/
 - 文章 我们那茬人把命交给国家了，现在每月领六百二退休金: https://www.aoobee.com/guide/women-nacha-ren-ba-ming-jiaoguo/
 - 文章 物联卡 vs 正规流量卡：区别、风险与识别方法: https://www.aoobee.com/guide/wulianka-vs-zhenggui-liuliangka/
@@ -236,41 +240,70 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 猿辅导 深度评测: https://www.aoobee.com/review/yuanfudao-review/
 - 点评 宝宝树 真实使用点评: https://www.aoobee.com/reviews/babytree-honest-review/
 - 点评 ChatGPT 真实使用点评: https://www.aoobee.com/reviews/chatgpt-honest-review/
+- 点评 中国移动 真实使用点评: https://www.aoobee.com/reviews/china-mobile-honest-review/
+- 点评 中国电信 真实使用点评: https://www.aoobee.com/reviews/china-telecom-honest-review/
+- 点评 中国联通 真实使用点评: https://www.aoobee.com/reviews/china-unicom-honest-review/
+- 点评 Claude 真实使用点评: https://www.aoobee.com/reviews/claude-honest-review/
+- 点评 大家的家 真实使用点评: https://www.aoobee.com/reviews/dajia-family-honest-review/
 - 点评 DeepSeek 真实使用点评: https://www.aoobee.com/reviews/deepseek-honest-review/
+- 点评 戴尔笔记本 真实使用点评: https://www.aoobee.com/reviews/dell-honest-review/
 - 点评 电信星卡真实使用点评：19元100G 到底值不值？: https://www.aoobee.com/reviews/dianxin-xingka-honest-review/
 - 点评 钉钉 真实使用点评: https://www.aoobee.com/reviews/dingtalk-honest-review/
+- 点评 豆包 真实使用点评: https://www.aoobee.com/reviews/doubao-honest-review/
 - 点评 戴森无绳吸尘器 真实使用点评: https://www.aoobee.com/reviews/dyson-honest-review/
 - 点评 方太油烟机 真实使用点评: https://www.aoobee.com/reviews/fangtai-honest-review/
+- 点评 飞猫智联 真实使用点评: https://www.aoobee.com/reviews/feimao-honest-review/
 - 点评 飞书 真实使用点评: https://www.aoobee.com/reviews/feishu-honest-review/
 - 点评 格行随身WiFi 真实使用点评: https://www.aoobee.com/reviews/gexing-honest-review/
+- 点评 格力 真实使用点评: https://www.aoobee.com/reviews/gree-honest-review/
+- 点评 国寿嘉园 真实使用点评: https://www.aoobee.com/reviews/guoshou-jiayuan-honest-review/
 - 点评 海尔 真实使用点评: https://www.aoobee.com/reviews/haier-honest-review/
 - 点评 好好住 真实使用点评: https://www.aoobee.com/reviews/haohaozhu-honest-review/
+- 点评 惠普笔记本 真实使用点评: https://www.aoobee.com/reviews/hp-honest-review/
+- 点评 华为随身WiFi 真实使用点评: https://www.aoobee.com/reviews/huawei-honest-review/
 - 点评 华为 MateBook 真实使用点评：华为手机用户的新生利器: https://www.aoobee.com/reviews/huawei-matebook-honest-review/
 - 点评 华为平板真实使用点评：华为手机用户的 MatePad 学习体验: https://www.aoobee.com/reviews/huawei-pingban-honest-review/
+- 点评 爱空间 真实使用点评: https://www.aoobee.com/reviews/ikongjian-honest-review/
 - 点评 iPad 真实使用点评：手写笔记党的无纸化学习利器: https://www.aoobee.com/reviews/ipad-honest-review/
+- 点评 京东服务+ 真实使用点评: https://www.aoobee.com/reviews/jd-fuwu-plus-honest-review/
 - 点评 降噪耳机真实使用点评：宿舍图书馆的专注力结界: https://www.aoobee.com/reviews/jiangzao-erji-honest-review/
 - 点评 极力猫随身WiFi 真实使用点评: https://www.aoobee.com/reviews/jilimao-honest-review/
 - 点评 机械键盘真实使用点评：宿舍码字党的效率与手感提升: https://www.aoobee.com/reviews/jixie-jianpan-honest-review/
+- 点评 Kimi 真实使用点评: https://www.aoobee.com/reviews/kimi-honest-review/
+- 点评 新东方在线 真实使用点评: https://www.aoobee.com/reviews/koolearn-honest-review/
+- 点评 酷家乐 真实使用点评: https://www.aoobee.com/reviews/kujiale-honest-review/
 - 点评 扩展坞真实使用点评：轻薄本用户告别"没接口"的尴尬: https://www.aoobee.com/reviews/kuozhanwu-honest-review/
 - 点评 联想小新真实使用点评：大一新生笔记本性价比之选: https://www.aoobee.com/reviews/lenovo-xiaoxin-honest-review/
+- 点评 靓家居 真实使用点评: https://www.aoobee.com/reviews/liangjiaju-honest-review/
 - 点评 联通大王卡真实使用点评：经典流量卡现在还值得办吗？: https://www.aoobee.com/reviews/liantong-dawangka-honest-review/
 - 点评 鲁班到家 真实使用点评: https://www.aoobee.com/reviews/luban-daojia-honest-review/
 - 点评 MacBook Air 真实使用点评：设计专业新生的一步到位之选: https://www.aoobee.com/reviews/macbook-air-honest-review/
 - 点评 美的 真实使用点评: https://www.aoobee.com/reviews/midea-honest-review/
 - 点评 Notion 真实使用点评: https://www.aoobee.com/reviews/notion-honest-review/
+- 点评 松下电器 真实使用点评: https://www.aoobee.com/reviews/panasonic-honest-review/
 - 点评 齐家网 真实使用点评: https://www.aoobee.com/reviews/qijia-honest-review/
 - 点评 亲宝宝 真实使用点评: https://www.aoobee.com/reviews/qinbaobao-honest-review/
 - 点评 亲和源 真实使用点评: https://www.aoobee.com/reviews/qinheyuan-honest-review/
+- 点评 闪修侠 真实使用点评: https://www.aoobee.com/reviews/shanxiuxia-honest-review/
+- 点评 西门子家电 真实使用点评: https://www.aoobee.com/reviews/siemens-honest-review/
 - 点评 Slack 真实使用点评: https://www.aoobee.com/reviews/slack-honest-review/
+- 点评 太保家园 真实使用点评: https://www.aoobee.com/reviews/taibao-jiayuan-honest-review/
 - 点评 泰康之家 真实使用点评: https://www.aoobee.com/reviews/taikang-zhijia-honest-review/
+- 点评 腾讯会议 真实使用点评: https://www.aoobee.com/reviews/tencent-meeting-honest-review/
+- 点评 通义千问 真实使用点评: https://www.aoobee.com/reviews/tongyi-qianwen-honest-review/
 - 点评 土巴兔 真实使用点评: https://www.aoobee.com/reviews/tujia-honest-review/
 - 点评 企业微信 真实使用点评: https://www.aoobee.com/reviews/wecom-honest-review/
+- 点评 文心一言 真实使用点评: https://www.aoobee.com/reviews/wenxin-yiyan-honest-review/
+- 点评 WPS 365 真实使用点评: https://www.aoobee.com/reviews/wps365-honest-review/
 - 点评 58到家 真实使用点评: https://www.aoobee.com/reviews/wuba-daojia-honest-review/
 - 点评 无线鼠标真实使用点评：图书馆自习党的静音标配: https://www.aoobee.com/reviews/wuxian-shubiao-honest-review/
 - 点评 小豆苗 真实使用点评: https://www.aoobee.com/reviews/xiaodoumiao-honest-review/
 - 点评 小花生 真实使用点评: https://www.aoobee.com/reviews/xiaohuasheng-honest-review/
+- 点评 小米家电 真实使用点评: https://www.aoobee.com/reviews/xiaomi-home-honest-review/
 - 点评 小米笔记本真实使用点评：预算党的配置与性价比之王: https://www.aoobee.com/reviews/xiaomi-notebook-honest-review/
+- 点评 学而思网校 真实使用点评: https://www.aoobee.com/reviews/xueersi-honest-review/
 - 点评 移动硬盘真实使用点评：毕业设计数据全靠它兜底: https://www.aoobee.com/reviews/yidong-yingpan-honest-review/
+- 点评 网易有道 真实使用点评: https://www.aoobee.com/reviews/youdao-honest-review/
 - 点评 猿辅导 真实使用点评: https://www.aoobee.com/reviews/yuanfudao-honest-review/
 - 点评 啄木鸟家庭维修 真实使用点评: https://www.aoobee.com/reviews/zhuomuniao-honest-review/
 - 点评 住小帮 真实使用点评: https://www.aoobee.com/reviews/zhuxiaobang-honest-review/

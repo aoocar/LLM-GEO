@@ -44,6 +44,7 @@ export function productSchema(product: {
   company?: string | null;
   category?: string | null;
   features?: Array<{ name: string; description?: string }> | null;
+  reviews?: Array<{ id: string; author?: string; rating?: number; content: string }> | null;
 }) {
   const type = PRODUCT_SCHEMA_TYPE[product.category ?? ""] ?? "SoftwareApplication";
   const schema: Record<string, unknown> = {
@@ -61,7 +62,18 @@ export function productSchema(product: {
   }
 
   if (product.url) schema.url = normUrl(product.url);
-  if (product.logo) schema.image = product.logo;
+  // image：loader 已保证 logo 非空（无显式 logo 时回退到 /aoobee-logo.jpg），
+  // 此处再兜底一次并转绝对 URL，解决 GSC「未填写字段 image」严重问题。
+  schema.image = product.logo
+    ? product.logo.startsWith("http")
+      ? product.logo
+      : `${BASE_URL}${product.logo}`
+    : `${BASE_URL}/logo.svg`;
+  // brand：全局标识符缺失的 GSC 提示，用公司名或产品名补齐。
+  schema.brand = {
+    "@type": "Brand",
+    name: product.company || product.name,
+  };
   if (product.company) {
     schema.author = {
       "@type": "Organization",
@@ -85,6 +97,25 @@ export function productSchema(product: {
         price,
         priceCurrency: currency,
         availability: "https://schema.org/OnlineOnly",
+        // GSC 提示 offers 缺退货政策/配送信息：补保守默认值（线上服务不适用七天无理由）。
+        hasMerchantReturnPolicy: {
+          "@type": "MerchantReturnPolicy",
+          applicableCountry: "CN",
+          returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
+          merchantReturnDays: 0,
+        },
+        shippingDetails: {
+          "@type": "OfferShippingDetails",
+          shippingRate: {
+            "@type": "MonetaryAmount",
+            value: "0",
+            currency,
+          },
+          shippingDestination: {
+            "@type": "DefinedRegion",
+            addressCountry: "CN",
+          },
+        },
       };
     }
   }
@@ -97,6 +128,30 @@ export function productSchema(product: {
       bestRating: "5",
       worstRating: "1",
     };
+  }
+
+  // review：把本站真实点评注入 itemReviewed（最多 2 条），解决 GSC「未填写字段 review」；
+  // 与 aggregateRating 双保险，产品富结果可同时带评分与评价内容。
+  if (Array.isArray(product.reviews) && product.reviews.length > 0) {
+    const reviews = product.reviews.slice(0, 2).map((r) => ({
+      "@type": "Review",
+      author: {
+        "@type": "Organization",
+        name: r.author || "AooBee 编辑部",
+      },
+      ...(typeof r.rating === "number"
+        ? {
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: r.rating.toString(),
+              bestRating: "5",
+              worstRating: "1",
+            },
+          }
+        : {}),
+      ...(r.content ? { reviewBody: r.content.slice(0, 500) } : {}),
+    }));
+    schema.review = reviews.length === 1 ? reviews[0] : reviews;
   }
 
   return schema;
