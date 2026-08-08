@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { Star, ExternalLink, Check, X, Clock, MapPin, Building } from "lucide-react";
+import { Star, Check, X, Clock, MapPin, Building } from "lucide-react";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/directory/breadcrumb";
 import { FaqSection } from "@/components/directory/faq-section";
@@ -316,13 +316,13 @@ export default async function ProductPage({
               <h3 className="font-bold text-gray-900 mb-4">相关标签</h3>
               <div className="flex flex-wrap gap-2">
                 {(product.tags || []).map((tag) => (
-                  <Link
+                  // GSC「备用网页」修复 P1：不再链到 /search?q=，纯展示避免爬虫发现大量参数变体
+                  <span
                     key={tag}
-                    href={`/search?q=${encodeURIComponent(tag)}`}
-                    className="px-3 py-1.5 bg-gray-100 text-gray-600 text-xs rounded-full hover:bg-primary/10 hover:text-primary transition-colors"
+                    className="px-3 py-1.5 bg-gray-100 text-gray-600 text-xs rounded-full"
                   >
                     {tag}
-                  </Link>
+                  </span>
                 ))}
               </div>
             </div>

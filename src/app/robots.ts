@@ -10,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/admin/", "/_next/"],
+        disallow: ["/api/", "/admin/", "/_next/", "/search?"],
       },
       // 明确允许 AI 爬虫 - GEO 优化关键
       {
