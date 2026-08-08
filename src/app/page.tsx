@@ -69,13 +69,13 @@ export default async function HomePage() {
             <div className="mt-4 flex items-center justify-center gap-2 text-sm text-blue-200 flex-wrap">
               <span>热门搜索：</span>
               {["AI写作工具", "项目管理", "设计工具", "CRM系统"].map((term) => (
-                <Link
+                // GSC「备用网页」修复 P1：不再链到 /search?q=，纯展示避免爬虫发现大量参数变体
+                <span
                   key={term}
-                  href={`/search?q=${encodeURIComponent(term)}`}
-                  className="px-3 py-1 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
+                  className="px-3 py-1 bg-white/10 rounded-full"
                 >
                   {term}
-                </Link>
+                </span>
               ))}
             </div>
           </div>

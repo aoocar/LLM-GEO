@@ -1,5 +1,4 @@
 import { Suspense } from "react";
-import Link from "next/link";
 import { Breadcrumb } from "@/components/directory/breadcrumb";
 import { JsonLd } from "@/components/seo/json-ld";
 import { generateMeta } from "@/lib/seo/meta";
@@ -8,11 +7,22 @@ import { getProducts, getArticles, getReviews } from "@/lib/content";
 import { SearchResults, type SearchItem } from "@/components/search/search-results";
 import { SearchResultList } from "@/components/search/search-list";
 
-export const metadata = generateMeta({
-  title: "搜索 - AooBee 产品与服务目录",
-  description: "在 AooBee 全行业产品目录中搜索产品、工具、服务与评测文章。",
-  url: "/search",
-});
+export const metadata = {
+  ...generateMeta({
+    title: "搜索 - AooBee 产品与服务目录",
+    description: "在 AooBee 全行业产品目录中搜索产品、工具、服务与评测文章。",
+    url: "/search",
+  }),
+  // GSC「备用网页」修复 P0：/search/?q=* 参数变体全部 noindex,follow，
+  // 覆盖 generateMeta 默认的 index,follow，避免大量搜索标签页被收录为备用网页。
+  robots: {
+    index: false,
+    follow: true,
+    "max-image-preview": "large" as const,
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+};
 
 const ARTICLE_PREFIX: Record<string, string> = {
   GUIDE: "guide",
