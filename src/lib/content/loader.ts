@@ -185,6 +185,7 @@ function parseProduct(file: string, catDirName: string): Product | null {
     location: (data.location as string) || null,
     pricing: (data.pricing as string) || null,
     pricingDetail: (data.pricingDetail as string) || null,
+    updatedAt: data.updatedAt ? new Date(data.updatedAt as string).toISOString() : null,
     rating: typeof data.rating === "number" ? data.rating : 0,
     reviewCount: reviews.length,
     longDesc: content.trim() || null,

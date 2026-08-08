@@ -334,6 +334,11 @@ export function organizationSchema() {
 
 /**
  * 点评结构化数据 (Review 内容类型，非交互评价)
+ *
+ * itemReviewed 补齐产品完整信息（与产品页 productSchema 一致）：
+ * image / brand / url / description + review / aggregateRating，
+ * 解决 GSC「产品摘要结构化数据」未填写字段 review、aggregateRating 问题；
+ * 同时补 datePublished（无点评日期时按产品页 updatedAt 派生）。
  */
 export function reviewSchema(review: {
   title: string;
@@ -345,7 +350,24 @@ export function reviewSchema(review: {
   rating?: number | null;
   summary?: string | null;
   category?: string | null;
+  /** 产品页 logo（缺省时用 AooBee 自有 logo 兜底，与产品页一致） */
+  productLogo?: string | null;
+  /** 品牌/公司名（如“中国联通”），解决 GSC「未提供全局标识符」 */
+  productBrand?: string | null;
+  /** 产品详情页 URL（如 /tongxun/liantong-dawangka） */
+  productUrl?: string | null;
+  /** 产品描述 */
+  productDescription?: string | null;
+  /** 产品页 updatedAt，用于派生 datePublished（点评 frontmatter 无日期字段） */
+  productUpdatedAt?: string | null;
 }) {
+  const productHref = review.productUrl
+    ? normUrl(
+        review.productUrl.startsWith("http")
+          ? review.productUrl
+          : `${BASE_URL}${review.productUrl}`
+      )
+    : normUrl(`${BASE_URL}/reviews/${review.slug}`);
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Review",
@@ -354,6 +376,20 @@ export function reviewSchema(review: {
     itemReviewed: {
       "@type": PRODUCT_SCHEMA_TYPE[review.category ?? ""] ?? "SoftwareApplication",
       name: review.productName || review.product,
+      // image：与产品页一致，真实 logo 缺失时用 AooBee 自有 logo 兜底，保证非空
+      image: review.productLogo
+        ? review.productLogo.startsWith("http")
+          ? review.productLogo
+          : `${BASE_URL}${review.productLogo}`
+        : `${BASE_URL}/aoobee-logo.jpg`,
+      // brand：全局标识符，公司名或产品名兜底
+      brand: {
+        "@type": "Brand",
+        name: review.productBrand || review.productName || review.product,
+      },
+      // url：指向产品详情页，便于搜索引擎关联点评与产品实体
+      url: productHref,
+      description: review.productDescription || review.summary || review.title,
     },
     author: {
       "@type": "Organization",
@@ -376,8 +412,37 @@ export function reviewSchema(review: {
       bestRating: "5",
       worstRating: "1",
     };
+    // 点评自身即一条 Review：回填进 itemReviewed.review + aggregateRating，
+    // 让「产品摘要」富结果拿到完整评价数据，解决 GSC 未填写字段 review/aggregateRating
+    ;(schema.itemReviewed as Record<string, unknown>).review = {
+      "@type": "Review",
+      name: review.title,
+      reviewBody: review.summary || "",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: review.rating.toString(),
+        bestRating: "5",
+        worstRating: "1",
+      },
+      author: {
+        "@type": "Organization",
+        name: review.author || "AooBee 编辑部",
+      },
+    };
+    (schema.itemReviewed as Record<string, unknown>).aggregateRating = {
+      "@type": "AggregateRating",
+      ratingValue: review.rating.toString(),
+      reviewCount: "1",
+      bestRating: "5",
+      worstRating: "1",
+    };
   }
   if (review.summary) schema.reviewBody = review.summary;
+
+  // 点评 frontmatter 无日期字段，按产品页 updatedAt 派生，保证 datePublished 非空
+  if (review.productUpdatedAt) {
+    schema.datePublished = new Date(review.productUpdatedAt).toISOString();
+  }
 
   return schema;
 }

@@ -30,6 +30,7 @@ export interface Product extends ProductSummary {
   founded?: string | null;
   location?: string | null;
   pricingDetail?: string | null;
+  updatedAt?: string | null;
   rating: number;
   reviewCount: number;
   longDesc?: string | null;

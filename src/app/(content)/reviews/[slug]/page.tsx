@@ -49,6 +49,13 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
             rating: review.rating,
             summary: review.summary,
             category: product?.category?.slug ?? null,
+            productLogo: product?.logo ?? null,
+            productBrand: product?.company ?? null,
+            productUrl: product
+              ? `/${product.category.slug}/${product.slug}`
+              : null,
+            productDescription: product?.description ?? null,
+            productUpdatedAt: product?.updatedAt ?? null,
           }),
           breadcrumbSchema([
             { name: "首页", url: "https://www.aoobee.com" },
