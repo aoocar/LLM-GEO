@@ -105,6 +105,66 @@ main:
             git push github "HEAD:main" 2>&1 | grep -viE 'password|username|hint:|remote: Resolving' || true
             echo "=== 推送完成 ==="
 
+  # 每日 07:00 拉取 Microsoft Clarity 流量数据并生成日报（真人/爬虫、行为质量、画像、热门页面、404 检测）
+  # token 从 aoobee-secrets 密钥仓库的 aoobee-seo-bot 文件注入，不写明文、不打日志
+  # 配额：Clarity Data Export API 每日 10 次，本任务每日 2 次调用（近 3 天窗口），远低于上限
+  "crontab: 0 7 * * *":
+    - name: fetch-clarity-report
+      docker:
+        image: node:22
+      stages:
+        - name: fetch-and-push
+          script: |
+            echo "=== [Clarity拉数] 读取 Clarity API token（aoobee-seo-bot）==="
+            CLARITY_TOKEN="$(curl -s -H "Authorization: Bearer $CNB_TOKEN" "https://api.cnb.cool/aoobee/aoobee-secrets/-/git/raw/main/aoobee-seo-bot")"
+            if [ -z "$CLARITY_TOKEN" ]; then
+              echo "ERROR: Clarity token 读取失败（请确认 aoobee-secrets/aoobee-seo-bot 存在）"
+              exit 1
+            fi
+            echo "token 已读取，长度=${#CLARITY_TOKEN}（不打印内容）"
+
+            echo ""
+            echo "=== 运行 Clarity 拉数脚本 ==="
+            export CLARITY_TOKEN
+            node scripts/fetch-clarity.mjs --days=3 || echo "⚠️ Clarity 拉数脚本异常退出（配额/网络/临时失败），不影响主流程"
+
+            if [ ! -d docs/seo-reports ]; then
+              echo "没有报告目录，无需提交"
+              exit 0
+            fi
+            REPORT_FILE=$(ls -t docs/seo-reports/clarity-*.md 2>/dev/null | head -1 || true)
+            if [ -z "$REPORT_FILE" ]; then
+              echo "没有 Clarity 报告文件，无需提交"
+              exit 0
+            fi
+            echo "最新报告: $REPORT_FILE"
+
+            git add docs/seo-reports/
+            if git diff --cached --quiet; then
+              echo "报告无变更（今天已生成过），无需提交"
+              exit 0
+            fi
+
+            echo ""
+            echo "=== 提交报告 ==="
+            git config user.name "AooBee SEO Bot"
+            git config user.email "seo-bot@aoobee.com"
+            git commit -m "docs(seo): 自动 Clarity 流量报告更新 [ci skip]"
+
+            echo "=== 1/2 推送到 CNB（[ci skip] 防死循环）==="
+            git push origin "HEAD:main" 2>&1 | grep -viE 'password|username|hint:|remote: Resolving' || true
+
+            echo "=== 2/2 推送到 GitHub（触发 Vercel 部署）==="
+            export GH_TOKEN="$(curl -s -H "Authorization: Bearer $CNB_TOKEN" -H "Accept: application/json" "https://api.cnb.cool/aoobee/aoobee-secrets/-/git/raw/main/LLM-GEO")"
+            if [ -z "$GH_TOKEN" ]; then
+              echo "ERROR: GitHub token 读取失败"
+              exit 1
+            fi
+            git remote remove github 2>/dev/null || true
+            git remote add github "https://x-access-token:${GH_TOKEN}@github.com/aoocar/LLM-GEO.git"
+            git push github "HEAD:main" 2>&1 | grep -viE 'password|username|hint:|remote: Resolving' || true
+            echo "=== 推送完成 ==="
+
   # 每日 07:30 向百度普通收录 API 提交 sitemap URL（每日 10 条轮转，配额友好）
   # token 从 aoobee-secrets 密钥仓库的 BAIDU_TOKEN 文件注入，不写明文、不打日志
   "crontab: 30 7 * * *":
