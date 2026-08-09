@@ -106,6 +106,22 @@ export function productSchema(product: {
         },
         shippingDetails: {
           "@type": "OfferShippingDetails",
+          // GSC 提示 offers.shippingDetails 缺 deliveryTime：补配送时效（1-2 天处理 + 2-5 天运输）。
+          deliveryTime: {
+            "@type": "ShippingDeliveryTime",
+            handlingTime: {
+              "@type": "QuantitativeValue",
+              minValue: 1,
+              maxValue: 2,
+              unitCode: "DAY",
+            },
+            transitTime: {
+              "@type": "QuantitativeValue",
+              minValue: 2,
+              maxValue: 5,
+              unitCode: "DAY",
+            },
+          },
           shippingRate: {
             "@type": "MonetaryAmount",
             value: "0",
