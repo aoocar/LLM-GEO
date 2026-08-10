@@ -7,7 +7,7 @@ excerpt: 2026 年国产 AI 大模型排行：按推理、长文本、多模态�
 description: 2026 年国产 AI 大模型排行榜：从推理能力、长文本处理、多模态创作与生态集成四个维度盘点最值得用的国产 AI 助手。
 authorName: AooBee 编辑部
 publishedAt: 2026-08-05
-updatedAt: 2026-08-06
+updatedAt: 2026-08-10
 faqItems:
   - question: 2026 年国产 AI 哪个最值得用？
     answer: 按场景选：强推理与免费体验选 DeepSeek，长文本资料整理选 Kimi，大众多模态选豆包，联网查证选文心一言，企业集成选通义千问。
