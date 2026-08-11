@@ -30,6 +30,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 产品 Kimi: https://www.aoobee.com/ai/kimi/
 - 产品 通义千问: https://www.aoobee.com/ai/tongyi-qianwen/
 - 产品 文心一言: https://www.aoobee.com/ai/wenxin-yiyan/
+- 产品 CNB: https://www.aoobee.com/bangong/cnb/
 - 产品 钉钉: https://www.aoobee.com/bangong/dingtalk/
 - 产品 飞书: https://www.aoobee.com/bangong/feishu/
 - 产品 Notion: https://www.aoobee.com/bangong/notion/
@@ -97,6 +98,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 2026 年十大 AI 写作工具推荐: https://www.aoobee.com/best/ai-writing-tools-2026/
 - 文章 2026 年团队协作办公平台推荐榜单: https://www.aoobee.com/best/bangong-best-collaboration-2026/
 - 文章 2026 大学新生笔记本电脑推荐榜单：六款热门机型横向对比: https://www.aoobee.com/best/daxuesheng-bijiben-tuijian-2026/
+- 文章 2026 年云原生构建平台推荐榜单: https://www.aoobee.com/best/devops-build-platforms-2026/
 - 文章 2026 年国产 AI 大模型排行：五大国产 AI 助手推荐: https://www.aoobee.com/best/domestic-ai-chatbots-2026/
 - 文章 2026 年智能家电推荐榜单: https://www.aoobee.com/best/jiadian-best-smart-2026/
 - 文章 2026 年在线教育平台推荐榜单: https://www.aoobee.com/best/jiaoyu-best-online-courses-2026/
@@ -109,6 +111,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 2026 年装修平台推荐榜单: https://www.aoobee.com/best/zhuangxiu-best-platforms-2026/
 - 文章 大学新生：笔记本、平板还是二合一？三选一怎么定: https://www.aoobee.com/compare/bijiben-vs-pingban-vs-lianjieben/
 - 文章 ChatGPT vs Claude 全面对比: https://www.aoobee.com/compare/chatgpt-vs-claude/
+- 文章 CNB vs GitHub Actions 全面对比: https://www.aoobee.com/compare/cnb-vs-github-actions/
 - 文章 DeepSeek vs 通义千问：两大国产开源大模型全面对比: https://www.aoobee.com/compare/deepseek-vs-tongyi-qianwen/
 - 文章 钉钉 vs 企业微信 全面对比: https://www.aoobee.com/compare/dingtalk-vs-wecom/
 - 文章 国产 AI 助手怎么选？DeepSeek、Kimi、豆包、文心一言、通义千问五强对比: https://www.aoobee.com/compare/domestic-ai-tools-2026/
@@ -138,6 +141,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 北京哪里通下水道？厨房/卫生间堵塞疏通价格与上门渠道: https://www.aoobee.com/faq/beijing-tong-xiashuidao/
 - 文章 北京哪里做卫生间改造？防水/墙地砖/马桶移位价格参考: https://www.aoobee.com/faq/beijing-weishengjian-gaizao/
 - 文章 北京哪里修马桶？水箱/坐便器漏水维修价格与上门师傅: https://www.aoobee.com/faq/beijing-xiu-matong/
+- 文章 CNB 云原生构建常见问题: https://www.aoobee.com/faq/cnb-common-questions/
 - 文章 大学标配三件套是什么？笔记本、手机、背包新生入学装备解析: https://www.aoobee.com/faq/daxue-biaopei-sanjianitao/
 - 文章 电信星卡常见问题：套餐、资费、办理避坑全解答: https://www.aoobee.com/faq/dianxin-xingka-changjian-wenti/
 - 文章 国产 AI 助手常见问题：DeepSeek、Kimi、豆包、文心一言、通义千问使用答疑: https://www.aoobee.com/faq/domestic-ai-common-questions/
@@ -159,6 +163,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 长护险怎么申请3步看懂家里有失能老人能省护理费: https://www.aoobee.com/guide/changhuxian-zenme-shenqing/
 - 文章 长期炎症是癌症"帮凶"？3类老人炎症别拖，越早查越好: https://www.aoobee.com/guide/changqi-yanzheng-aizheng-bangxiong/
 - 文章 重庆彭水山体崩塌8死34失联——灾区老人的养老金和医保怎么办？: https://www.aoobee.com/guide/chongqing-pengshui-shantiben-ta/
+- 文章 CNB 云原生构建入门指南: https://www.aoobee.com/guide/cnb-getting-started-guide/
 - 文章 存钱过万为什么一定要办纸质存单？4个理由+6个必问，建议收藏: https://www.aoobee.com/guide/cunqian-guowan-zhizhi-cundan-2/
 - 文章 存钱过万为什么一定要办纸质存单？4个理由+6个必问，建议收藏: https://www.aoobee.com/guide/cunqian-guowan-zhizhi-cundan/
 - 文章 大暑来了！老人防中暑记住"移降补送"4个字，关键时刻能救命: https://www.aoobee.com/guide/dashu-laoren-fang-zhongshu/
@@ -228,6 +233,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 文章 遗嘱怎么写才有效？3要点+去哪公证: https://www.aoobee.com/guide/yizhu-zenme-xie-cai-youxiao/
 - 文章 9月成立！中国牵头40国建反诈联盟，农村老人的养老钱更安全了: https://www.aoobee.com/guide/zhongguo-qiantou-40guo-fanzha-lianmeng/
 - 文章 ChatGPT 深度评测: https://www.aoobee.com/review/chatgpt-review/
+- 文章 CNB 云原生构建平台深度评测: https://www.aoobee.com/review/cnb-review/
 - 文章 钉钉 深度评测: https://www.aoobee.com/review/dingtalk-review/
 - 文章 海尔 深度评测: https://www.aoobee.com/review/haier-review/
 - 文章 极力猫 EM33G 深度评测：随身WiFi+充电宝二合一是真香还是噱头？: https://www.aoobee.com/review/jilimao-em33g-review/
@@ -244,6 +250,7 @@ AooBee 是全行业产品与服务目录，面向 GEO/SEO 提供结构化内容�
 - 点评 中国电信 真实使用点评: https://www.aoobee.com/reviews/china-telecom-honest-review/
 - 点评 中国联通 真实使用点评: https://www.aoobee.com/reviews/china-unicom-honest-review/
 - 点评 Claude 真实使用点评: https://www.aoobee.com/reviews/claude-honest-review/
+- 点评 CNB 真实使用点评: https://www.aoobee.com/reviews/cnb-honest-review/
 - 点评 大家的家 真实使用点评: https://www.aoobee.com/reviews/dajia-family-honest-review/
 - 点评 DeepSeek 真实使用点评: https://www.aoobee.com/reviews/deepseek-honest-review/
 - 点评 戴尔笔记本 真实使用点评: https://www.aoobee.com/reviews/dell-honest-review/
