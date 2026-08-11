@@ -84,11 +84,14 @@ export function productSchema(product: {
   // offers：仅当能可靠解析出价格时才输出，避免非法空 price Offer 拖累富结果。
   if (product.pricing) {
     let price: string | null = null;
-    if (product.pricing === "免费") {
+    // 优先提取具体价格（如 "免费 / Plus $20" → 20，"¥199" → 199）。
+    const m = product.pricing.match(/(\d+(?:\.\d+)?)/);
+    if (m) {
+      price = m[1];
+    } else if (product.pricing.includes("免费")) {
+      // 明确含"免费"档且无具体收费数字时（如 "基础免费" / "免费+订阅" / "免费咨询"），
+      // 安全地输出 price=0，让这些产品同时具备 offers + review + aggregateRating 三字段。
       price = "0";
-    } else {
-      const m = product.pricing.match(/(\d+(?:\.\d+)?)/);
-      if (m) price = m[1];
     }
     if (price !== null) {
       const currency = /\$/.test(product.pricing) ? "USD" : "CNY";
