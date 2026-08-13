@@ -8,6 +8,11 @@ const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-LFP31YGTRT";
 // 也可在 Vercel 环境变量 NEXT_PUBLIC_CLARITY_ID 中覆盖。
 const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID || "lx18ztcr4b";
 
+// 百度统计站点 ID（来自用户提供的 hm.js 片段）。
+// 也可在 Vercel 环境变量 NEXT_PUBLIC_BAIDU_ID 中覆盖。
+const BAIDU_ID =
+  process.env.NEXT_PUBLIC_BAIDU_ID || "6c379e0b1ee15fb6fa39fc893c0ba925";
+
 export function Analytics() {
   return (
     <>
@@ -36,6 +41,19 @@ export function Analytics() {
         strategy="afterInteractive"
         crossOrigin="anonymous"
       />
+
+      {/* 百度统计 */}
+      <Script id="baidu-tongji" strategy="afterInteractive">
+        {`
+          var _hmt = _hmt || [];
+          (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?${BAIDU_ID}";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+          })();
+        `}
+      </Script>
     </>
   );
 }
