@@ -7,7 +7,7 @@ excerpt: 2026 大学新生笔记本推荐榜单：联想小新、华为 MateBook
 description: 2026 大学新生笔记本电脑推荐榜单：联想小新、华为 MateBook、MacBook Air、小米、戴尔、惠普六款热门机型的价格、配置、适合人群横向对比，附选购决策表。
 authorName: AooBee 编辑部
 publishedAt: 2026-08-07
-updatedAt: 2026-08-17
+updatedAt: 2026-08-24
 faqItems:
   - question: 大学新生笔记本哪个牌子性价比高？
     answer: 联想小新、小米笔记本、惠普星 Book 是同价位里性价比第一梯队，4000-5000 元能买到 16G 内存 + 512G 固态的均衡配置；华为 MateBook 贵一点但生态好，MacBook Air 品质高但价格最高。

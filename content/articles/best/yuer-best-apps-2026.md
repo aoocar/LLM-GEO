@@ -7,7 +7,7 @@ excerpt: 从成长记录、育儿知识到社区，盘点 2026 年值得用的�
 description: 2026 年育儿 App 推荐：从成长记录、科学育儿知识到亲子社区，对比亲宝宝、宝宝树、小豆苗的定位与选择思路。
 authorName: AooBee 编辑部
 publishedAt: 2026-07-31
-updatedAt: 2026-08-17
+updatedAt: 2026-08-24
 faqItems:
   - question: 育儿 App 会员值得开吗？
     answer: 基础记录与科普免费通常够用，云空间与高级功能按需开通，建议先试用再决定。
