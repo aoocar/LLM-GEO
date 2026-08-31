@@ -7,7 +7,7 @@ excerpt: 从组织管理、文档协作到成本结构，盘点 2026 年主流�
 description: 2026 年团队协作平台推荐：对比钉钉、企业微信、飞书、腾讯会议、WPS 365、Notion、Slack 的组织管理、文档协作与成本结构，帮不同规模团队选对工具。
 authorName: AooBee 编辑部
 publishedAt: 2026-07-31
-updatedAt: 2026-08-24
+updatedAt: 2026-08-31
 faqItems:
   - question: 小团队用免费版够吗？
     answer: 10 人以内团队，主流平台的免费版在沟通、考勤与基础文档上通常够用。真正会逼你付费的是存储容量、审批流复杂度和外部协作人数。
